@@ -1,0 +1,258 @@
+[0.000000] (-) TimerEvent: {}
+[0.000471] (-) JobUnselected: {'identifier': 'turtle_demo_controller'}
+[0.000514] (enc_turtle_cpp) JobQueued: {'identifier': 'enc_turtle_cpp', 'dependencies': OrderedDict()}
+[0.000550] (enc_turtle_cpp) JobStarted: {'identifier': 'enc_turtle_cpp'}
+[0.008598] (enc_turtle_cpp) JobProgress: {'identifier': 'enc_turtle_cpp', 'progress': 'cmake'}
+[0.009242] (enc_turtle_cpp) JobProgress: {'identifier': 'enc_turtle_cpp', 'progress': 'build'}
+[0.010023] (enc_turtle_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', '--', '-j12', '-l12'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('GIT_ASKPASS', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/ROS2_turtlesim_ws'), ('TERM_PROGRAM_VERSION', '0.50.7'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bd24ec93-b3db-40ce-af66-59a4217c209d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/node'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'Cursor'), ('WSL_INTEROP', '/run/WSL/344188_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/bin/remote-cli:/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '11ea8a6a-273f-4f01-a734-76267bbc8b3f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e4c32d764.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy')]), 'shell': False}
+[0.055510] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bgv_test\x1b[0m\n'}
+[0.065956] (enc_turtle_cpp) StdoutLine: {'line': b'[  2%] Built target enc_turtle_cpp__cpp\n'}
+[0.066211] (enc_turtle_cpp) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o\x1b[0m\n'}
+[0.066283] (enc_turtle_cpp) StdoutLine: {'line': b'[ 12%] Built target enc_turtle_cpp__rosidl_generator_c\n'}
+[0.073706] (enc_turtle_cpp) StdoutLine: {'line': b'[ 21%] Built target turtle_plant\n'}
+[0.073927] (enc_turtle_cpp) StdoutLine: {'line': b'[ 21%] Built target turtle_controller\n'}
+[0.087624] (enc_turtle_cpp) StdoutLine: {'line': b'[ 34%] Built target enc_turtle_cpp__rosidl_typesupport_c\n'}
+[0.087818] (enc_turtle_cpp) StdoutLine: {'line': b'[ 36%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp\n'}
+[0.088573] (enc_turtle_cpp) StdoutLine: {'line': b'[ 46%] Built target enc_turtle_cpp__rosidl_typesupport_cpp\n'}
+[0.088670] (enc_turtle_cpp) StdoutLine: {'line': b'[ 51%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c\n'}
+[0.092561] (enc_turtle_cpp) StdoutLine: {'line': b'[ 58%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp\n'}
+[0.099796] (-) TimerEvent: {}
+[0.118432] (enc_turtle_cpp) StdoutLine: {'line': b'[ 65%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c\n'}
+[0.129184] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_cpp\x1b[0m\n'}
+[0.140074] (enc_turtle_cpp) StdoutLine: {'line': b'[ 65%] Built target enc_turtle_cpp\n'}
+[0.150739] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_cpp__py\x1b[0m\n'}
+[0.150906] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_controller\x1b[0m\n'}
+[0.151471] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_plant\x1b[0m\n'}
+[0.161886] (enc_turtle_cpp) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[0.191786] (enc_turtle_cpp) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o\x1b[0m\n'}
+[0.191969] (enc_turtle_cpp) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o\x1b[0m\n'}
+[0.199905] (-) TimerEvent: {}
+[0.300197] (-) TimerEvent: {}
+[0.401082] (-) TimerEvent: {}
+[0.453731] (enc_turtle_cpp) StdoutLine: {'line': b'[ 73%] Built target enc_turtle_cpp__py\n'}
+[0.467381] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_cpp__python\x1b[0m\n'}
+[0.487900] (enc_turtle_cpp) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/enc_turtle_cpp__python.dir/rosidl_generator_py/enc_turtle_cpp/msg/_encrypted_data_s.c.o\x1b[0m\n'}
+[0.501210] (-) TimerEvent: {}
+[0.593402] (enc_turtle_cpp) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/libenc_turtle_cpp__python.so\x1b[0m\n'}
+[0.601344] (-) TimerEvent: {}
+[0.684377] (enc_turtle_cpp) StdoutLine: {'line': b'[ 78%] Built target enc_turtle_cpp__python\n'}
+[0.696166] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[0.696731] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[0.697374] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[0.701438] (-) TimerEvent: {}
+[0.715563] (enc_turtle_cpp) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[0.717739] (enc_turtle_cpp) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[0.718056] (enc_turtle_cpp) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[0.800774] (enc_turtle_cpp) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[0.801538] (-) TimerEvent: {}
+[0.803780] (enc_turtle_cpp) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[0.810815] (enc_turtle_cpp) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[0.885132] (enc_turtle_cpp) StdoutLine: {'line': b'[ 92%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext\n'}
+[0.885374] (enc_turtle_cpp) StdoutLine: {'line': b'[ 92%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext\n'}
+[0.901679] (-) TimerEvent: {}
+[0.938659] (enc_turtle_cpp) StdoutLine: {'line': b'[ 92%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.001823] (-) TimerEvent: {}
+[1.102181] (-) TimerEvent: {}
+[1.202560] (-) TimerEvent: {}
+[1.303116] (-) TimerEvent: {}
+[1.403563] (-) TimerEvent: {}
+[1.409460] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.409680] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:12:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCryptoContextBGVRNS\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.409741] (enc_turtle_cpp) StderrLine: {'line': b'   12 |     CCParams<\x1b[01;31m\x1b[KCryptoContextBGVRNS\x1b[m\x1b[K> parameters;\n'}
+[1.409781] (enc_turtle_cpp) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.409821] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:12:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.409856] (enc_turtle_cpp) StderrLine: {'line': b'   12 |     CCParams<CryptoContextBGVRNS\x1b[01;31m\x1b[K>\x1b[m\x1b[K parameters;\n'}
+[1.409890] (enc_turtle_cpp) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.409923] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:13:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[KSetPlaintextModulus\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kparameters\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.409964] (enc_turtle_cpp) StderrLine: {'line': b'   13 |     parameters.\x1b[01;31m\x1b[KSetPlaintextModulus\x1b[m\x1b[K(65537);\n'}
+[1.409998] (enc_turtle_cpp) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.410031] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:14:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[KSetMultiplicativeDepth\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kparameters\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.410065] (enc_turtle_cpp) StderrLine: {'line': b'   14 |     parameters.\x1b[01;31m\x1b[KSetMultiplicativeDepth\x1b[m\x1b[K(2);\n'}
+[1.410098] (enc_turtle_cpp) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.410130] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:15:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[KSetSecurityLevel\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kparameters\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.410170] (enc_turtle_cpp) StderrLine: {'line': b'   15 |     parameters.\x1b[01;31m\x1b[KSetSecurityLevel\x1b[m\x1b[K(SecurityLevel::HEStd_128_classic);\n'}
+[1.410203] (enc_turtle_cpp) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.410235] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:16:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[KSetRingDim\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kparameters\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.410268] (enc_turtle_cpp) StderrLine: {'line': b'   16 |     parameters.\x1b[01;31m\x1b[KSetRingDim\x1b[m\x1b[K(16384);  // \xea\xb6\x8c\xec\x9e\xa5\xeb\x90\x98\xeb\x8a\x94 \xec\xb5\x9c\xec\x86\x8c Ring dimension\xec\x9c\xbc\xeb\xa1\x9c \xeb\xb3\x80\xea\xb2\xbd\n'}
+[1.410301] (enc_turtle_cpp) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.411391] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:21:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KGenCryptoContext(int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.411523] (enc_turtle_cpp) StderrLine: {'line': b'   21 |     CryptoContext<DCRTPoly> cc = GenCryptoContext(parameters\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.411570] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.411610] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:5\x1b[m\x1b[K:\n'}
+[1.411647] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/openfhe/pke/gen-cryptocontext.h:89:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> typename T::ContextType lbcrypto::GenCryptoContext(const lbcrypto::CCParams<T>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.411682] (enc_turtle_cpp) StderrLine: {'line': b'   89 | typename T::ContextType \x1b[01;36m\x1b[KGenCryptoContext\x1b[m\x1b[K(const CCParams<T>& params) {\n'}
+[1.411716] (enc_turtle_cpp) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.411750] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/openfhe/pke/gen-cryptocontext.h:89:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.411784] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:21:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst lbcrypto::CCParams<T>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.411818] (enc_turtle_cpp) StderrLine: {'line': b'   21 |     CryptoContext<DCRTPoly> cc = GenCryptoContext(parameters\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.411852] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.503696] (-) TimerEvent: {}
+[1.604055] (-) TimerEvent: {}
+[1.704434] (-) TimerEvent: {}
+[1.804810] (-) TimerEvent: {}
+[1.905176] (-) TimerEvent: {}
+[2.005543] (-) TimerEvent: {}
+[2.105905] (-) TimerEvent: {}
+[2.206288] (-) TimerEvent: {}
+[2.306670] (-) TimerEvent: {}
+[2.397700] (enc_turtle_cpp) StderrLine: {'line': b'make[2]: *** [CMakeFiles/bgv_test.dir/build.make:63: CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o] Error 1\n'}
+[2.397957] (enc_turtle_cpp) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:131: CMakeFiles/bgv_test.dir/all] Error 2\n'}
+[2.398053] (enc_turtle_cpp) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[2.406775] (-) TimerEvent: {}
+[2.507086] (-) TimerEvent: {}
+[2.607662] (-) TimerEvent: {}
+[2.708059] (-) TimerEvent: {}
+[2.808447] (-) TimerEvent: {}
+[2.908834] (-) TimerEvent: {}
+[3.009204] (-) TimerEvent: {}
+[3.109573] (-) TimerEvent: {}
+[3.209948] (-) TimerEvent: {}
+[3.310333] (-) TimerEvent: {}
+[3.410742] (-) TimerEvent: {}
+[3.511117] (-) TimerEvent: {}
+[3.611496] (-) TimerEvent: {}
+[3.711870] (-) TimerEvent: {}
+[3.812259] (-) TimerEvent: {}
+[3.912627] (-) TimerEvent: {}
+[4.013006] (-) TimerEvent: {}
+[4.113396] (-) TimerEvent: {}
+[4.213771] (-) TimerEvent: {}
+[4.314134] (-) TimerEvent: {}
+[4.414483] (-) TimerEvent: {}
+[4.514847] (-) TimerEvent: {}
+[4.615353] (-) TimerEvent: {}
+[4.715725] (-) TimerEvent: {}
+[4.816130] (-) TimerEvent: {}
+[4.916502] (-) TimerEvent: {}
+[5.016880] (-) TimerEvent: {}
+[5.117244] (-) TimerEvent: {}
+[5.217602] (-) TimerEvent: {}
+[5.317966] (-) TimerEvent: {}
+[5.418329] (-) TimerEvent: {}
+[5.518715] (-) TimerEvent: {}
+[5.619088] (-) TimerEvent: {}
+[5.719507] (-) TimerEvent: {}
+[5.819905] (-) TimerEvent: {}
+[5.920276] (-) TimerEvent: {}
+[6.020654] (-) TimerEvent: {}
+[6.121049] (-) TimerEvent: {}
+[6.221453] (-) TimerEvent: {}
+[6.321878] (-) TimerEvent: {}
+[6.422265] (-) TimerEvent: {}
+[6.522615] (-) TimerEvent: {}
+[6.623004] (-) TimerEvent: {}
+[6.723392] (-) TimerEvent: {}
+[6.823767] (-) TimerEvent: {}
+[6.924136] (-) TimerEvent: {}
+[7.024514] (-) TimerEvent: {}
+[7.124882] (-) TimerEvent: {}
+[7.225255] (-) TimerEvent: {}
+[7.325627] (-) TimerEvent: {}
+[7.426000] (-) TimerEvent: {}
+[7.526367] (-) TimerEvent: {}
+[7.626740] (-) TimerEvent: {}
+[7.727117] (-) TimerEvent: {}
+[7.827555] (-) TimerEvent: {}
+[7.927980] (-) TimerEvent: {}
+[8.028341] (-) TimerEvent: {}
+[8.128850] (-) TimerEvent: {}
+[8.229242] (-) TimerEvent: {}
+[8.329647] (-) TimerEvent: {}
+[8.430022] (-) TimerEvent: {}
+[8.530394] (-) TimerEvent: {}
+[8.630766] (-) TimerEvent: {}
+[8.731148] (-) TimerEvent: {}
+[8.831558] (-) TimerEvent: {}
+[8.931913] (-) TimerEvent: {}
+[9.032328] (-) TimerEvent: {}
+[9.132690] (-) TimerEvent: {}
+[9.233071] (-) TimerEvent: {}
+[9.333438] (-) TimerEvent: {}
+[9.433800] (-) TimerEvent: {}
+[9.534170] (-) TimerEvent: {}
+[9.634579] (-) TimerEvent: {}
+[9.734966] (-) TimerEvent: {}
+[9.835332] (-) TimerEvent: {}
+[9.935761] (-) TimerEvent: {}
+[10.036107] (-) TimerEvent: {}
+[10.136460] (-) TimerEvent: {}
+[10.236830] (-) TimerEvent: {}
+[10.337201] (-) TimerEvent: {}
+[10.437565] (-) TimerEvent: {}
+[10.537994] (-) TimerEvent: {}
+[10.638350] (-) TimerEvent: {}
+[10.738711] (-) TimerEvent: {}
+[10.839047] (-) TimerEvent: {}
+[10.939420] (-) TimerEvent: {}
+[11.039789] (-) TimerEvent: {}
+[11.140175] (-) TimerEvent: {}
+[11.240547] (-) TimerEvent: {}
+[11.340924] (-) TimerEvent: {}
+[11.441317] (-) TimerEvent: {}
+[11.541685] (-) TimerEvent: {}
+[11.642061] (-) TimerEvent: {}
+[11.742427] (-) TimerEvent: {}
+[11.842769] (-) TimerEvent: {}
+[11.943307] (-) TimerEvent: {}
+[12.043681] (-) TimerEvent: {}
+[12.144038] (-) TimerEvent: {}
+[12.244384] (-) TimerEvent: {}
+[12.344761] (-) TimerEvent: {}
+[12.445145] (-) TimerEvent: {}
+[12.545498] (-) TimerEvent: {}
+[12.645875] (-) TimerEvent: {}
+[12.746245] (-) TimerEvent: {}
+[12.846605] (-) TimerEvent: {}
+[12.946972] (-) TimerEvent: {}
+[13.047362] (-) TimerEvent: {}
+[13.147764] (-) TimerEvent: {}
+[13.248172] (-) TimerEvent: {}
+[13.348529] (-) TimerEvent: {}
+[13.449045] (-) TimerEvent: {}
+[13.549404] (-) TimerEvent: {}
+[13.649772] (-) TimerEvent: {}
+[13.750145] (-) TimerEvent: {}
+[13.850505] (-) TimerEvent: {}
+[13.950867] (-) TimerEvent: {}
+[14.051258] (-) TimerEvent: {}
+[14.151619] (-) TimerEvent: {}
+[14.251980] (-) TimerEvent: {}
+[14.352342] (-) TimerEvent: {}
+[14.452704] (-) TimerEvent: {}
+[14.553073] (-) TimerEvent: {}
+[14.653459] (-) TimerEvent: {}
+[14.753813] (-) TimerEvent: {}
+[14.854395] (-) TimerEvent: {}
+[14.954825] (-) TimerEvent: {}
+[15.055185] (-) TimerEvent: {}
+[15.155721] (-) TimerEvent: {}
+[15.256143] (-) TimerEvent: {}
+[15.285511] (enc_turtle_cpp) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable enc_turtle_controller\x1b[0m\n'}
+[15.356273] (-) TimerEvent: {}
+[15.456606] (-) TimerEvent: {}
+[15.464656] (enc_turtle_cpp) StdoutLine: {'line': b'[ 95%] Built target enc_turtle_controller\n'}
+[15.556731] (-) TimerEvent: {}
+[15.657070] (-) TimerEvent: {}
+[15.757434] (-) TimerEvent: {}
+[15.857784] (-) TimerEvent: {}
+[15.958126] (-) TimerEvent: {}
+[16.058517] (-) TimerEvent: {}
+[16.158906] (-) TimerEvent: {}
+[16.259312] (-) TimerEvent: {}
+[16.359675] (-) TimerEvent: {}
+[16.460023] (-) TimerEvent: {}
+[16.560400] (-) TimerEvent: {}
+[16.660753] (-) TimerEvent: {}
+[16.761124] (-) TimerEvent: {}
+[16.861512] (-) TimerEvent: {}
+[16.961883] (-) TimerEvent: {}
+[17.062231] (-) TimerEvent: {}
+[17.101741] (enc_turtle_cpp) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable enc_turtle_plant\x1b[0m\n'}
+[17.162356] (-) TimerEvent: {}
+[17.262689] (-) TimerEvent: {}
+[17.281471] (enc_turtle_cpp) StdoutLine: {'line': b'[ 97%] Built target enc_turtle_plant\n'}
+[17.283032] (enc_turtle_cpp) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[17.285676] (enc_turtle_cpp) CommandEnded: {'returncode': 2}
+[17.362883] (-) TimerEvent: {}
+[17.363986] (enc_turtle_cpp) JobEnded: {'identifier': 'enc_turtle_cpp', 'rc': 2}
+[17.365258] (-) EventReactorShutdown: {}

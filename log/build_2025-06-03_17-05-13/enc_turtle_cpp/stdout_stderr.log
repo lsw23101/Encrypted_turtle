@@ -1,0 +1,75 @@
+[35m[1mScanning dependencies of target bgv_test[0m
+[  2%] Built target enc_turtle_cpp__cpp
+[  7%] [32mBuilding CXX object CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o[0m
+[ 12%] Built target enc_turtle_cpp__rosidl_generator_c
+[ 21%] Built target turtle_plant
+[ 21%] Built target turtle_controller
+[ 34%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[ 36%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[ 46%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[ 51%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[ 58%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[ 65%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target enc_turtle_cpp[0m
+[ 65%] Built target enc_turtle_cpp
+[35m[1mScanning dependencies of target enc_turtle_cpp__py[0m
+[35m[1mScanning dependencies of target enc_turtle_controller[0m
+[35m[1mScanning dependencies of target enc_turtle_plant[0m
+[ 68%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[ 73%] Built target enc_turtle_cpp__py
+[35m[1mScanning dependencies of target enc_turtle_cpp__python[0m
+[ 75%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__python.dir/rosidl_generator_py/enc_turtle_cpp/msg/_encrypted_data_s.c.o[0m
+[ 78%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/libenc_turtle_cpp__python.so[0m
+[ 78%] Built target enc_turtle_cpp__python
+[35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_c__pyext[0m
+[35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 80%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_c.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 87%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[ 90%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[ 92%] [32m[1mLinking CXX shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[ 92%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[ 92%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[ 92%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:12:14:[m[K [01;31m[Kerror: [m[K‘[01m[KCryptoContextBGVRNS[m[K’ was not declared in this scope
+   12 |     CCParams<[01;31m[KCryptoContextBGVRNS[m[K> parameters;
+      |              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:12:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   12 |     CCParams<CryptoContextBGVRNS[01;31m[K>[m[K parameters;
+      |                                 [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:13:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetPlaintextModulus[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   13 |     parameters.[01;31m[KSetPlaintextModulus[m[K(65537);
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:14:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetMultiplicativeDepth[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   14 |     parameters.[01;31m[KSetMultiplicativeDepth[m[K(2);
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:15:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetSecurityLevel[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   15 |     parameters.[01;31m[KSetSecurityLevel[m[K(SecurityLevel::HEStd_128_classic);
+      |                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:16:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetRingDim[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   16 |     parameters.[01;31m[KSetRingDim[m[K(16384);  // 권장되는 최소 Ring dimension으로 변경
+      |                [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:21:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGenCryptoContext(int&)[m[K’
+   21 |     CryptoContext<DCRTPoly> cc = GenCryptoContext(parameters[01;31m[K)[m[K;
+      |                                                             [01;31m[K^[m[K
+In file included from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:5[m[K:
+[01m[K/usr/local/include/openfhe/pke/gen-cryptocontext.h:89:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> typename T::ContextType lbcrypto::GenCryptoContext(const lbcrypto::CCParams<T>&)[m[K’
+   89 | typename T::ContextType [01;36m[KGenCryptoContext[m[K(const CCParams<T>& params) {
+      |                         [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/openfhe/pke/gen-cryptocontext.h:89:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:21:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst lbcrypto::CCParams<T>[m[K’ and ‘[01m[Kint[m[K’
+   21 |     CryptoContext<DCRTPoly> cc = GenCryptoContext(parameters[01;36m[K)[m[K;
+      |                                                             [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/bgv_test.dir/build.make:63: CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:131: CMakeFiles/bgv_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 95%] [32m[1mLinking CXX executable enc_turtle_controller[0m
+[ 95%] Built target enc_turtle_controller
+[ 97%] [32m[1mLinking CXX executable enc_turtle_plant[0m
+[ 97%] Built target enc_turtle_plant
+make: *** [Makefile:141: all] Error 2

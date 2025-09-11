@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from enc_turtle_cpp/msg/EncryptedData.msg
+// generated code does not contain a copyright notice
+
+
+module enc_turtle_cpp {
+  module msg {
+    struct EncryptedData {
+      @verbatim (language="comment", text=
+        " Serialized encrypted data as byte array")
+      sequence<uint8> data;
+
+      @verbatim (language="comment", text=
+        " 0: x coordinate, 1: y coordinate, 2: result")
+      uint32 data_type;
+    };
+  };
+};

@@ -1,0 +1,25 @@
+[0.018s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.079s] [  9%] Built target enc_turtle_cpp__rosidl_generator_c
+[0.079s] [  9%] Built target enc_turtle_cpp__cpp
+[0.080s] [ 14%] Built target bgv_test
+[0.094s] [ 24%] Built target turtle_plant
+[0.094s] [ 24%] Built target turtle_controller
+[0.110s] [ 46%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[0.110s] [ 46%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[0.110s] [ 46%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[0.112s] [ 53%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[0.112s] [ 60%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[0.139s] [ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[0.160s] [ 68%] Built target enc_turtle_cpp
+[0.171s] [35m[1mScanning dependencies of target enc_turtle_controller[0m
+[0.181s] [ 70%] Built target enc_turtle_cpp__py
+[0.190s] [ 75%] Built target enc_turtle_plant
+[0.206s] [ 78%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[0.206s] [ 82%] Built target enc_turtle_cpp__python
+[0.233s] [ 92%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[0.233s] [ 92%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[0.233s] [ 97%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[2.203s] make[2]: *** [CMakeFiles/enc_turtle_controller.dir/build.make:63: CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o] Interrupt
+[2.203s] make[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/enc_turtle_controller.dir/all] Interrupt
+[2.203s] make: *** [Makefile:141: all] Interrupt
+[2.239s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12

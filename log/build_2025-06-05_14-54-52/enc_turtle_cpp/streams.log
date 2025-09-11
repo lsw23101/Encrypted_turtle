@@ -1,0 +1,161 @@
+[0.017s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.041s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.057s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.057s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.171s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.178s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.271s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.273s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.318s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.346s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.347s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.426s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[2.445s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[2.501s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.524s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.600s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[4.659s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.664s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.681s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[4.681s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[4.697s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.697s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[4.697s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[4.708s] -- Found OpenFHE
+[4.708s] -- OpenFHE Version: 1.3.0
+[4.708s] -- OpenFHE Include Dirs: 
+[4.708s] -- OpenFHE Libraries: 
+[4.712s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.720s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.721s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.722s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/include>
+[4.722s] -- Configured cppcheck exclude dirs and/or files: 
+[4.723s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.723s] -- Configured cpplint exclude dirs and/or files: 
+[4.723s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.724s] -- Added test 'lint_cmake' to check CMake code style
+[4.724s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.725s] -- Added test 'uncrustify' to check C / C++ code style
+[4.725s] -- Configured uncrustify additional arguments: 
+[4.725s] -- Added test 'xmllint' to check XML markup files
+[4.730s] -- Configuring done
+[4.774s] -- Generating done
+[4.778s] -- Build files have been written to: /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp
+[4.818s] [  6%] Built target enc_turtle_cpp__rosidl_generator_c
+[4.818s] [  8%] Built target enc_turtle_cpp__cpp
+[4.821s] [ 13%] Built target bgv_test
+[4.827s] [ 17%] Built target turtle_controller
+[4.828s] [ 22%] Built target turtle_plant
+[4.839s] [ 28%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[4.839s] [ 35%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[4.840s] [ 42%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[4.840s] [ 48%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[4.845s] [ 55%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[4.868s] [ 62%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[4.887s] [ 62%] Built target enc_turtle_cpp
+[4.899s] [35m[1mScanning dependencies of target test_controller[0m
+[4.899s] [35m[1mScanning dependencies of target test_plant[0m
+[4.902s] [35m[1mScanning dependencies of target enc_turtle_plant[0m
+[4.902s] [35m[1mScanning dependencies of target enc_turtle_controller[0m
+[4.909s] [ 64%] Built target enc_turtle_cpp__py
+[4.929s] [ 66%] [32mBuilding CXX object CMakeFiles/test_plant.dir/src/test_plant.cpp.o[0m
+[4.931s] [ 68%] [32mBuilding CXX object CMakeFiles/test_controller.dir/src/test_controller.cpp.o[0m
+[4.934s] [ 71%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[4.936s] [ 75%] Built target enc_turtle_cpp__python
+[4.937s] [ 77%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[4.966s] [ 91%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[4.966s] [ 91%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[4.966s] [ 91%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[28.458s] [ 93%] [32m[1mLinking CXX executable test_plant[0m
+[28.547s] [ 95%] [32m[1mLinking CXX executable test_controller[0m
+[28.685s] [ 95%] Built target test_plant
+[28.770s] [ 95%] Built target test_controller
+[29.592s] [ 97%] [32m[1mLinking CXX executable enc_turtle_controller[0m
+[29.790s] [ 97%] Built target enc_turtle_controller
+[31.426s] [100%] [32m[1mLinking CXX executable enc_turtle_plant[0m
+[31.616s] [100%] Built target enc_turtle_plant
+[31.631s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[31.713s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp
+[31.721s] -- Install configuration: ""
+[31.721s] -- Execute custom install script
+[31.721s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/ament_index/resource_index/rosidl_interfaces/enc_turtle_cpp
+[31.722s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__functions.h
+[31.722s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__struct.h
+[31.722s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__type_support.h
+[31.722s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/encrypted_data.h
+[31.723s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/rosidl_generator_c__visibility_control.h
+[31.723s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/environment/library_path.sh
+[31.723s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/environment/library_path.dsv
+[31.724s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__rosidl_typesupport_fastrtps_c.h
+[31.724s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[31.724s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/libenc_turtle_cpp__rosidl_typesupport_fastrtps_c.so
+[31.725s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__rosidl_typesupport_fastrtps_cpp.hpp
+[31.725s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[31.725s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/libenc_turtle_cpp__rosidl_typesupport_fastrtps_cpp.so
+[31.726s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__rosidl_typesupport_introspection_c.h
+[31.726s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.726s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__builder.hpp
+[31.727s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__struct.hpp
+[31.727s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__traits.hpp
+[31.727s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__type_support.hpp
+[31.727s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/encrypted_data.hpp
+[31.727s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/rosidl_generator_cpp__visibility_control.hpp
+[31.728s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/include/enc_turtle_cpp/msg/detail/encrypted_data__rosidl_typesupport_introspection_cpp.hpp
+[31.728s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/environment/pythonpath.sh
+[31.728s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/environment/pythonpath.dsv
+[31.728s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages/enc_turtle_cpp/__init__.py
+[31.728s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages/enc_turtle_cpp/msg/__init__.py
+[31.729s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages/enc_turtle_cpp/msg/_encrypted_data.py
+[31.729s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[31.729s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[31.730s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[31.730s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/libenc_turtle_cpp__python.so
+[31.730s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/msg/EncryptedData.idl
+[31.730s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/msg/EncryptedData.msg
+[31.731s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/launch/enc_turtle_demo.launch.py
+[31.731s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/launch/turtle_demo.launch.py
+[31.731s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp/enc_turtle_plant
+[31.731s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp/enc_turtle_controller
+[31.732s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp/bgv_test
+[31.732s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp/test_plant
+[31.732s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp/test_controller
+[31.732s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/ament_index/resource_index/package_run_dependencies/enc_turtle_cpp
+[31.732s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/ament_index/resource_index/parent_prefix_path/enc_turtle_cpp
+[31.733s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/environment/ament_prefix_path.sh
+[31.733s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/environment/ament_prefix_path.dsv
+[31.733s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/environment/path.sh
+[31.733s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/environment/path.dsv
+[31.733s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/local_setup.bash
+[31.734s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/local_setup.sh
+[31.734s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/local_setup.zsh
+[31.734s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/local_setup.dsv
+[31.734s] -- Symlinking: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.dsv
+[31.744s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/ament_index/resource_index/packages/enc_turtle_cpp
+[31.744s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/rosidl_cmake-extras.cmake
+[31.744s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
+[31.744s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/ament_cmake_export_libraries-extras.cmake
+[31.745s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/ament_cmake_export_targets-extras.cmake
+[31.745s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/ament_cmake_export_include_directories-extras.cmake
+[31.745s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[31.745s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[31.746s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cppConfig.cmake
+[31.746s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cppConfig-version.cmake
+[31.746s] -- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.xml
+[31.746s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/libenc_turtle_cpp__rosidl_generator_c.so
+[31.747s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/libenc_turtle_cpp__rosidl_typesupport_introspection_c.so
+[31.747s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/libenc_turtle_cpp__rosidl_typesupport_c.so
+[31.747s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/libenc_turtle_cpp__rosidl_typesupport_introspection_cpp.so
+[31.748s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/libenc_turtle_cpp__rosidl_typesupport_cpp.so
+[31.769s] Compiling '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages/enc_turtle_cpp/__init__.py'...
+[31.772s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_generator_cExport.cmake
+[31.772s] -- Installing: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_generator_cExport-noconfig.cmake
+[31.772s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_typesupport_introspection_cExport.cmake
+[31.772s] -- Installing: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[31.773s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_typesupport_cExport.cmake
+[31.773s] -- Installing: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_typesupport_cExport-noconfig.cmake
+[31.773s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_generator_cppExport.cmake
+[31.773s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_typesupport_introspection_cppExport.cmake
+[31.773s] -- Installing: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[31.773s] -- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_typesupport_cppExport.cmake
+[31.774s] -- Installing: /home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/cmake/enc_turtle_cpp__rosidl_typesupport_cppExport-noconfig.cmake
+[31.777s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp

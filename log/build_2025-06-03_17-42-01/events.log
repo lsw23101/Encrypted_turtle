@@ -1,0 +1,276 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (enc_turtle_cpp) JobQueued: {'identifier': 'enc_turtle_cpp', 'dependencies': OrderedDict()}
+[0.000519] (turtle_demo_controller) JobQueued: {'identifier': 'turtle_demo_controller', 'dependencies': OrderedDict()}
+[0.000561] (enc_turtle_cpp) JobStarted: {'identifier': 'enc_turtle_cpp'}
+[0.006372] (turtle_demo_controller) JobStarted: {'identifier': 'turtle_demo_controller'}
+[0.012515] (enc_turtle_cpp) JobProgress: {'identifier': 'enc_turtle_cpp', 'progress': 'cmake'}
+[0.013352] (enc_turtle_cpp) JobProgress: {'identifier': 'enc_turtle_cpp', 'progress': 'build'}
+[0.013816] (enc_turtle_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', '--', '-j12', '-l12'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_PYTHON_VERSION', '3'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'STEIECDSL-P04'), ('WSL_INTEROP', '/run/WSL/702_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '8653f738-ce2f-45a8-a59d-1af2da39cb86'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages:/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.019811] (turtle_demo_controller) JobProgress: {'identifier': 'turtle_demo_controller', 'progress': 'cmake'}
+[0.022203] (turtle_demo_controller) JobProgress: {'identifier': 'turtle_demo_controller', 'progress': 'build'}
+[0.022337] (turtle_demo_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller', '--', '-j12', '-l12'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_PYTHON_VERSION', '3'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'STEIECDSL-P04'), ('WSL_INTEROP', '/run/WSL/702_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '8653f738-ce2f-45a8-a59d-1af2da39cb86'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages:/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.068491] (enc_turtle_cpp) StdoutLine: {'line': b'[  7%] Built target enc_turtle_cpp__rosidl_generator_c\n'}
+[0.069380] (enc_turtle_cpp) StdoutLine: {'line': b'[  9%] Built target enc_turtle_cpp__cpp\n'}
+[0.071686] (enc_turtle_cpp) StdoutLine: {'line': b'[ 14%] Built target bgv_test\n'}
+[0.073571] (turtle_demo_controller) StdoutLine: {'line': b'[  3%] Built target turtle_demo_controller__cpp\n'}
+[0.075963] (turtle_demo_controller) StdoutLine: {'line': b'[ 12%] Built target turtle_demo_controller__rosidl_generator_c\n'}
+[0.079746] (enc_turtle_cpp) StdoutLine: {'line': b'[ 19%] Built target turtle_controller\n'}
+[0.080225] (enc_turtle_cpp) StdoutLine: {'line': b'[ 24%] Built target turtle_plant\n'}
+[0.092871] (enc_turtle_cpp) StdoutLine: {'line': b'[ 31%] Built target enc_turtle_cpp__rosidl_typesupport_c\n'}
+[0.093113] (enc_turtle_cpp) StdoutLine: {'line': b'[ 39%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c\n'}
+[0.093176] (enc_turtle_cpp) StdoutLine: {'line': b'[ 46%] Built target enc_turtle_cpp__rosidl_typesupport_cpp\n'}
+[0.094843] (enc_turtle_cpp) StdoutLine: {'line': b'[ 53%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp\n'}
+[0.098357] (enc_turtle_cpp) StdoutLine: {'line': b'[ 60%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp\n'}
+[0.098628] (turtle_demo_controller) StdoutLine: {'line': b'[ 22%] Built target turtle_demo_controller__rosidl_typesupport_cpp\n'}
+[0.099679] (turtle_demo_controller) StdoutLine: {'line': b'[ 32%] Built target turtle_demo_controller__rosidl_typesupport_introspection_cpp\n'}
+[0.099761] (-) TimerEvent: {}
+[0.101247] (turtle_demo_controller) StdoutLine: {'line': b'[ 41%] Built target turtle_demo_controller__rosidl_typesupport_c\n'}
+[0.101547] (turtle_demo_controller) StdoutLine: {'line': b'[ 51%] Built target turtle_demo_controller__rosidl_typesupport_fastrtps_cpp\n'}
+[0.103745] (turtle_demo_controller) StdoutLine: {'line': b'[ 61%] Built target turtle_demo_controller__rosidl_typesupport_introspection_c\n'}
+[0.123242] (enc_turtle_cpp) StdoutLine: {'line': b'[ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c\n'}
+[0.126284] (turtle_demo_controller) StdoutLine: {'line': b'[ 70%] Built target turtle_demo_controller__rosidl_typesupport_fastrtps_c\n'}
+[0.143740] (enc_turtle_cpp) StdoutLine: {'line': b'[ 68%] Built target enc_turtle_cpp\n'}
+[0.145170] (turtle_demo_controller) StdoutLine: {'line': b'[ 70%] Built target turtle_demo_controller\n'}
+[0.155331] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_plant\x1b[0m\n'}
+[0.163767] (enc_turtle_cpp) StdoutLine: {'line': b'[ 70%] Built target enc_turtle_cpp__py\n'}
+[0.164687] (turtle_demo_controller) StdoutLine: {'line': b'[ 74%] Built target turtle_demo_controller__py\n'}
+[0.172472] (enc_turtle_cpp) StdoutLine: {'line': b'[ 75%] Built target enc_turtle_controller\n'}
+[0.186294] (enc_turtle_cpp) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o\x1b[0m\n'}
+[0.187226] (enc_turtle_cpp) StdoutLine: {'line': b'[ 82%] Built target enc_turtle_cpp__python\n'}
+[0.187808] (turtle_demo_controller) StdoutLine: {'line': b'[ 80%] Built target turtle_demo_controller__python\n'}
+[0.199887] (-) TimerEvent: {}
+[0.213345] (turtle_demo_controller) StdoutLine: {'line': b'[ 87%] Built target turtle_demo_controller__rosidl_typesupport_c__pyext\n'}
+[0.214177] (turtle_demo_controller) StdoutLine: {'line': b'[ 93%] Built target turtle_demo_controller__rosidl_typesupport_introspection_c__pyext\n'}
+[0.214410] (enc_turtle_cpp) StdoutLine: {'line': b'[ 87%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.214745] (enc_turtle_cpp) StdoutLine: {'line': b'[ 97%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext\n'}
+[0.214824] (enc_turtle_cpp) StdoutLine: {'line': b'[ 97%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext\n'}
+[0.215660] (turtle_demo_controller) StdoutLine: {'line': b'[100%] Built target turtle_demo_controller__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.226764] (turtle_demo_controller) CommandEnded: {'returncode': 0}
+[0.287478] (turtle_demo_controller) JobProgress: {'identifier': 'turtle_demo_controller', 'progress': 'install'}
+[0.298693] (turtle_demo_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_PYTHON_VERSION', '3'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'STEIECDSL-P04'), ('WSL_INTEROP', '/run/WSL/702_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '8653f738-ce2f-45a8-a59d-1af2da39cb86'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages:/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.300287] (-) TimerEvent: {}
+[0.307651] (turtle_demo_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.308188] (turtle_demo_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.308481] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/ament_index/resource_index/rosidl_interfaces/turtle_demo_controller\n'}
+[0.308916] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__functions.h\n'}
+[0.309101] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__struct.h\n'}
+[0.309258] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__type_support.h\n'}
+[0.309416] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/encrypted_data.h\n'}
+[0.309583] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.309829] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/library_path.sh\n'}
+[0.310076] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/library_path.dsv\n'}
+[0.310553] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__rosidl_typesupport_fastrtps_c.h\n'}
+[0.310716] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.311008] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_fastrtps_c.so\n'}
+[0.311491] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.311682] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.312000] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.312393] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__rosidl_typesupport_introspection_c.h\n'}
+[0.312588] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.312983] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__builder.hpp\n'}
+[0.313197] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__struct.hpp\n'}
+[0.313357] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__traits.hpp\n'}
+[0.313516] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__type_support.hpp\n'}
+[0.313675] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/encrypted_data.hpp\n'}
+[0.313827] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.314264] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.314486] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/pythonpath.sh\n'}
+[0.314695] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/pythonpath.dsv\n'}
+[0.314888] (turtle_demo_controller) StdoutLine: {'line': b'-- Symlinking: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/__init__.py\n'}
+[0.324821] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/msg/__init__.py\n'}
+[0.325090] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/msg/_encrypted_data.py\n'}
+[0.325442] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_demo_controller_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.325815] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_demo_controller_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.326295] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_demo_controller_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.326658] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__python.so\n'}
+[0.326914] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/msg/EncryptedData.idl\n'}
+[0.327134] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/msg/EncryptedData.msg\n'}
+[0.327846] (turtle_demo_controller) StdoutLine: {'line': b'-- Symlinking: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/__init__.py\n'}
+[0.337198] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/enc_turtle_controller.py\n'}
+[0.337423] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/enc_turtle_plant.py\n'}
+[0.337634] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/simple_test.py\n'}
+[0.337821] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/test_bgv.py\n'}
+[0.338086] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/test_serialization.py\n'}
+[0.338283] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_controller.py\n'}
+[0.338502] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_plant.py\n'}
+[0.338816] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/turtle_plant.py\n'}
+[0.339018] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/turtle_controller.py\n'}
+[0.339200] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/simple_test.py\n'}
+[0.339384] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/enc_turtle_plant.py\n'}
+[0.339573] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/enc_turtle_controller.py\n'}
+[0.339981] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller//launch/enc_two_turtle.launch.py\n'}
+[0.340161] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller//launch/two_turtle.launch.py\n'}
+[0.340390] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/ament_index/resource_index/package_run_dependencies/turtle_demo_controller\n'}
+[0.340636] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/ament_index/resource_index/parent_prefix_path/turtle_demo_controller\n'}
+[0.340916] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/ament_prefix_path.sh\n'}
+[0.341134] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/ament_prefix_path.dsv\n'}
+[0.341329] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/path.sh\n'}
+[0.341526] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/path.dsv\n'}
+[0.341722] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/local_setup.bash\n'}
+[0.341945] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/local_setup.sh\n'}
+[0.342199] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/local_setup.zsh\n'}
+[0.342472] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/local_setup.dsv\n'}
+[0.342649] (turtle_demo_controller) StdoutLine: {'line': b'-- Symlinking: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.dsv\n'}
+[0.352018] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/ament_index/resource_index/packages/turtle_demo_controller\n'}
+[0.352303] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/rosidl_cmake-extras.cmake\n'}
+[0.352556] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.352794] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.352998] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.353203] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.353425] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.353625] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.353831] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controllerConfig.cmake\n'}
+[0.353985] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controllerConfig-version.cmake\n'}
+[0.354234] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.xml\n'}
+[0.354491] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_generator_c.so\n'}
+[0.354867] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_introspection_c.so\n'}
+[0.355197] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_c.so\n'}
+[0.355550] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_introspection_cpp.so\n'}
+[0.355904] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_cpp.so\n'}
+[0.400432] (-) TimerEvent: {}
+[0.403132] (turtle_demo_controller) StdoutLine: {'line': b"Listing '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller'...\n"}
+[0.403340] (turtle_demo_controller) StdoutLine: {'line': b"Listing '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/msg'...\n"}
+[0.405849] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_generator_cExport.cmake\n'}
+[0.406032] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.406230] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.406481] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.406584] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_cExport.cmake\n'}
+[0.406818] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.406893] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_generator_cppExport.cmake\n'}
+[0.407050] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.407211] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.407373] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_cppExport.cmake\n'}
+[0.407531] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.410130] (turtle_demo_controller) CommandEnded: {'returncode': 0}
+[0.491788] (turtle_demo_controller) JobEnded: {'identifier': 'turtle_demo_controller', 'rc': 0}
+[0.500518] (-) TimerEvent: {}
+[0.600985] (-) TimerEvent: {}
+[0.701326] (-) TimerEvent: {}
+[0.801666] (-) TimerEvent: {}
+[0.901992] (-) TimerEvent: {}
+[1.002370] (-) TimerEvent: {}
+[1.102733] (-) TimerEvent: {}
+[1.203084] (-) TimerEvent: {}
+[1.303427] (-) TimerEvent: {}
+[1.403796] (-) TimerEvent: {}
+[1.504209] (-) TimerEvent: {}
+[1.604585] (-) TimerEvent: {}
+[1.704932] (-) TimerEvent: {}
+[1.805379] (-) TimerEvent: {}
+[1.905717] (-) TimerEvent: {}
+[2.006078] (-) TimerEvent: {}
+[2.038287] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:10:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.038654] (enc_turtle_cpp) StderrLine: {'line': b'   10 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.038821] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.039001] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:11:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.039136] (enc_turtle_cpp) StderrLine: {'line': b'   11 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.039289] (enc_turtle_cpp) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.039557] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:12:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.039628] (enc_turtle_cpp) StderrLine: {'line': b'   12 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.039672] (enc_turtle_cpp) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.039709] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:13:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.039746] (enc_turtle_cpp) StderrLine: {'line': b'   13 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.039780] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.039815] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:14:123:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.039876] (enc_turtle_cpp) StderrLine: {'line': b'   14 | bcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.039926] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.039965] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.040002] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.040036] (enc_turtle_cpp) StderrLine: {'line': b'   15 | hemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.040069] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.040101] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.062372] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:164:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KChunkCollector\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.062564] (enc_turtle_cpp) StderrLine: {'line': b'  164 |   std::map<uint64_t, \x1b[01;31m\x1b[KChunkCollector\x1b[m\x1b[K> chunk_collectors_;\n'}
+[2.062618] (enc_turtle_cpp) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.062665] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:164:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.062703] (enc_turtle_cpp) StderrLine: {'line': b'  164 |   std::map<uint64_t, ChunkCollector\x1b[01;31m\x1b[K>\x1b[m\x1b[K chunk_collectors_;\n'}
+[2.062737] (enc_turtle_cpp) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.062771] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:164:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[2.086138] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EncTurtlePlant::result_callback(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.086316] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:121:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kfind\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((EncTurtlePlant*)this)->EncTurtlePlant::chunk_collectors_\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.086415] (enc_turtle_cpp) StderrLine: {'line': b'  121 |     if (chunk_collectors_.\x1b[01;31m\x1b[Kfind\x1b[m\x1b[K(key) == chunk_collectors_.end()) {\n'}
+[2.086467] (enc_turtle_cpp) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.086509] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:121:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kend\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((EncTurtlePlant*)this)->EncTurtlePlant::chunk_collectors_\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.086549] (enc_turtle_cpp) StderrLine: {'line': b'  121 |     if (chunk_collectors_.find(key) == chunk_collectors_.\x1b[01;31m\x1b[Kend\x1b[m\x1b[K()) {\n'}
+[2.086584] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.086617] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:122:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kint[uint64_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[2.086659] (enc_turtle_cpp) StderrLine: {'line': b'  122 |       chunk_collectors_[key\x1b[01;31m\x1b[K]\x1b[m\x1b[K.chunks.resize(msg->total_chunks);\n'}
+[2.086694] (enc_turtle_cpp) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.086728] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:123:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kint[uint64_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[2.086761] (enc_turtle_cpp) StderrLine: {'line': b'  123 |       chunk_collectors_[key\x1b[01;31m\x1b[K]\x1b[m\x1b[K.total_chunks = msg->total_chunks;\n'}
+[2.086794] (enc_turtle_cpp) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.086830] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:126:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kint[uint64_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[2.086863] (enc_turtle_cpp) StderrLine: {'line': b'  126 |     auto& collector = chunk_collectors_[key\x1b[01;31m\x1b[K]\x1b[m\x1b[K;\n'}
+[2.086895] (enc_turtle_cpp) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.088648] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:153:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kerase\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((EncTurtlePlant*)this)->EncTurtlePlant::chunk_collectors_\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.088758] (enc_turtle_cpp) StderrLine: {'line': b'  153 |       chunk_collectors_.\x1b[01;31m\x1b[Kerase\x1b[m\x1b[K(key);\n'}
+[2.088805] (enc_turtle_cpp) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.106174] (-) TimerEvent: {}
+[2.206488] (-) TimerEvent: {}
+[2.306851] (-) TimerEvent: {}
+[2.407218] (-) TimerEvent: {}
+[2.507602] (-) TimerEvent: {}
+[2.607962] (-) TimerEvent: {}
+[2.708330] (-) TimerEvent: {}
+[2.808759] (-) TimerEvent: {}
+[2.909118] (-) TimerEvent: {}
+[3.009478] (-) TimerEvent: {}
+[3.110689] (-) TimerEvent: {}
+[3.211078] (-) TimerEvent: {}
+[3.311461] (-) TimerEvent: {}
+[3.411839] (-) TimerEvent: {}
+[3.512229] (-) TimerEvent: {}
+[3.612595] (-) TimerEvent: {}
+[3.712975] (-) TimerEvent: {}
+[3.813362] (-) TimerEvent: {}
+[3.913732] (-) TimerEvent: {}
+[4.014114] (-) TimerEvent: {}
+[4.114503] (-) TimerEvent: {}
+[4.214907] (-) TimerEvent: {}
+[4.315264] (-) TimerEvent: {}
+[4.415644] (-) TimerEvent: {}
+[4.516000] (-) TimerEvent: {}
+[4.616345] (-) TimerEvent: {}
+[4.716695] (-) TimerEvent: {}
+[4.817038] (-) TimerEvent: {}
+[4.917392] (-) TimerEvent: {}
+[5.017755] (-) TimerEvent: {}
+[5.118198] (-) TimerEvent: {}
+[5.218599] (-) TimerEvent: {}
+[5.318978] (-) TimerEvent: {}
+[5.419361] (-) TimerEvent: {}
+[5.519728] (-) TimerEvent: {}
+[5.620119] (-) TimerEvent: {}
+[5.720505] (-) TimerEvent: {}
+[5.821027] (-) TimerEvent: {}
+[5.921422] (-) TimerEvent: {}
+[6.021811] (-) TimerEvent: {}
+[6.122206] (-) TimerEvent: {}
+[6.222572] (-) TimerEvent: {}
+[6.322984] (-) TimerEvent: {}
+[6.423516] (-) TimerEvent: {}
+[6.523933] (-) TimerEvent: {}
+[6.624284] (-) TimerEvent: {}
+[6.724663] (-) TimerEvent: {}
+[6.825055] (-) TimerEvent: {}
+[6.925435] (-) TimerEvent: {}
+[7.025794] (-) TimerEvent: {}
+[7.126217] (-) TimerEvent: {}
+[7.226587] (-) TimerEvent: {}
+[7.326932] (-) TimerEvent: {}
+[7.427285] (-) TimerEvent: {}
+[7.527640] (-) TimerEvent: {}
+[7.628037] (-) TimerEvent: {}
+[7.728400] (-) TimerEvent: {}
+[7.828745] (-) TimerEvent: {}
+[7.929086] (-) TimerEvent: {}
+[8.029450] (-) TimerEvent: {}
+[8.129799] (-) TimerEvent: {}
+[8.230217] (-) TimerEvent: {}
+[8.253780] (enc_turtle_cpp) StderrLine: {'line': b'make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1\n'}
+[8.254098] (enc_turtle_cpp) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2\n'}
+[8.254549] (enc_turtle_cpp) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.257251] (enc_turtle_cpp) CommandEnded: {'returncode': 2}
+[8.330376] (-) TimerEvent: {}
+[8.345028] (enc_turtle_cpp) JobEnded: {'identifier': 'enc_turtle_cpp', 'rc': 2}
+[8.355804] (-) EventReactorShutdown: {}

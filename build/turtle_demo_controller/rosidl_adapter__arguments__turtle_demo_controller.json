@@ -1,0 +1,6 @@
+{
+  "package_name": "turtle_demo_controller",
+  "non_idl_tuples": [
+    "/home/sangwon/ROS2_turtlesim_ws/src/turtle_demo_controller:msg/EncryptedData.msg"
+  ]
+}

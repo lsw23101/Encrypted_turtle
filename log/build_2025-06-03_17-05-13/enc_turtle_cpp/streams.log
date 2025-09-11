@@ -1,0 +1,77 @@
+[0.013s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID: /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.055s] [35m[1mScanning dependencies of target bgv_test[0m
+[0.066s] [  2%] Built target enc_turtle_cpp__cpp
+[0.066s] [  7%] [32mBuilding CXX object CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o[0m
+[0.066s] [ 12%] Built target enc_turtle_cpp__rosidl_generator_c
+[0.073s] [ 21%] Built target turtle_plant
+[0.073s] [ 21%] Built target turtle_controller
+[0.087s] [ 34%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[0.087s] [ 36%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[0.088s] [ 46%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[0.088s] [ 51%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[0.092s] [ 58%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[0.118s] [ 65%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[0.129s] [35m[1mScanning dependencies of target enc_turtle_cpp[0m
+[0.140s] [ 65%] Built target enc_turtle_cpp
+[0.150s] [35m[1mScanning dependencies of target enc_turtle_cpp__py[0m
+[0.150s] [35m[1mScanning dependencies of target enc_turtle_controller[0m
+[0.151s] [35m[1mScanning dependencies of target enc_turtle_plant[0m
+[0.161s] [ 68%] [34m[1mGenerating Python code for ROS interfaces[0m
+[0.191s] [ 73%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[0.191s] [ 73%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[0.453s] [ 73%] Built target enc_turtle_cpp__py
+[0.467s] [35m[1mScanning dependencies of target enc_turtle_cpp__python[0m
+[0.487s] [ 75%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__python.dir/rosidl_generator_py/enc_turtle_cpp/msg/_encrypted_data_s.c.o[0m
+[0.593s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/libenc_turtle_cpp__python.so[0m
+[0.684s] [ 78%] Built target enc_turtle_cpp__python
+[0.696s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_c__pyext[0m
+[0.696s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext[0m
+[0.697s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.715s] [ 80%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_c.c.o[0m
+[0.717s] [ 82%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[0.718s] [ 85%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[0.800s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[0.803s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[0.810s] [ 92%] [32m[1mLinking CXX shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[0.885s] [ 92%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[0.885s] [ 92%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[0.938s] [ 92%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[1.409s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[1.409s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:12:14:[m[K [01;31m[Kerror: [m[K‘[01m[KCryptoContextBGVRNS[m[K’ was not declared in this scope
+[1.409s]    12 |     CCParams<[01;31m[KCryptoContextBGVRNS[m[K> parameters;
+[1.409s]       |              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.409s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:12:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.409s]    12 |     CCParams<CryptoContextBGVRNS[01;31m[K>[m[K parameters;
+[1.409s]       |                                 [01;31m[K^[m[K
+[1.409s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:13:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetPlaintextModulus[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.409s]    13 |     parameters.[01;31m[KSetPlaintextModulus[m[K(65537);
+[1.409s]       |                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.409s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:14:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetMultiplicativeDepth[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.410s]    14 |     parameters.[01;31m[KSetMultiplicativeDepth[m[K(2);
+[1.410s]       |                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.410s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:15:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetSecurityLevel[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.410s]    15 |     parameters.[01;31m[KSetSecurityLevel[m[K(SecurityLevel::HEStd_128_classic);
+[1.410s]       |                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.410s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:16:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetRingDim[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.410s]    16 |     parameters.[01;31m[KSetRingDim[m[K(16384);  // 권장되는 최소 Ring dimension으로 변경
+[1.410s]       |                [01;31m[K^~~~~~~~~~[m[K
+[1.411s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:21:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGenCryptoContext(int&)[m[K’
+[1.411s]    21 |     CryptoContext<DCRTPoly> cc = GenCryptoContext(parameters[01;31m[K)[m[K;
+[1.411s]       |                                                             [01;31m[K^[m[K
+[1.411s] In file included from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:5[m[K:
+[1.411s] [01m[K/usr/local/include/openfhe/pke/gen-cryptocontext.h:89:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> typename T::ContextType lbcrypto::GenCryptoContext(const lbcrypto::CCParams<T>&)[m[K’
+[1.411s]    89 | typename T::ContextType [01;36m[KGenCryptoContext[m[K(const CCParams<T>& params) {
+[1.411s]       |                         [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.411s] [01m[K/usr/local/include/openfhe/pke/gen-cryptocontext.h:89:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.411s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:21:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst lbcrypto::CCParams<T>[m[K’ and ‘[01m[Kint[m[K’
+[1.411s]    21 |     CryptoContext<DCRTPoly> cc = GenCryptoContext(parameters[01;36m[K)[m[K;
+[1.411s]       |                                                             [01;36m[K^[m[K
+[2.397s] make[2]: *** [CMakeFiles/bgv_test.dir/build.make:63: CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o] Error 1
+[2.397s] make[1]: *** [CMakeFiles/Makefile2:131: CMakeFiles/bgv_test.dir/all] Error 2
+[2.398s] make[1]: *** Waiting for unfinished jobs....
+[15.285s] [ 95%] [32m[1mLinking CXX executable enc_turtle_controller[0m
+[15.464s] [ 95%] Built target enc_turtle_controller
+[17.101s] [ 97%] [32m[1mLinking CXX executable enc_turtle_plant[0m
+[17.281s] [ 97%] Built target enc_turtle_plant
+[17.283s] make: *** [Makefile:141: all] Error 2
+[17.286s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '2': CMAKE_PREFIX_PATH=/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID: /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12

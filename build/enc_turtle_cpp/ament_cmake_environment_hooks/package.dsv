@@ -1,0 +1,4 @@
+source;share/enc_turtle_cpp/local_setup.bash
+source;share/enc_turtle_cpp/local_setup.dsv
+source;share/enc_turtle_cpp/local_setup.sh
+source;share/enc_turtle_cpp/local_setup.zsh

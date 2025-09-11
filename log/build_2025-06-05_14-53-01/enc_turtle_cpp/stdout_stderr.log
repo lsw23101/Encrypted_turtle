@@ -1,0 +1,43 @@
+[  2%] Built target enc_turtle_cpp__cpp
+[  8%] Built target enc_turtle_cpp__rosidl_generator_c
+[ 13%] Built target bgv_test
+[ 22%] Built target turtle_plant
+[ 22%] Built target turtle_controller
+[ 28%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[ 35%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[ 42%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[ 48%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[ 55%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[ 62%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[ 62%] Built target enc_turtle_cpp
+[35m[1mScanning dependencies of target test_controller[0m
+[35m[1mScanning dependencies of target test_plant[0m
+[ 64%] Built target enc_turtle_cpp__py
+[ 68%] Built target enc_turtle_controller
+[ 73%] Built target enc_turtle_plant
+[ 75%] [32mBuilding CXX object CMakeFiles/test_plant.dir/src/test_plant.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/test_controller.dir/src/test_controller.cpp.o[0m
+[ 82%] Built target enc_turtle_cpp__python
+[ 86%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[ 91%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[ 95%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_controller.cpp:[m[K In member function ‘[01m[Kvoid TestController::encrypted_callback(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_controller.cpp:67:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class lbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >[m[K’ {aka ‘[01m[Kclass lbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >[m[K’} has no member named ‘[01m[KSetPublicKey[m[K’
+   67 |         cc->[01;31m[KSetPublicKey[m[K(pubKey);
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:[m[K In constructor ‘[01m[KTestPlant::TestPlant()[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:73:53:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >::GetEvalMultKeyVector()[m[K’
+   73 |         auto evalMultKey = cc->GetEvalMultKeyVector([01;31m[K)[m[K;
+      |                                                     [01;31m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/pke/openfhe.h:54[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:3[m[K:
+[01m[K/usr/local/include/openfhe/pke/cryptocontext.h:1076:49:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstatic const std::vector<std::shared_ptr<lbcrypto::EvalKeyImpl<Element> > >& lbcrypto::CryptoContextImpl<Element>::GetEvalMultKeyVector(const string&) [with Element = lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > >; std::string = std::__cxx11::basic_string<char>][m[K’
+ 1076 |     static const std::vector<EvalKey<Element>>& [01;36m[KGetEvalMultKeyVector[m[K(const std::string& keyTag);
+      |                                                 [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/openfhe/pke/cryptocontext.h:1076:49:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/test_controller.dir/build.make:63: CMakeFiles/test_controller.dir/src/test_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:483: CMakeFiles/test_controller.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/test_plant.dir/build.make:63: CMakeFiles/test_plant.dir/src/test_plant.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:650: CMakeFiles/test_plant.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

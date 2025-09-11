@@ -1,0 +1,343 @@
+[0.019s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.070s] [  2%] Built target enc_turtle_cpp__cpp
+[0.071s] [  9%] Built target enc_turtle_cpp__rosidl_generator_c
+[0.072s] [ 14%] Built target bgv_test
+[0.082s] [ 24%] Built target turtle_plant
+[0.082s] [ 24%] Built target turtle_controller
+[0.095s] [ 31%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[0.096s] [ 39%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[0.097s] [ 46%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[0.100s] [ 53%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[0.102s] [ 60%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[0.128s] [ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[0.148s] [ 68%] Built target enc_turtle_cpp
+[0.159s] [35m[1mScanning dependencies of target enc_turtle_controller[0m
+[0.160s] [35m[1mScanning dependencies of target enc_turtle_plant[0m
+[0.167s] [ 70%] Built target enc_turtle_cpp__py
+[0.191s] [ 75%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[0.191s] [ 78%] Built target enc_turtle_cpp__python
+[0.192s] [ 80%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[0.218s] [ 85%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[0.219s] [ 90%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[0.219s] [ 95%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[2.147s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:10:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.148s]    10 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[2.148s]       |                                                       [01;35m[K^[m[K
+[2.148s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:9:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.149s]     9 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[2.149s]       |                                                       [01;35m[K^[m[K
+[2.149s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:10:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.149s]    10 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+[2.149s]       |                                         [01;35m[K^[m[K
+[2.149s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:11:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.150s]    11 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+[2.150s]       |                                         [01;35m[K^[m[K
+[2.150s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:11:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.150s]    11 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[2.150s]       |                                             [01;35m[K^[m[K
+[2.150s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:12:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.150s]    12 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[2.150s]       |                                             [01;35m[K^[m[K
+[2.150s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:13:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.150s]    13 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.150s]       |                                                                   [01;35m[K^[m[K
+[2.150s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:12:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.150s]    12 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.150s]       |                                                                   [01;35m[K^[m[K
+[2.150s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:13:65:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.150s]    13 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.150s]       |                                                                 [01;35m[K^[m[K
+[2.150s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:14:65:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.150s]    14 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.150s]       |                                                                 [01;35m[K^[m[K
+[2.150s] In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.150s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.150s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.150s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.150s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.150s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.150s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.150s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.151s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[2.151s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.151s]    14 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.151s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.151s] In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.151s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[2.151s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.151s]    15 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.151s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.151s] In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.151s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.152s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[2.152s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.152s]    15 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.152s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.152s] In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.152s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.152s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[2.152s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.152s]    14 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.152s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.152s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.152s]    15 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.152s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.152s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.152s]    14 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.152s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.152s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.152s]    14 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.152s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.152s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.152s]    15 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.152s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.153s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:69:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.153s]    14 | CEREAL_REGISTER_TYPE(lbcrypto::LWEPublicKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.153s]       |                                                                     [01;35m[K^[m[K
+[2.153s] In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.153s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[2.153s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.153s]    15 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.153s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.153s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:69:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.153s]    15 | CEREAL_REGISTER_TYPE(lbcrypto::LWEPublicKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.153s]       |                                                                     [01;35m[K^[m[K
+[2.153s] In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.153s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.153s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[2.153s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.153s]    16 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.153s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.154s] In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.154s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[2.154s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.154s]    15 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.154s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.154s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.154s]    15 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.154s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.154s] In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.154s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.155s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.155s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.155s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.155s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.155s]    16 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.155s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.155s]    15 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.155s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.155s]    16 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.155s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.155s]    16 | CEREAL_REGISTER_TYPE([01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.155s]       |                      [01;31m[K^~~~~~~~[m[K
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:70:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.155s]    15 | CEREAL_REGISTER_TYPE(lbcrypto::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.155s]       |                                                                      [01;35m[K^[m[K
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:70:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.155s]    16 | CEREAL_REGISTER_TYPE(lbcrypto::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.155s]       |                                                                      [01;35m[K^[m[K
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:18:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.155s]    18 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoParametersBase<lbcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[2.155s]       |                                                                                                                           [01;35m[K^[m[K
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:17:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.155s]    17 | bcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[2.155s]       |                                                      [01;35m[K^[m[K
+[2.155s] 
+[2.155s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:18:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.155s]    18 | hemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[2.155s]       |                                                      [01;35m[K^[m[K
+[2.155s] 
+[2.155s] In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.155s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.155s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.155s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.155s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.155s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.156s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[2.156s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:19:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.156s]    19 | RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, [01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.156s]       |                                                      [01;31m[K^~~~~~~~[m[K
+[2.156s] 
+[2.156s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:19:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.156s]    19 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::SchemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[2.156s]       |                                                                                                       [01;35m[K^[m[K
+[2.156s] In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.156s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.156s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[2.156s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:20:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.156s]    20 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, [01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.156s]       |                                                                                  [01;31m[K^~~~~~~~[m[K
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:[m[K In static member function ‘[01m[Kstatic void cereal::detail::PolymorphicRelation<lbcrypto::CryptoObject<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >, lbcrypto::LWEPublicKeyImpl>::bind()[m[K’:
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:19:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.157s]    19 | RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, [01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.157s]       |                                                      [01;31m[K^~~~~~~~[m[K
+[2.157s] 
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In static member function ‘[01m[Kstatic void cereal::detail::PolymorphicRelation<lbcrypto::CryptoObject<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >, lbcrypto::LWEPublicKeyImpl>::bind()[m[K’:
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:20:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPublicKeyImpl[m[K’ is not a template
+[2.157s]    20 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, [01;31m[Klbcrypto[m[K::LWEPublicKeyImpl<lbcrypto::DCRTPoly>);
+[2.157s]       |                                                                                  [01;31m[K^~~~~~~~[m[K
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:[m[K At global scope:
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:19:129:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.157s]    19 | oly>, lbcrypto::LWEPublicKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.157s]       |                                                      [01;35m[K^[m[K
+[2.157s] 
+[2.157s] In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.157s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.157s]    20 | RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, [01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.157s]       |                                                      [01;31m[K^~~~~~~~[m[K
+[2.157s] 
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K At global scope:
+[2.157s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:20:129:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.157s]    20 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LWEPublicKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.157s]       |                                                                                                                                 [01;35m[K^[m[K
+[2.157s] In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+[2.157s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+[2.158s]                  from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+[2.158s]                  from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+[2.158s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+[2.158s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+[2.158s]                  from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+[2.158s]                  from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+[2.158s]                  from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+[2.158s]                  from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+[2.158s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.158s]    21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, [01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.158s]       |                                                                                  [01;31m[K^~~~~~~~[m[K
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:[m[K In static member function ‘[01m[Kstatic void cereal::detail::PolymorphicRelation<lbcrypto::CryptoObject<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >, lbcrypto::LWEPrivateKeyImpl>::bind()[m[K’:
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.158s]    20 | RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, [01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.158s]       |                                                      [01;31m[K^~~~~~~~[m[K
+[2.158s] 
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In static member function ‘[01m[Kstatic void cereal::detail::PolymorphicRelation<lbcrypto::CryptoObject<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >, lbcrypto::LWEPrivateKeyImpl>::bind()[m[K’:
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klbcrypto::LWEPrivateKeyImpl[m[K’ is not a template
+[2.158s]    21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, [01;31m[Klbcrypto[m[K::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>);
+[2.158s]       |                                                                                  [01;31m[K^~~~~~~~[m[K
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:[m[K At global scope:
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:130:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.158s]    20 | ly>, lbcrypto::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.158s]       |                                                      [01;35m[K^[m[K
+[2.158s] 
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K At global scope:
+[2.158s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:130:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.158s]    21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LWEPrivateKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.158s]       |                                                                                                                                  [01;35m[K^[m[K
+[8.249s] make[2]: *** [CMakeFiles/enc_turtle_controller.dir/build.make:63: CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o] Error 1
+[8.250s] make[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/enc_turtle_controller.dir/all] Error 2
+[8.250s] make[1]: *** Waiting for unfinished jobs....
+[8.566s] make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1
+[8.567s] make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2
+[8.567s] make: *** [Makefile:141: all] Error 2
+[8.570s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12

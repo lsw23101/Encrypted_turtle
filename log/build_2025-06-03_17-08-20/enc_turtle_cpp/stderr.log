@@ -1,0 +1,10 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:22:15:[m[K [01;31m[Kerror: [m[K‘[01m[KGenCryptoContext[m[K’ was not declared in this scope
+   22 |     auto cc = [01;31m[KGenCryptoContext[m[K(parameters);
+      |               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:23:34:[m[K [01;31m[Kerror: [m[K‘[01m[KENCRYPTION[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+   23 |     cc->Enable(PKESchemeFeature::[01;31m[KENCRYPTION[m[K);
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/bgv_test.dir/build.make:63: CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:131: CMakeFiles/bgv_test.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

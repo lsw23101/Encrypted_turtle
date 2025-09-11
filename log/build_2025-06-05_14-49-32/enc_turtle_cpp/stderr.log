@@ -1,0 +1,9 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:[m[K In constructor ‘[01m[KTestPlant::TestPlant()[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:73:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class lbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >[m[K’ {aka ‘[01m[Kclass lbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >[m[K’} has no member named ‘[01m[KGetEvalMultKey[m[K’; did you mean ‘[01m[KInsertEvalMultKey[m[K’?
+   73 |         Serial::Serialize(cc->[01;31m[KGetEvalMultKey[m[K(), ss_evalkey, SerType::BINARY);
+      |                               [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                               [32m[KInsertEvalMultKey[m[K
+make[2]: *** [CMakeFiles/test_plant.dir/build.make:63: CMakeFiles/test_plant.dir/src/test_plant.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:650: CMakeFiles/test_plant.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,8 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kopenfhe/core/lattice/ilparams.h: No such file or directory
+    2 | #include [01;31m[K<openfhe/core/lattice/ilparams.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/bgv_test.dir/build.make:63: CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:131: CMakeFiles/bgv_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

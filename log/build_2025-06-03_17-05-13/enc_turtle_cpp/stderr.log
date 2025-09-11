@@ -1,0 +1,34 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:12:14:[m[K [01;31m[Kerror: [m[K‘[01m[KCryptoContextBGVRNS[m[K’ was not declared in this scope
+   12 |     CCParams<[01;31m[KCryptoContextBGVRNS[m[K> parameters;
+      |              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:12:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   12 |     CCParams<CryptoContextBGVRNS[01;31m[K>[m[K parameters;
+      |                                 [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:13:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetPlaintextModulus[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   13 |     parameters.[01;31m[KSetPlaintextModulus[m[K(65537);
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:14:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetMultiplicativeDepth[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   14 |     parameters.[01;31m[KSetMultiplicativeDepth[m[K(2);
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:15:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetSecurityLevel[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   15 |     parameters.[01;31m[KSetSecurityLevel[m[K(SecurityLevel::HEStd_128_classic);
+      |                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:16:16:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KSetRingDim[m[K’ in ‘[01m[Kparameters[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   16 |     parameters.[01;31m[KSetRingDim[m[K(16384);  // 권장되는 최소 Ring dimension으로 변경
+      |                [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:21:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGenCryptoContext(int&)[m[K’
+   21 |     CryptoContext<DCRTPoly> cc = GenCryptoContext(parameters[01;31m[K)[m[K;
+      |                                                             [01;31m[K^[m[K
+In file included from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:5[m[K:
+[01m[K/usr/local/include/openfhe/pke/gen-cryptocontext.h:89:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> typename T::ContextType lbcrypto::GenCryptoContext(const lbcrypto::CCParams<T>&)[m[K’
+   89 | typename T::ContextType [01;36m[KGenCryptoContext[m[K(const CCParams<T>& params) {
+      |                         [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/openfhe/pke/gen-cryptocontext.h:89:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:21:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst lbcrypto::CCParams<T>[m[K’ and ‘[01m[Kint[m[K’
+   21 |     CryptoContext<DCRTPoly> cc = GenCryptoContext(parameters[01;36m[K)[m[K;
+      |                                                             [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/bgv_test.dir/build.make:63: CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:131: CMakeFiles/bgv_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

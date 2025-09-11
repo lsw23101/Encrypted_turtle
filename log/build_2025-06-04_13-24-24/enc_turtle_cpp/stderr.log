@@ -1,0 +1,4 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In member function ‘[01m[Kvoid EncTurtlePlant::result_callback(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:156:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresult[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  156 |       double [01;35m[Kresult[m[K = static_cast<double>(plaintext->GetPackedValue()[0]) / 1000.0;
+      |              [01;35m[K^~~~~~[m[K

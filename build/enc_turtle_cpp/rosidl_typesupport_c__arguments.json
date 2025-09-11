@@ -1,0 +1,17 @@
+{
+  "package_name": "enc_turtle_cpp",
+  "output_dir": "/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp/rosidl_typesupport_c/enc_turtle_cpp",
+  "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_c/resource",
+  "idl_tuples": [
+    "/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp/rosidl_adapter/enc_turtle_cpp:msg/EncryptedData.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/foxy/lib/rosidl_typesupport_c/rosidl_typesupport_c",
+    "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_c/__init__.py",
+    "/opt/ros/foxy/share/rosidl_typesupport_c/resource/action__type_support.c.em",
+    "/opt/ros/foxy/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
+    "/opt/ros/foxy/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
+    "/opt/ros/foxy/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
+    "/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp/rosidl_adapter/enc_turtle_cpp/msg/EncryptedData.idl"
+  ]
+}

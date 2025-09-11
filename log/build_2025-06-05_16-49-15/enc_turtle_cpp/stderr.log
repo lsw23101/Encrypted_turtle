@@ -1,0 +1,13 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:[m[K In constructor ‘[01m[KTestPlant::TestPlant()[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:46:48:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >::EvalMultKeyGen(lbcrypto::PrivateKey<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >&, const string&)[m[K’
+   46 |         cc->EvalMultKeyGen(kp.secretKey, keyTag[01;31m[K)[m[K;
+      |                                                [01;31m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/pke/openfhe.h:54[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:3[m[K:
+[01m[K/usr/local/include/openfhe/pke/cryptocontext.h:1862:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid lbcrypto::CryptoContextImpl<Element>::EvalMultKeyGen(lbcrypto::PrivateKey<Element>) [with Element = lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > >; lbcrypto::PrivateKey<Element> = std::shared_ptr<lbcrypto::PrivateKeyImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > > >][m[K’
+ 1862 |     void [01;36m[KEvalMultKeyGen[m[K(const PrivateKey<Element> key);
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/openfhe/pke/cryptocontext.h:1862:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+make[2]: *** [CMakeFiles/test_plant.dir/build.make:63: CMakeFiles/test_plant.dir/src/test_plant.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:650: CMakeFiles/test_plant.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,729 @@
+[0.000000] (-) TimerEvent: {}
+[0.000579] (enc_turtle_cpp) JobQueued: {'identifier': 'enc_turtle_cpp', 'dependencies': OrderedDict()}
+[0.000624] (turtle_demo_controller) JobQueued: {'identifier': 'turtle_demo_controller', 'dependencies': OrderedDict()}
+[0.000661] (enc_turtle_cpp) JobStarted: {'identifier': 'enc_turtle_cpp'}
+[0.006994] (turtle_demo_controller) JobStarted: {'identifier': 'turtle_demo_controller'}
+[0.013267] (enc_turtle_cpp) JobProgress: {'identifier': 'enc_turtle_cpp', 'progress': 'cmake'}
+[0.013952] (enc_turtle_cpp) JobProgress: {'identifier': 'enc_turtle_cpp', 'progress': 'build'}
+[0.014798] (enc_turtle_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', '--', '-j12', '-l12'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_PYTHON_VERSION', '3'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'STEIECDSL-P04'), ('WSL_INTEROP', '/run/WSL/702_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '8653f738-ce2f-45a8-a59d-1af2da39cb86'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages:/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.020806] (turtle_demo_controller) JobProgress: {'identifier': 'turtle_demo_controller', 'progress': 'cmake'}
+[0.021439] (turtle_demo_controller) JobProgress: {'identifier': 'turtle_demo_controller', 'progress': 'build'}
+[0.023213] (turtle_demo_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller', '--', '-j12', '-l12'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_PYTHON_VERSION', '3'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'STEIECDSL-P04'), ('WSL_INTEROP', '/run/WSL/702_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '8653f738-ce2f-45a8-a59d-1af2da39cb86'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages:/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.070265] (enc_turtle_cpp) StdoutLine: {'line': b'[  2%] Built target enc_turtle_cpp__cpp\n'}
+[0.072151] (enc_turtle_cpp) StdoutLine: {'line': b'[  9%] Built target enc_turtle_cpp__rosidl_generator_c\n'}
+[0.072633] (turtle_demo_controller) StdoutLine: {'line': b'[  3%] Built target turtle_demo_controller__cpp\n'}
+[0.079980] (enc_turtle_cpp) StdoutLine: {'line': b'[ 14%] Built target bgv_test\n'}
+[0.080450] (enc_turtle_cpp) StdoutLine: {'line': b'[ 19%] Built target turtle_controller\n'}
+[0.080511] (turtle_demo_controller) StdoutLine: {'line': b'[ 12%] Built target turtle_demo_controller__rosidl_generator_c\n'}
+[0.081858] (enc_turtle_cpp) StdoutLine: {'line': b'[ 24%] Built target turtle_plant\n'}
+[0.094877] (enc_turtle_cpp) StdoutLine: {'line': b'[ 31%] Built target enc_turtle_cpp__rosidl_typesupport_cpp\n'}
+[0.095579] (enc_turtle_cpp) StdoutLine: {'line': b'[ 39%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp\n'}
+[0.096643] (enc_turtle_cpp) StdoutLine: {'line': b'[ 48%] Built target enc_turtle_cpp__rosidl_typesupport_c\n'}
+[0.096876] (enc_turtle_cpp) StdoutLine: {'line': b'[ 53%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c\n'}
+[0.098159] (enc_turtle_cpp) StdoutLine: {'line': b'[ 60%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp\n'}
+[0.098422] (turtle_demo_controller) StdoutLine: {'line': b'[ 22%] Built target turtle_demo_controller__rosidl_typesupport_introspection_cpp\n'}
+[0.099184] (turtle_demo_controller) StdoutLine: {'line': b'[ 32%] Built target turtle_demo_controller__rosidl_typesupport_cpp\n'}
+[0.099802] (-) TimerEvent: {}
+[0.101526] (turtle_demo_controller) StdoutLine: {'line': b'[ 41%] Built target turtle_demo_controller__rosidl_typesupport_fastrtps_cpp\n'}
+[0.105939] (turtle_demo_controller) StdoutLine: {'line': b'[ 54%] Built target turtle_demo_controller__rosidl_typesupport_c\n'}
+[0.106099] (turtle_demo_controller) StdoutLine: {'line': b'[ 61%] Built target turtle_demo_controller__rosidl_typesupport_introspection_c\n'}
+[0.123905] (enc_turtle_cpp) StdoutLine: {'line': b'[ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c\n'}
+[0.126111] (turtle_demo_controller) StdoutLine: {'line': b'[ 70%] Built target turtle_demo_controller__rosidl_typesupport_fastrtps_c\n'}
+[0.143950] (enc_turtle_cpp) StdoutLine: {'line': b'[ 68%] Built target enc_turtle_cpp\n'}
+[0.144534] (turtle_demo_controller) StdoutLine: {'line': b'[ 70%] Built target turtle_demo_controller\n'}
+[0.155637] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_plant\x1b[0m\n'}
+[0.156314] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_controller\x1b[0m\n'}
+[0.163857] (turtle_demo_controller) StdoutLine: {'line': b'[ 74%] Built target turtle_demo_controller__py\n'}
+[0.164150] (enc_turtle_cpp) StdoutLine: {'line': b'[ 70%] Built target enc_turtle_cpp__py\n'}
+[0.186748] (enc_turtle_cpp) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o\x1b[0m\n'}
+[0.186920] (enc_turtle_cpp) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o\x1b[0m\n'}
+[0.187153] (turtle_demo_controller) StdoutLine: {'line': b'[ 80%] Built target turtle_demo_controller__python\n'}
+[0.190557] (enc_turtle_cpp) StdoutLine: {'line': b'[ 80%] Built target enc_turtle_cpp__python\n'}
+[0.199916] (-) TimerEvent: {}
+[0.215100] (turtle_demo_controller) StdoutLine: {'line': b'[ 87%] Built target turtle_demo_controller__rosidl_typesupport_introspection_c__pyext\n'}
+[0.215475] (turtle_demo_controller) StdoutLine: {'line': b'[ 93%] Built target turtle_demo_controller__rosidl_typesupport_c__pyext\n'}
+[0.215728] (turtle_demo_controller) StdoutLine: {'line': b'[100%] Built target turtle_demo_controller__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.218152] (enc_turtle_cpp) StdoutLine: {'line': b'[ 85%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext\n'}
+[0.218490] (enc_turtle_cpp) StdoutLine: {'line': b'[ 90%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.219053] (enc_turtle_cpp) StdoutLine: {'line': b'[ 95%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext\n'}
+[0.227513] (turtle_demo_controller) CommandEnded: {'returncode': 0}
+[0.289061] (turtle_demo_controller) JobProgress: {'identifier': 'turtle_demo_controller', 'progress': 'install'}
+[0.302049] (turtle_demo_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_PYTHON_VERSION', '3'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'STEIECDSL-P04'), ('WSL_INTEROP', '/run/WSL/702_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '8653f738-ce2f-45a8-a59d-1af2da39cb86'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages:/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.303006] (-) TimerEvent: {}
+[0.311216] (turtle_demo_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.311732] (turtle_demo_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.312072] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/ament_index/resource_index/rosidl_interfaces/turtle_demo_controller\n'}
+[0.312710] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__functions.h\n'}
+[0.312875] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__struct.h\n'}
+[0.313046] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__type_support.h\n'}
+[0.313192] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/encrypted_data.h\n'}
+[0.313364] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.313612] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/library_path.sh\n'}
+[0.313832] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/library_path.dsv\n'}
+[0.314297] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__rosidl_typesupport_fastrtps_c.h\n'}
+[0.314472] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.314773] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_fastrtps_c.so\n'}
+[0.315227] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.315404] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.315721] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.316122] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__rosidl_typesupport_introspection_c.h\n'}
+[0.316307] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.316714] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__builder.hpp\n'}
+[0.316883] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__struct.hpp\n'}
+[0.317046] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__traits.hpp\n'}
+[0.317213] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__type_support.hpp\n'}
+[0.317442] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/encrypted_data.hpp\n'}
+[0.317608] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.317917] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/include/turtle_demo_controller/msg/detail/encrypted_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.318142] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/pythonpath.sh\n'}
+[0.318350] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/pythonpath.dsv\n'}
+[0.318564] (turtle_demo_controller) StdoutLine: {'line': b'-- Symlinking: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/__init__.py\n'}
+[0.329735] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/msg/__init__.py\n'}
+[0.329919] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/msg/_encrypted_data.py\n'}
+[0.330318] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_demo_controller_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.330653] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_demo_controller_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.330980] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_demo_controller_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.331278] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__python.so\n'}
+[0.331505] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/msg/EncryptedData.idl\n'}
+[0.331716] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/msg/EncryptedData.msg\n'}
+[0.332422] (turtle_demo_controller) StdoutLine: {'line': b'-- Symlinking: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/__init__.py\n'}
+[0.342550] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/enc_turtle_controller.py\n'}
+[0.342728] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/enc_turtle_plant.py\n'}
+[0.342924] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/simple_test.py\n'}
+[0.343107] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/test_bgv.py\n'}
+[0.343297] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/test_serialization.py\n'}
+[0.343487] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_controller.py\n'}
+[0.343678] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/turtle_plant.py\n'}
+[0.344009] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/turtle_plant.py\n'}
+[0.344641] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/turtle_controller.py\n'}
+[0.344732] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/simple_test.py\n'}
+[0.344883] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/enc_turtle_plant.py\n'}
+[0.345007] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/turtle_demo_controller/enc_turtle_controller.py\n'}
+[0.345439] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller//launch/enc_two_turtle.launch.py\n'}
+[0.345645] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller//launch/two_turtle.launch.py\n'}
+[0.345999] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/ament_index/resource_index/package_run_dependencies/turtle_demo_controller\n'}
+[0.346317] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/ament_index/resource_index/parent_prefix_path/turtle_demo_controller\n'}
+[0.346612] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/ament_prefix_path.sh\n'}
+[0.346881] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/ament_prefix_path.dsv\n'}
+[0.347153] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/path.sh\n'}
+[0.347420] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/environment/path.dsv\n'}
+[0.347679] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/local_setup.bash\n'}
+[0.347941] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/local_setup.sh\n'}
+[0.348212] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/local_setup.zsh\n'}
+[0.348456] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/local_setup.dsv\n'}
+[0.348633] (turtle_demo_controller) StdoutLine: {'line': b'-- Symlinking: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.dsv\n'}
+[0.361922] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/ament_index/resource_index/packages/turtle_demo_controller\n'}
+[0.362235] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/rosidl_cmake-extras.cmake\n'}
+[0.362599] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.362850] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.363108] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.363391] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.363649] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.363903] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.364633] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controllerConfig.cmake\n'}
+[0.364794] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controllerConfig-version.cmake\n'}
+[0.364844] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.xml\n'}
+[0.364988] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_generator_c.so\n'}
+[0.365406] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_introspection_c.so\n'}
+[0.365929] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_c.so\n'}
+[0.366363] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_introspection_cpp.so\n'}
+[0.366800] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/libturtle_demo_controller__rosidl_typesupport_cpp.so\n'}
+[0.403119] (-) TimerEvent: {}
+[0.415487] (turtle_demo_controller) StdoutLine: {'line': b"Listing '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller'...\n"}
+[0.415635] (turtle_demo_controller) StdoutLine: {'line': b"Listing '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages/turtle_demo_controller/msg'...\n"}
+[0.418320] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_generator_cExport.cmake\n'}
+[0.418517] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.418640] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.418776] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.419184] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_cExport.cmake\n'}
+[0.419288] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.419485] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_generator_cppExport.cmake\n'}
+[0.419694] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.419809] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.420001] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_cppExport.cmake\n'}
+[0.420131] (turtle_demo_controller) StdoutLine: {'line': b'-- Up-to-date: /home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/cmake/turtle_demo_controller__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.422543] (turtle_demo_controller) CommandEnded: {'returncode': 0}
+[0.503267] (-) TimerEvent: {}
+[0.506192] (turtle_demo_controller) JobEnded: {'identifier': 'turtle_demo_controller', 'rc': 0}
+[0.603399] (-) TimerEvent: {}
+[0.703753] (-) TimerEvent: {}
+[0.804143] (-) TimerEvent: {}
+[0.904506] (-) TimerEvent: {}
+[1.004871] (-) TimerEvent: {}
+[1.105219] (-) TimerEvent: {}
+[1.205597] (-) TimerEvent: {}
+[1.306148] (-) TimerEvent: {}
+[1.406522] (-) TimerEvent: {}
+[1.506886] (-) TimerEvent: {}
+[1.607270] (-) TimerEvent: {}
+[1.707627] (-) TimerEvent: {}
+[1.807985] (-) TimerEvent: {}
+[1.908367] (-) TimerEvent: {}
+[2.008732] (-) TimerEvent: {}
+[2.109093] (-) TimerEvent: {}
+[2.151165] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:9:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.151490] (enc_turtle_cpp) StderrLine: {'line': b'    9 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.151851] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.152000] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:10:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.152057] (enc_turtle_cpp) StderrLine: {'line': b'   10 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.152312] (enc_turtle_cpp) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.152365] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:11:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.152420] (enc_turtle_cpp) StderrLine: {'line': b'   11 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.152808] (enc_turtle_cpp) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.152905] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:12:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.153019] (enc_turtle_cpp) StderrLine: {'line': b'   12 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.153363] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.153500] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:13:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.153654] (enc_turtle_cpp) StderrLine: {'line': b'   13 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.153806] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.153952] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.154459] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.154688] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.154741] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.154782] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.154812] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.154844] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.154871] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.154896] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.154921] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.154947] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.154973] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.155003] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.155029] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPCryptoParameters\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KCryptoParametersRNS\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.155059] (enc_turtle_cpp) StderrLine: {'line': b'   14 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPCryptoParameters\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.155085] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.155110] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.155137] (enc_turtle_cpp) StderrLine: {'line': b'   14 | _TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.155163] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.155190] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.155216] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.155243] (enc_turtle_cpp) StderrLine: {'line': b'   14 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);\n'}
+[2.155269] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.155295] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39\x1b[m\x1b[K,\n'}
+[2.155324] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.155349] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.155375] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.155400] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.155428] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.155453] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.155478] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.155503] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.155528] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.155553] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.155578] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.155602] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.155627] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.155652] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPCryptoParameters\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KCryptoParametersRNS\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.155678] (enc_turtle_cpp) StderrLine: {'line': b'   14 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPCryptoParameters\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.155704] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.155729] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.155757] (enc_turtle_cpp) StderrLine: {'line': b'   14 | _TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.155782] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.155807] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.155832] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.155858] (enc_turtle_cpp) StderrLine: {'line': b'   14 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);\n'}
+[2.155883] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.155907] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.155933] (enc_turtle_cpp) StderrLine: {'line': b'   14 | YPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.155958] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.155983] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.156010] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.156038] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.156063] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.156102] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.156130] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.156156] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.156181] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.156206] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.156232] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.156257] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.156282] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.156307] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.156332] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.156356] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.156423] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.156461] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.156492] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.156519] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.156546] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.156572] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.156598] (enc_turtle_cpp) StderrLine: {'line': b'   15 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.156624] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.156651] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39\x1b[m\x1b[K,\n'}
+[2.156684] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.156712] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.156737] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.156762] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.156787] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.156815] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.156840] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.156866] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.156892] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.156917] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.156942] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.156967] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.156992] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.157017] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.157045] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.157069] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.157094] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.157123] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.157148] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.157173] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.157199] (enc_turtle_cpp) StderrLine: {'line': b'   15 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.157224] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.157248] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.157277] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.157302] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.157326] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.157351] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.157377] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.157405] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.157430] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.157454] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.157479] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.157504] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.157530] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.157554] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.157579] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.157604] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.157629] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.157654] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.157683] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.157708] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.157733] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.157759] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.157783] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.157808] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.157837] (enc_turtle_cpp) StderrLine: {'line': b'   16 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.157862] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.157887] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39\x1b[m\x1b[K,\n'}
+[2.157912] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.157937] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.157962] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.157987] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.158021] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.158046] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.158072] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.158100] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.158125] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.158150] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.158175] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.158200] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.158226] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.158251] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.158276] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.158301] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.158326] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.158354] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.158408] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.158451] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.158483] (enc_turtle_cpp) StderrLine: {'line': b'   16 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.158510] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.158537] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.158563] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.158589] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.158615] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:18:123:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.158646] (enc_turtle_cpp) StderrLine: {'line': b'   18 | bcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.158672] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.158698] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.158725] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:19:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.158751] (enc_turtle_cpp) StderrLine: {'line': b'   19 | hemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.158777] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.158802] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.158828] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.158853] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.158878] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.158903] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.158929] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.158955] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.158980] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.159005] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.159030] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.159054] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.159083] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.159108] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.159134] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.159162] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPCryptoParameters\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KCryptoParametersRNS\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.159189] (enc_turtle_cpp) StderrLine: {'line': b'   20 | bcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::\x1b[01;31m\x1b[KLPCryptoParameters\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.159214] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.159240] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.159265] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.159291] (enc_turtle_cpp) StderrLine: {'line': b'   20 | oly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.159317] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.159342] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.159366] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.159391] (enc_turtle_cpp) StderrLine: {'line': b'   20 | \x1b[01;31m\x1b[KCEREAL_REGISTER_POLYMORPHIC_RELATION\x1b[m\x1b[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);\n'}
+[2.159416] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.159441] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:131:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.159470] (enc_turtle_cpp) StderrLine: {'line': b'   20 | y>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.159496] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.159521] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.159546] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.159571] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.159596] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.159621] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.159650] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.159680] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.159706] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.159731] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.159757] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.159783] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.159808] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.159833] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.159858] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.159883] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.159909] (enc_turtle_cpp) StderrLine: {'line': b'   21 | bcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::\x1b[01;31m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.159935] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.159959] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.159984] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:126:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.160010] (enc_turtle_cpp) StderrLine: {'line': b'   21 | RTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.160034] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.160059] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.160131] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.160229] (enc_turtle_cpp) StderrLine: {'line': b'   21 | \x1b[01;31m\x1b[KCEREAL_REGISTER_POLYMORPHIC_RELATION\x1b[m\x1b[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.160264] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.160293] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:128:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.160327] (enc_turtle_cpp) StderrLine: {'line': b'   21 | Poly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.160354] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.160380] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.160406] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.160439] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.160465] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.160491] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.160516] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.160541] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.160566] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.160592] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.160617] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.160642] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.160670] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.160695] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.160720] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3\x1b[m\x1b[K:\n'}
+[2.160748] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.160775] (enc_turtle_cpp) StderrLine: {'line': b'   22 | bcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::\x1b[01;31m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.160800] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.160826] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.160853] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:127:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.160879] (enc_turtle_cpp) StderrLine: {'line': b'   22 | TPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.160905] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.160930] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.160956] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.160981] (enc_turtle_cpp) StderrLine: {'line': b'   22 | \x1b[01;31m\x1b[KCEREAL_REGISTER_POLYMORPHIC_RELATION\x1b[m\x1b[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.161073] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.161135] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:129:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.161176] (enc_turtle_cpp) StderrLine: {'line': b'   22 | oly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.161212] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.161245] (enc_turtle_cpp) StderrLine: {'line': b'\n'}
+[2.174290] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:10:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.174490] (enc_turtle_cpp) StderrLine: {'line': b'   10 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.174626] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.174684] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:11:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.174818] (enc_turtle_cpp) StderrLine: {'line': b'   11 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.174951] (enc_turtle_cpp) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.175001] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:12:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.175245] (enc_turtle_cpp) StderrLine: {'line': b'   12 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.175695] (enc_turtle_cpp) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.175827] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:13:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.176231] (enc_turtle_cpp) StderrLine: {'line': b'   13 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.176290] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.176326] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:14:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.176431] (enc_turtle_cpp) StderrLine: {'line': b'   14 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.176647] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.176787] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.176942] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.177055] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.177305] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.177344] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.177377] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.177415] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.177442] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.177469] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.177495] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.177521] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.177546] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.177571] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.177597] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPCryptoParameters\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KCryptoParametersRNS\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.177625] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPCryptoParameters\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.177651] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.177677] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.177704] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.177730] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.177755] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.177781] (enc_turtle_cpp) StderrLine: {'line': b'   15 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);\n'}
+[2.177806] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.177831] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39\x1b[m\x1b[K,\n'}
+[2.177856] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.177880] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.177909] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.177935] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.177960] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.177985] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.178010] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.178036] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.178061] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.178087] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.178115] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.178140] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.178165] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.178190] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPCryptoParameters\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KCryptoParametersRNS\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.178216] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPCryptoParameters\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.178241] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.178266] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.178294] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.178321] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.178346] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.178375] (enc_turtle_cpp) StderrLine: {'line': b'   15 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);\n'}
+[2.178400] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.178426] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.178452] (enc_turtle_cpp) StderrLine: {'line': b'   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.178480] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.178505] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.178530] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.178555] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.178581] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.178606] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.178631] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.178656] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.178681] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.178706] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.178732] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.178757] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.178782] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.178807] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.178832] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.178858] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.178884] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.178910] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.178935] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.178960] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.179006] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.179052] (enc_turtle_cpp) StderrLine: {'line': b'   16 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.179084] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.179124] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39\x1b[m\x1b[K,\n'}
+[2.179153] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.179179] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.179205] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.179231] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.179256] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.179302] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.179345] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.179377] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.179406] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.179433] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.179460] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.179487] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.179517] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.179543] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.179570] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.179595] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.179620] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.179646] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.179671] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.179696] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.179722] (enc_turtle_cpp) StderrLine: {'line': b'   16 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.179747] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.179774] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.179800] (enc_turtle_cpp) StderrLine: {'line': b'   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.179825] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.179850] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.179876] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.179902] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.179928] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.179953] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.179978] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.180003] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.180028] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.180069] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.180133] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.180168] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.180197] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.180224] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.180255] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.180286] (enc_turtle_cpp) StderrLine: {'line': b'   17 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.180312] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.180338] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.180365] (enc_turtle_cpp) StderrLine: {'line': b'   17 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.180391] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.180419] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.180445] (enc_turtle_cpp) StderrLine: {'line': b'   17 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.180471] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.180496] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39\x1b[m\x1b[K,\n'}
+[2.180521] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.180551] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.180578] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.180605] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.180631] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.180656] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.180681] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.180706] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.180731] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.180756] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.180781] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.180806] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.180831] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.180857] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.180883] (enc_turtle_cpp) StderrLine: {'line': b'   17 | CEREAL_REGISTER_TYPE(lbcrypto::\x1b[01;31m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.180908] (enc_turtle_cpp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.180933] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.180959] (enc_turtle_cpp) StderrLine: {'line': b'   17 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.180984] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.181049] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.181084] (enc_turtle_cpp) StderrLine: {'line': b'   17 | \x1b[01;31m\x1b[KCEREAL_REGISTER_TYPE\x1b[m\x1b[K(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.181113] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.181140] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.181168] (enc_turtle_cpp) StderrLine: {'line': b'   17 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.181194] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.181220] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:19:123:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.181252] (enc_turtle_cpp) StderrLine: {'line': b'   19 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoParametersBase<lbcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.181278] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.181303] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:20:103:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.181328] (enc_turtle_cpp) StderrLine: {'line': b'   20 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::SchemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.181353] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.181378] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.181403] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.181428] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.181453] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.181477] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.181502] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.181530] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.181556] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.181581] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.181609] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.181639] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.181665] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.181690] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.181716] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPCryptoParameters\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KCryptoParametersRNS\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.181743] (enc_turtle_cpp) StderrLine: {'line': b'   21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::\x1b[01;31m\x1b[KLPCryptoParameters\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.181768] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.181794] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.181820] (enc_turtle_cpp) StderrLine: {'line': b'   21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.181845] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.181870] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.181895] (enc_turtle_cpp) StderrLine: {'line': b'   21 | \x1b[01;31m\x1b[KCEREAL_REGISTER_POLYMORPHIC_RELATION\x1b[m\x1b[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);\n'}
+[2.181921] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.181946] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:131:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.181972] (enc_turtle_cpp) StderrLine: {'line': b'   21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.181997] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.182025] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.182050] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.182081] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.182109] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.182134] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.182159] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.182184] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.182209] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.182234] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.182259] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.182284] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.182308] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.182334] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.182360] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPublicKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.182390] (enc_turtle_cpp) StderrLine: {'line': b'   22 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::\x1b[01;31m\x1b[KLPPublicKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.182415] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.182440] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:126:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.182466] (enc_turtle_cpp) StderrLine: {'line': b'   22 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.182491] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.182516] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.182544] (enc_turtle_cpp) StderrLine: {'line': b'   22 | \x1b[01;31m\x1b[KCEREAL_REGISTER_POLYMORPHIC_RELATION\x1b[m\x1b[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.182570] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.182596] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:128:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.182626] (enc_turtle_cpp) StderrLine: {'line': b'   22 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.182652] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.182680] (enc_turtle_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/openfhe/core/utils/serializable.h:61\x1b[m\x1b[K,\n'}
+[2.182707] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51\x1b[m\x1b[K,\n'}
+[2.182732] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43\x1b[m\x1b[K,\n'}
+[2.182757] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44\x1b[m\x1b[K,\n'}
+[2.182783] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38\x1b[m\x1b[K,\n'}
+[2.182808] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/math/math-hal.h:48\x1b[m\x1b[K,\n'}
+[2.182836] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39\x1b[m\x1b[K,\n'}
+[2.182861] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39\x1b[m\x1b[K,\n'}
+[2.182886] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49\x1b[m\x1b[K,\n'}
+[2.182912] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35\x1b[m\x1b[K,\n'}
+[2.182937] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/core/openfhecore.h:39\x1b[m\x1b[K,\n'}
+[2.182964] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/openfhe/pke/openfhe.h:40\x1b[m\x1b[K,\n'}
+[2.183007] (enc_turtle_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4\x1b[m\x1b[K:\n'}
+[2.183054] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Klbcrypto\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KLWEPrivateKeyImpl\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.183087] (enc_turtle_cpp) StderrLine: {'line': b'   23 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::\x1b[01;31m\x1b[KLPPrivateKeyImpl\x1b[m\x1b[K<lbcrypto::DCRTPoly>);\n'}
+[2.183116] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.183144] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:127:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.183171] (enc_turtle_cpp) StderrLine: {'line': b'   23 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.183197] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.183229] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.183258] (enc_turtle_cpp) StderrLine: {'line': b'   23 | \x1b[01;31m\x1b[KCEREAL_REGISTER_POLYMORPHIC_RELATION\x1b[m\x1b[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);\n'}
+[2.183284] (enc_turtle_cpp) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.183311] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:129:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[2.183337] (enc_turtle_cpp) StderrLine: {'line': b'   23 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>)\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[2.183363] (enc_turtle_cpp) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.209240] (-) TimerEvent: {}
+[2.309557] (-) TimerEvent: {}
+[2.409914] (-) TimerEvent: {}
+[2.510272] (-) TimerEvent: {}
+[2.610627] (-) TimerEvent: {}
+[2.711003] (-) TimerEvent: {}
+[2.811381] (-) TimerEvent: {}
+[2.911743] (-) TimerEvent: {}
+[3.012121] (-) TimerEvent: {}
+[3.112495] (-) TimerEvent: {}
+[3.212852] (-) TimerEvent: {}
+[3.313223] (-) TimerEvent: {}
+[3.413584] (-) TimerEvent: {}
+[3.513938] (-) TimerEvent: {}
+[3.614300] (-) TimerEvent: {}
+[3.714639] (-) TimerEvent: {}
+[3.815068] (-) TimerEvent: {}
+[3.915458] (-) TimerEvent: {}
+[4.015824] (-) TimerEvent: {}
+[4.116216] (-) TimerEvent: {}
+[4.216611] (-) TimerEvent: {}
+[4.316975] (-) TimerEvent: {}
+[4.417355] (-) TimerEvent: {}
+[4.517735] (-) TimerEvent: {}
+[4.618128] (-) TimerEvent: {}
+[4.718481] (-) TimerEvent: {}
+[4.818854] (-) TimerEvent: {}
+[4.919214] (-) TimerEvent: {}
+[5.019572] (-) TimerEvent: {}
+[5.119925] (-) TimerEvent: {}
+[5.220323] (-) TimerEvent: {}
+[5.320678] (-) TimerEvent: {}
+[5.421051] (-) TimerEvent: {}
+[5.521429] (-) TimerEvent: {}
+[5.621823] (-) TimerEvent: {}
+[5.722200] (-) TimerEvent: {}
+[5.822570] (-) TimerEvent: {}
+[5.922969] (-) TimerEvent: {}
+[6.023398] (-) TimerEvent: {}
+[6.123767] (-) TimerEvent: {}
+[6.224138] (-) TimerEvent: {}
+[6.324492] (-) TimerEvent: {}
+[6.424844] (-) TimerEvent: {}
+[6.525200] (-) TimerEvent: {}
+[6.625560] (-) TimerEvent: {}
+[6.725934] (-) TimerEvent: {}
+[6.826297] (-) TimerEvent: {}
+[6.926662] (-) TimerEvent: {}
+[7.027032] (-) TimerEvent: {}
+[7.127394] (-) TimerEvent: {}
+[7.227763] (-) TimerEvent: {}
+[7.328154] (-) TimerEvent: {}
+[7.428671] (-) TimerEvent: {}
+[7.529059] (-) TimerEvent: {}
+[7.629413] (-) TimerEvent: {}
+[7.729795] (-) TimerEvent: {}
+[7.830174] (-) TimerEvent: {}
+[7.930555] (-) TimerEvent: {}
+[8.030945] (-) TimerEvent: {}
+[8.046832] (enc_turtle_cpp) StderrLine: {'line': b'make[2]: *** [CMakeFiles/enc_turtle_controller.dir/build.make:63: CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o] Error 1\n'}
+[8.047245] (enc_turtle_cpp) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/enc_turtle_controller.dir/all] Error 2\n'}
+[8.047359] (enc_turtle_cpp) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[8.131078] (-) TimerEvent: {}
+[8.231452] (-) TimerEvent: {}
+[8.331806] (-) TimerEvent: {}
+[8.392060] (enc_turtle_cpp) StderrLine: {'line': b'make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1\n'}
+[8.392381] (enc_turtle_cpp) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2\n'}
+[8.392648] (enc_turtle_cpp) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.395234] (enc_turtle_cpp) CommandEnded: {'returncode': 2}
+[8.431918] (-) TimerEvent: {}
+[8.477295] (enc_turtle_cpp) JobEnded: {'identifier': 'enc_turtle_cpp', 'rc': 2}
+[8.479557] (-) EventReactorShutdown: {}

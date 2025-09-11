@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp
+openfhe/pke/openfhe.h
+/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/openfhe/pke/openfhe.h
+chrono
+-
+iomanip
+-
+iostream
+-
+sstream
+-
+

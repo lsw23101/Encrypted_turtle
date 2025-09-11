@@ -1,0 +1,248 @@
+[0.000000] (-) TimerEvent: {}
+[0.000582] (-) JobUnselected: {'identifier': 'turtle_demo_controller'}
+[0.000649] (enc_turtle_cpp) JobQueued: {'identifier': 'enc_turtle_cpp', 'dependencies': OrderedDict()}
+[0.000674] (enc_turtle_cpp) JobStarted: {'identifier': 'enc_turtle_cpp'}
+[0.011189] (enc_turtle_cpp) JobProgress: {'identifier': 'enc_turtle_cpp', 'progress': 'cmake'}
+[0.012032] (enc_turtle_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp', '-DCMAKE_INSTALL_PREFIX=/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('GIT_ASKPASS', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/openfhe-development/build'), ('TERM_PROGRAM_VERSION', '0.50.7'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bd24ec93-b3db-40ce-af66-59a4217c209d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/node'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'Cursor'), ('WSL_INTEROP', '/run/WSL/344188_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/bin/remote-cli:/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '11ea8a6a-273f-4f01-a734-76267bbc8b3f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e4c32d764.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy')]), 'shell': False}
+[0.099508] (-) TimerEvent: {}
+[0.148871] (enc_turtle_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199633] (-) TimerEvent: {}
+[0.299996] (-) TimerEvent: {}
+[0.318170] (enc_turtle_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.390367] (enc_turtle_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.400098] (-) TimerEvent: {}
+[0.500393] (-) TimerEvent: {}
+[0.505105] (enc_turtle_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.505700] (enc_turtle_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.600517] (-) TimerEvent: {}
+[0.623166] (enc_turtle_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.629029] (enc_turtle_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.629334] (enc_turtle_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.630820] (enc_turtle_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.700653] (-) TimerEvent: {}
+[0.766053] (enc_turtle_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.766773] (enc_turtle_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.800775] (-) TimerEvent: {}
+[0.890838] (enc_turtle_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.897520] (enc_turtle_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.897842] (enc_turtle_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.899861] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.900847] (-) TimerEvent: {}
+[0.917728] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.917912] (enc_turtle_cpp) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.000986] (-) TimerEvent: {}
+[1.051992] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.101117] (-) TimerEvent: {}
+[1.156879] (enc_turtle_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.161343] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.201237] (-) TimerEvent: {}
+[1.301594] (-) TimerEvent: {}
+[1.401966] (-) TimerEvent: {}
+[1.502314] (-) TimerEvent: {}
+[1.602698] (-) TimerEvent: {}
+[1.703067] (-) TimerEvent: {}
+[1.803399] (-) TimerEvent: {}
+[1.829822] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.903536] (-) TimerEvent: {}
+[2.003905] (-) TimerEvent: {}
+[2.104268] (-) TimerEvent: {}
+[2.204618] (-) TimerEvent: {}
+[2.304970] (-) TimerEvent: {}
+[2.405344] (-) TimerEvent: {}
+[2.484842] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.505460] (-) TimerEvent: {}
+[2.605809] (-) TimerEvent: {}
+[2.706175] (-) TimerEvent: {}
+[2.806605] (-) TimerEvent: {}
+[2.907205] (-) TimerEvent: {}
+[3.007569] (-) TimerEvent: {}
+[3.107984] (-) TimerEvent: {}
+[3.208399] (-) TimerEvent: {}
+[3.308779] (-) TimerEvent: {}
+[3.409116] (-) TimerEvent: {}
+[3.509458] (-) TimerEvent: {}
+[3.609819] (-) TimerEvent: {}
+[3.649445] (enc_turtle_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.682943] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.683732] (enc_turtle_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.684418] (enc_turtle_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.709955] (-) TimerEvent: {}
+[3.803371] (enc_turtle_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.803629] (enc_turtle_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.810040] (-) TimerEvent: {}
+[3.910314] (-) TimerEvent: {}
+[3.925537] (enc_turtle_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.926826] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.010492] (-) TimerEvent: {}
+[4.021152] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[4.041208] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)\n'}
+[4.106024] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[4.110584] (-) TimerEvent: {}
+[4.210879] (-) TimerEvent: {}
+[4.311265] (-) TimerEvent: {}
+[4.411606] (-) TimerEvent: {}
+[4.511930] (-) TimerEvent: {}
+[4.512208] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found OpenMP_C: -fopenmp (found version "4.5") \n'}
+[4.612054] (-) TimerEvent: {}
+[4.663677] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[4.663982] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5")  \n'}
+[4.681581] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[4.712160] (-) TimerEvent: {}
+[4.764667] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[4.812293] (-) TimerEvent: {}
+[4.912640] (-) TimerEvent: {}
+[5.013008] (-) TimerEvent: {}
+[5.113381] (-) TimerEvent: {}
+[5.213772] (-) TimerEvent: {}
+[5.314203] (-) TimerEvent: {}
+[5.414560] (-) TimerEvent: {}
+[5.514890] (-) TimerEvent: {}
+[5.615230] (-) TimerEvent: {}
+[5.715560] (-) TimerEvent: {}
+[5.815914] (-) TimerEvent: {}
+[5.916273] (-) TimerEvent: {}
+[6.016603] (-) TimerEvent: {}
+[6.116937] (-) TimerEvent: {}
+[6.217294] (-) TimerEvent: {}
+[6.317662] (-) TimerEvent: {}
+[6.418004] (-) TimerEvent: {}
+[6.518353] (-) TimerEvent: {}
+[6.618723] (-) TimerEvent: {}
+[6.719056] (-) TimerEvent: {}
+[6.819615] (-) TimerEvent: {}
+[6.919983] (-) TimerEvent: {}
+[7.020452] (-) TimerEvent: {}
+[7.039641] (enc_turtle_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.046332] (enc_turtle_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.063157] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[7.064452] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[7.120709] (-) TimerEvent: {}
+[7.221071] (-) TimerEvent: {}
+[7.306898] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[7.307110] (enc_turtle_cpp) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.307162] (enc_turtle_cpp) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[7.307199] (enc_turtle_cpp) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[7.321174] (-) TimerEvent: {}
+[7.323215] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[7.377357] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found OpenFHE\n'}
+[7.377564] (enc_turtle_cpp) StdoutLine: {'line': b'-- OpenFHE Version: 1.3.0\n'}
+[7.377615] (enc_turtle_cpp) StdoutLine: {'line': b'-- OpenFHE Include Dirs: \n'}
+[7.377659] (enc_turtle_cpp) StdoutLine: {'line': b'-- OpenFHE Libraries: \n'}
+[7.380771] (enc_turtle_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[7.398070] (enc_turtle_cpp) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[7.399544] (enc_turtle_cpp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.400862] (enc_turtle_cpp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/include>\n'}
+[7.400978] (enc_turtle_cpp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.402146] (enc_turtle_cpp) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[7.402224] (enc_turtle_cpp) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[7.402914] (enc_turtle_cpp) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.403674] (enc_turtle_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.404329] (enc_turtle_cpp) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[7.405621] (enc_turtle_cpp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.405713] (enc_turtle_cpp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.406268] (enc_turtle_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.411677] (enc_turtle_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.421268] (-) TimerEvent: {}
+[7.473649] (enc_turtle_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[7.476507] (enc_turtle_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp\n'}
+[7.487538] (enc_turtle_cpp) CommandEnded: {'returncode': 0}
+[7.490574] (enc_turtle_cpp) JobProgress: {'identifier': 'enc_turtle_cpp', 'progress': 'build'}
+[7.490665] (enc_turtle_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', '--', '-j12', '-l12'], 'cwd': '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sangwon'), ('GIT_ASKPASS', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/sangwon'), ('OLDPWD', '/home/sangwon/openfhe-development/build'), ('TERM_PROGRAM_VERSION', '0.50.7'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bd24ec93-b3db-40ce-af66-59a4217c209d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/node'), ('GOROOT', '/usr/local/go'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/sangwon/gcamp_ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'sangwon'), ('NAME', 'Cursor'), ('WSL_INTEROP', '/run/WSL/344188_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/lib/pkgconfig:/usr/local/lib/pkgconfig:'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/sangwon/.cursor-server/bin/02270c8441bdc4b2fdbc30e6f470a589ec78d600/bin/remote-cli:/home/sangwon/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Bandizip/:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/sang2/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sang2/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/sang2/go/bin:/mnt/c/texlive/2024/bin/windows:/mnt/c/Users/sang2/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin:/usr/local/go/bin:/home/sangwon/go/bin:/usr/local/go/bin:/home/sangwon/go/bin'), ('WT_SESSION', '11ea8a6a-273f-4f01-a734-76267bbc8b3f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e4c32d764.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('GOPATH', '/home/sangwon/go'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/your/additional/paths'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller:/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages:/home/sangwon/.local/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy')]), 'shell': False}
+[7.521422] (-) TimerEvent: {}
+[7.532691] (enc_turtle_cpp) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[7.533014] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_cpp__cpp\x1b[0m\n'}
+[7.533169] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bgv_test\x1b[0m\n'}
+[7.533224] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target turtle_plant\x1b[0m\n'}
+[7.533357] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target turtle_controller\x1b[0m\n'}
+[7.543960] (enc_turtle_cpp) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o\x1b[0m\n'}
+[7.544167] (enc_turtle_cpp) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[7.575966] (enc_turtle_cpp) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/turtle_controller.dir/src/turtle_controller.cpp.o\x1b[0m\n'}
+[7.576125] (enc_turtle_cpp) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/turtle_plant.dir/src/turtle_plant.cpp.o\x1b[0m\n'}
+[7.578610] (enc_turtle_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:2:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kopenfhe/core/lattice/ilparams.h: No such file or directory\n'}
+[7.578793] (enc_turtle_cpp) StderrLine: {'line': b'    2 | #include \x1b[01;31m\x1b[K<openfhe/core/lattice/ilparams.h>\x1b[m\x1b[K\n'}
+[7.578844] (enc_turtle_cpp) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.578886] (enc_turtle_cpp) StderrLine: {'line': b'compilation terminated.\n'}
+[7.581170] (enc_turtle_cpp) StderrLine: {'line': b'make[2]: *** [CMakeFiles/bgv_test.dir/build.make:63: CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o] Error 1\n'}
+[7.581492] (enc_turtle_cpp) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:131: CMakeFiles/bgv_test.dir/all] Error 2\n'}
+[7.581569] (enc_turtle_cpp) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[7.621539] (-) TimerEvent: {}
+[7.701571] (enc_turtle_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target enc_turtle_cpp__rosidl_generator_c\x1b[0m\n'}
+[7.714583] (enc_turtle_cpp) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_generator_c.dir/rosidl_generator_c/enc_turtle_cpp/msg/detail/encrypted_data__functions.c.o\x1b[0m\n'}
+[7.721690] (-) TimerEvent: {}
+[7.725267] (enc_turtle_cpp) StdoutLine: {'line': b'[ 14%] Built target enc_turtle_cpp__cpp\n'}
+[7.766066] (enc_turtle_cpp) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libenc_turtle_cpp__rosidl_generator_c.so\x1b[0m\n'}
+[7.821818] (-) TimerEvent: {}
+[7.856888] (enc_turtle_cpp) StdoutLine: {'line': b'[ 17%] Built target enc_turtle_cpp__rosidl_generator_c\n'}
+[7.921966] (-) TimerEvent: {}
+[8.022329] (-) TimerEvent: {}
+[8.122698] (-) TimerEvent: {}
+[8.223068] (-) TimerEvent: {}
+[8.323457] (-) TimerEvent: {}
+[8.423818] (-) TimerEvent: {}
+[8.524182] (-) TimerEvent: {}
+[8.624565] (-) TimerEvent: {}
+[8.724933] (-) TimerEvent: {}
+[8.825335] (-) TimerEvent: {}
+[8.925719] (-) TimerEvent: {}
+[9.026128] (-) TimerEvent: {}
+[9.126559] (-) TimerEvent: {}
+[9.226940] (-) TimerEvent: {}
+[9.327312] (-) TimerEvent: {}
+[9.427676] (-) TimerEvent: {}
+[9.528039] (-) TimerEvent: {}
+[9.628423] (-) TimerEvent: {}
+[9.728799] (-) TimerEvent: {}
+[9.829173] (-) TimerEvent: {}
+[9.929538] (-) TimerEvent: {}
+[10.029891] (-) TimerEvent: {}
+[10.130264] (-) TimerEvent: {}
+[10.230670] (-) TimerEvent: {}
+[10.331071] (-) TimerEvent: {}
+[10.431449] (-) TimerEvent: {}
+[10.531830] (-) TimerEvent: {}
+[10.632200] (-) TimerEvent: {}
+[10.732572] (-) TimerEvent: {}
+[10.832988] (-) TimerEvent: {}
+[10.933380] (-) TimerEvent: {}
+[11.033788] (-) TimerEvent: {}
+[11.134177] (-) TimerEvent: {}
+[11.234544] (-) TimerEvent: {}
+[11.334911] (-) TimerEvent: {}
+[11.435278] (-) TimerEvent: {}
+[11.535636] (-) TimerEvent: {}
+[11.635978] (-) TimerEvent: {}
+[11.736316] (-) TimerEvent: {}
+[11.836673] (-) TimerEvent: {}
+[11.937017] (-) TimerEvent: {}
+[12.037358] (-) TimerEvent: {}
+[12.137700] (-) TimerEvent: {}
+[12.238060] (-) TimerEvent: {}
+[12.338477] (-) TimerEvent: {}
+[12.438881] (-) TimerEvent: {}
+[12.539263] (-) TimerEvent: {}
+[12.639210] (enc_turtle_cpp) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking CXX executable turtle_controller\x1b[0m\n'}
+[12.639425] (-) TimerEvent: {}
+[12.739707] (-) TimerEvent: {}
+[12.788932] (enc_turtle_cpp) StdoutLine: {'line': b'[ 19%] Built target turtle_controller\n'}
+[12.839855] (-) TimerEvent: {}
+[12.940231] (-) TimerEvent: {}
+[13.040615] (-) TimerEvent: {}
+[13.140976] (-) TimerEvent: {}
+[13.241359] (-) TimerEvent: {}
+[13.341734] (-) TimerEvent: {}
+[13.442117] (-) TimerEvent: {}
+[13.542505] (-) TimerEvent: {}
+[13.642858] (-) TimerEvent: {}
+[13.743219] (-) TimerEvent: {}
+[13.843592] (-) TimerEvent: {}
+[13.943968] (-) TimerEvent: {}
+[14.044339] (-) TimerEvent: {}
+[14.144723] (-) TimerEvent: {}
+[14.155102] (enc_turtle_cpp) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking CXX executable turtle_plant\x1b[0m\n'}
+[14.244867] (-) TimerEvent: {}
+[14.306035] (enc_turtle_cpp) StdoutLine: {'line': b'[ 21%] Built target turtle_plant\n'}
+[14.307206] (enc_turtle_cpp) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[14.309594] (enc_turtle_cpp) CommandEnded: {'returncode': 2}
+[14.344997] (-) TimerEvent: {}
+[14.389812] (enc_turtle_cpp) JobEnded: {'identifier': 'enc_turtle_cpp', 'rc': 2}
+[14.391047] (-) EventReactorShutdown: {}

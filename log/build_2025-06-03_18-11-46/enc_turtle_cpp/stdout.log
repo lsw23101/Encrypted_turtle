@@ -1,0 +1,23 @@
+[  2%] Built target enc_turtle_cpp__cpp
+[  9%] Built target enc_turtle_cpp__rosidl_generator_c
+[ 14%] Built target bgv_test
+[ 24%] Built target turtle_controller
+[ 24%] Built target turtle_plant
+[ 31%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[ 39%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[ 46%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[ 53%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[ 60%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[ 68%] Built target enc_turtle_cpp
+[35m[1mScanning dependencies of target enc_turtle_plant[0m
+[35m[1mScanning dependencies of target enc_turtle_controller[0m
+[ 70%] Built target enc_turtle_cpp__py
+[ 75%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[ 80%] Built target enc_turtle_cpp__python
+[ 85%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[ 90%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[ 95%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[ 97%] [32m[1mLinking CXX executable enc_turtle_plant[0m
+[ 97%] Built target enc_turtle_plant

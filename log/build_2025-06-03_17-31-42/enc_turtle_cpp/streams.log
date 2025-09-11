@@ -1,0 +1,188 @@
+[0.018s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.039s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.056s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.056s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.173s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.178s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.287s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.289s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.413s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.442s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.443s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.521s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[2.540s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[2.598s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.622s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.700s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[4.826s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.831s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.849s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[4.849s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[4.866s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.866s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[4.866s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[4.877s] -- Found OpenFHE
+[4.877s] -- OpenFHE Version: 1.3.0
+[4.877s] -- OpenFHE Include Dirs: 
+[4.877s] -- OpenFHE Libraries: 
+[4.880s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.888s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.889s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.890s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/include>
+[4.890s] -- Configured cppcheck exclude dirs and/or files: 
+[4.891s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.891s] -- Configured cpplint exclude dirs and/or files: 
+[4.891s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.892s] -- Added test 'lint_cmake' to check CMake code style
+[4.892s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.893s] -- Added test 'uncrustify' to check C / C++ code style
+[4.893s] -- Configured uncrustify additional arguments: 
+[4.893s] -- Added test 'xmllint' to check XML markup files
+[4.898s] -- Configuring done
+[4.939s] -- Generating done
+[4.943s] -- Build files have been written to: /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp
+[4.971s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.983s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.984s] [  9%] Built target bgv_test
+[4.989s] [ 14%] Built target turtle_plant
+[4.990s] [ 19%] Built target turtle_controller
+[5.127s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_generator_c[0m
+[5.135s] [ 19%] Built target enc_turtle_cpp__cpp
+[5.139s] [ 21%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_generator_c.dir/rosidl_generator_c/enc_turtle_cpp/msg/detail/encrypted_data__functions.c.o[0m
+[5.146s] [ 26%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.146s] [ 26%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.146s] [ 29%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.182s] [ 31%] [32m[1mLinking C shared library libenc_turtle_cpp__rosidl_generator_c.so[0m
+[5.267s] [ 31%] Built target enc_turtle_cpp__rosidl_generator_c
+[5.279s] [ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.280s] [ 36%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.281s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_cpp[0m
+[5.293s] [ 39%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/enc_turtle_cpp/msg/encrypted_data__type_support.cpp.o[0m
+[5.300s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp[0m
+[5.300s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_introspection_cpp[0m
+[5.312s] [ 41%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/enc_turtle_cpp/msg/detail/dds_fastrtps/encrypted_data__type_support.cpp.o[0m
+[5.314s] [ 43%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/enc_turtle_cpp/msg/detail/encrypted_data__type_support.cpp.o[0m
+[5.433s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_c[0m
+[5.449s] [ 46%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_c.dir/rosidl_typesupport_c/enc_turtle_cpp/msg/encrypted_data__type_support.cpp.o[0m
+[5.455s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_introspection_c[0m
+[5.471s] [ 48%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/enc_turtle_cpp/msg/detail/encrypted_data__type_support.c.o[0m
+[5.488s] [ 51%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_c.so[0m
+[5.516s] [ 53%] [32m[1mLinking C shared library libenc_turtle_cpp__rosidl_typesupport_introspection_c.so[0m
+[5.530s] [ 56%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_cpp.so[0m
+[5.585s] [ 56%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[5.599s] [ 56%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[5.609s] [ 58%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_introspection_cpp.so[0m
+[5.627s] [ 58%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[5.713s] [ 60%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.721s] [ 60%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[5.834s] [ 60%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[5.844s] [ 63%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.989s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_fastrtps_c[0m
+[6.002s] [ 65%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/enc_turtle_cpp/msg/detail/encrypted_data__type_support_c.cpp.o[0m
+[6.244s] [ 68%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_fastrtps_c.so[0m
+[6.361s] [ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[6.381s] [ 68%] Built target enc_turtle_cpp
+[6.392s] [35m[1mScanning dependencies of target enc_turtle_plant[0m
+[6.393s] [35m[1mScanning dependencies of target enc_turtle_controller[0m
+[6.401s] [ 70%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.423s] [ 73%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[6.423s] [ 75%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[6.682s] [ 75%] Built target enc_turtle_cpp__py
+[6.692s] [35m[1mScanning dependencies of target enc_turtle_cpp__python[0m
+[6.707s] [ 78%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__python.dir/rosidl_generator_py/enc_turtle_cpp/msg/_encrypted_data_s.c.o[0m
+[6.803s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/libenc_turtle_cpp__python.so[0m
+[6.890s] [ 80%] Built target enc_turtle_cpp__python
+[6.901s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext[0m
+[6.901s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_c__pyext[0m
+[6.901s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext[0m
+[6.916s] [ 82%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.917s] [ 85%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.918s] [ 87%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/enc_turtle_cpp/_enc_turtle_cpp_s.ep.rosidl_typesupport_c.c.o[0m
+[6.991s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[6.993s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.005s] [ 95%] [32m[1mLinking CXX shared library rosidl_generator_py/enc_turtle_cpp/enc_turtle_cpp_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[7.071s] [ 95%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[7.071s] [ 95%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[7.112s] [ 95%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[8.360s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:8:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.360s]     8 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[8.360s]       |                                                       [01;35m[K^[m[K
+[8.360s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:9:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.361s]     9 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+[8.361s]       |                                         [01;35m[K^[m[K
+[8.361s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:10:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.361s]    10 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[8.361s]       |                                             [01;35m[K^[m[K
+[8.361s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:11:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.361s]    11 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[8.361s]       |                                                                   [01;35m[K^[m[K
+[8.361s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:12:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.361s]    12 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoParametersBase<lbcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[8.361s]       |                                                                                                                           [01;35m[K^[m[K
+[8.361s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:13:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.361s]    13 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::SchemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[8.361s]       |                                                                                                       [01;35m[K^[m[K
+[8.397s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:7:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.397s]     7 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[8.397s]       |                                                       [01;35m[K^[m[K
+[8.398s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:8:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.398s]     8 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+[8.398s]       |                                         [01;35m[K^[m[K
+[8.398s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:9:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.398s]     9 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[8.398s]       |                                             [01;35m[K^[m[K
+[8.398s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:10:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.398s]    10 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[8.398s]       |                                                                   [01;35m[K^[m[K
+[8.398s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:11:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.398s]    11 | bcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[8.398s]       |                                                      [01;35m[K^[m[K
+[8.398s] 
+[8.398s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:12:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[8.398s]    12 | hemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[8.398s]       |                                                      [01;35m[K^[m[K
+[8.398s] 
+[8.408s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In member function ‘[01m[Kvoid EncTurtlePlant::result_callback(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::SharedPtr)[m[K’:
+[8.408s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:100:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::__cxx11::basic_stringstream<char>::basic_stringstream(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_result_type&)[m[K’
+[8.408s]   100 |       std::stringstream ss(msg->data_result[01;31m[K)[m[K;
+[8.408s]       |                                            [01;31m[K^[m[K
+[8.408s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:22[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[8.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[8.408s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:1[m[K:
+[8.408s] [01m[K/usr/include/c++/9/sstream:789:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(std::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[8.408s]   789 |       [01;36m[Kbasic_stringstream[m[K(basic_stringstream&& __rhs)
+[8.408s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.408s] [01m[K/usr/include/c++/9/sstream:789:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_result_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kstd::__cxx11::basic_stringstream<char>&&[m[K’
+[8.408s]   789 |       basic_stringstream([01;36m[Kbasic_stringstream&& __rhs[m[K)
+[8.408s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[8.408s] [01m[K/usr/include/c++/9/sstream:772:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(const __string_type&, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::__string_type = std::__cxx11::basic_string<char>; std::ios_base::openmode = std::_Ios_Openmode][m[K’
+[8.408s]   772 |       [01;36m[Kbasic_stringstream[m[K(const __string_type& __str,
+[8.408s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.408s] [01m[K/usr/include/c++/9/sstream:772:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_result_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kconst __string_type&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+[8.408s]   772 |       basic_stringstream([01;36m[Kconst __string_type& __str[m[K,
+[8.408s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[8.408s] [01m[K/usr/include/c++/9/sstream:756:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::ios_base::openmode = std::_Ios_Openmode][m[K’
+[8.408s]   756 |       [01;36m[Kbasic_stringstream[m[K(ios_base::openmode __m)
+[8.408s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.408s] [01m[K/usr/include/c++/9/sstream:756:45:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_result_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kstd::ios_base::openmode[m[K’ {aka ‘[01m[Kstd::_Ios_Openmode[m[K’}
+[8.409s]   756 |       basic_stringstream([01;36m[Kios_base::openmode __m[m[K)
+[8.409s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[8.409s] [01m[K/usr/include/c++/9/sstream:741:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[8.409s]   741 |       [01;36m[Kbasic_stringstream[m[K()
+[8.409s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.409s] [01m[K/usr/include/c++/9/sstream:741:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[14.471s] make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1
+[14.471s] make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2
+[14.471s] make[1]: *** Waiting for unfinished jobs....
+[27.169s] [ 97%] [32m[1mLinking CXX executable enc_turtle_controller[0m
+[27.340s] [ 97%] Built target enc_turtle_controller
+[27.341s] make: *** [Makefile:141: all] Error 2
+[27.346s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12

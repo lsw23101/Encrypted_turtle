@@ -1,0 +1,256 @@
+[0.017s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.067s] [  2%] Built target enc_turtle_cpp__cpp
+[0.070s] [  9%] Built target enc_turtle_cpp__rosidl_generator_c
+[0.071s] [ 14%] Built target bgv_test
+[0.076s] [ 19%] Built target turtle_plant
+[0.080s] [ 24%] Built target turtle_controller
+[0.094s] [ 31%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[0.095s] [ 39%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[0.095s] [ 46%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[0.096s] [ 60%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[0.096s] [ 60%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[0.118s] [ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[0.139s] [ 68%] Built target enc_turtle_cpp
+[0.150s] [35m[1mScanning dependencies of target enc_turtle_plant[0m
+[0.150s] [35m[1mScanning dependencies of target enc_turtle_controller[0m
+[0.157s] [ 70%] Built target enc_turtle_cpp__py
+[0.181s] [ 73%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[0.181s] [ 75%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[0.183s] [ 80%] Built target enc_turtle_cpp__python
+[0.211s] [ 85%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[0.211s] [ 92%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[0.211s] [ 95%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[2.175s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:8:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.175s]     8 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[2.175s]       |                                                       [01;35m[K^[m[K
+[2.175s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:9:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.175s]     9 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+[2.175s]       |                                         [01;35m[K^[m[K
+[2.176s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:10:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.176s]    10 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[2.176s]       |                                             [01;35m[K^[m[K
+[2.176s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:11:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.176s]    11 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.176s]       |                                                                   [01;35m[K^[m[K
+[2.176s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:12:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.176s]    12 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoParametersBase<lbcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[2.176s]       |                                                                                                                           [01;35m[K^[m[K
+[2.176s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:13:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.176s]    13 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::SchemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[2.176s]       |                                                                                                       [01;35m[K^[m[K
+[2.177s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:7:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.177s]     7 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[2.177s]       |                                                       [01;35m[K^[m[K
+[2.177s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:8:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.177s]     8 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+[2.177s]       |                                         [01;35m[K^[m[K
+[2.177s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:9:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.178s]     9 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[2.178s]       |                                             [01;35m[K^[m[K
+[2.178s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:10:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.178s]    10 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+[2.178s]       |                                                                   [01;35m[K^[m[K
+[2.178s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:11:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.178s]    11 | bcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+[2.178s]       |                                                      [01;35m[K^[m[K
+[2.179s] 
+[2.179s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:12:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[2.179s]    12 | hemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+[2.179s]       |                                                      [01;35m[K^[m[K
+[2.179s] 
+[2.204s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:[m[K In member function ‘[01m[Kvoid EncTurtleController::enc_pose_callback(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.204s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:65:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::__cxx11::basic_stringstream<char>::basic_stringstream(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_x_type&)[m[K’
+[2.204s]    65 |       std::stringstream ss_x(msg->data_x[01;31m[K)[m[K;
+[2.204s]       |                                         [01;31m[K^[m[K
+[2.204s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:22[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.204s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:1[m[K:
+[2.204s] [01m[K/usr/include/c++/9/sstream:789:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(std::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[2.204s]   789 |       [01;36m[Kbasic_stringstream[m[K(basic_stringstream&& __rhs)
+[2.204s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.204s] [01m[K/usr/include/c++/9/sstream:789:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_x_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kstd::__cxx11::basic_stringstream<char>&&[m[K’
+[2.204s]   789 |       basic_stringstream([01;36m[Kbasic_stringstream&& __rhs[m[K)
+[2.205s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.205s] [01m[K/usr/include/c++/9/sstream:772:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(const __string_type&, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::__string_type = std::__cxx11::basic_string<char>; std::ios_base::openmode = std::_Ios_Openmode][m[K’
+[2.205s]   772 |       [01;36m[Kbasic_stringstream[m[K(const __string_type& __str,
+[2.205s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.205s] [01m[K/usr/include/c++/9/sstream:772:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_x_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kconst __string_type&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+[2.205s]   772 |       basic_stringstream([01;36m[Kconst __string_type& __str[m[K,
+[2.205s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.205s] [01m[K/usr/include/c++/9/sstream:756:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::ios_base::openmode = std::_Ios_Openmode][m[K’
+[2.205s]   756 |       [01;36m[Kbasic_stringstream[m[K(ios_base::openmode __m)
+[2.205s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.205s] [01m[K/usr/include/c++/9/sstream:756:45:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_x_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kstd::ios_base::openmode[m[K’ {aka ‘[01m[Kstd::_Ios_Openmode[m[K’}
+[2.205s]   756 |       basic_stringstream([01;36m[Kios_base::openmode __m[m[K)
+[2.205s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.205s] [01m[K/usr/include/c++/9/sstream:741:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[2.205s]   741 |       [01;36m[Kbasic_stringstream[m[K()
+[2.205s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.205s] [01m[K/usr/include/c++/9/sstream:741:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.205s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:66:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::__cxx11::basic_stringstream<char>::basic_stringstream(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_y_type&)[m[K’
+[2.205s]    66 |       std::stringstream ss_y(msg->data_y[01;31m[K)[m[K;
+[2.205s]       |                                         [01;31m[K^[m[K
+[2.205s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:22[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.205s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:1[m[K:
+[2.205s] [01m[K/usr/include/c++/9/sstream:789:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(std::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[2.205s]   789 |       [01;36m[Kbasic_stringstream[m[K(basic_stringstream&& __rhs)
+[2.205s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.206s] [01m[K/usr/include/c++/9/sstream:789:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_y_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kstd::__cxx11::basic_stringstream<char>&&[m[K’
+[2.206s]   789 |       basic_stringstream([01;36m[Kbasic_stringstream&& __rhs[m[K)
+[2.206s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.206s] [01m[K/usr/include/c++/9/sstream:772:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(const __string_type&, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::__string_type = std::__cxx11::basic_string<char>; std::ios_base::openmode = std::_Ios_Openmode][m[K’
+[2.206s]   772 |       [01;36m[Kbasic_stringstream[m[K(const __string_type& __str,
+[2.206s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.206s] [01m[K/usr/include/c++/9/sstream:772:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_y_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kconst __string_type&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+[2.206s]   772 |       basic_stringstream([01;36m[Kconst __string_type& __str[m[K,
+[2.206s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.206s] [01m[K/usr/include/c++/9/sstream:756:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::ios_base::openmode = std::_Ios_Openmode][m[K’
+[2.206s]   756 |       [01;36m[Kbasic_stringstream[m[K(ios_base::openmode __m)
+[2.206s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.206s] [01m[K/usr/include/c++/9/sstream:756:45:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_y_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kstd::ios_base::openmode[m[K’ {aka ‘[01m[Kstd::_Ios_Openmode[m[K’}
+[2.206s]   756 |       basic_stringstream([01;36m[Kios_base::openmode __m[m[K)
+[2.206s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.206s] [01m[K/usr/include/c++/9/sstream:741:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[2.206s]   741 |       [01;36m[Kbasic_stringstream[m[K()
+[2.206s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.206s] [01m[K/usr/include/c++/9/sstream:741:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.214s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In member function ‘[01m[Kvoid EncTurtlePlant::pose_callback(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.214s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:88:26:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_x_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} and ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’})
+[2.214s]    88 |         msg_out.data_x = [01;31m[Kx_str[m[K;
+[2.214s]       |                          [01;31m[K^~~~~[m[K
+[2.214s] In file included from [01m[K/usr/include/c++/9/vector:72[m[K,
+[2.214s]                  from [01m[K/usr/include/c++/9/functional:62[m[K,
+[2.214s]                  from [01m[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13[m[K,
+[2.214s]                  from [01m[K/usr/include/c++/9/algorithm:71[m[K,
+[2.214s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:18[m[K,
+[2.214s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.214s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.214s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.214s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:1[m[K:
+[2.214s] [01m[K/usr/include/c++/9/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[2.214s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[2.214s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.214s] [01m[K/usr/include/c++/9/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::vector<unsigned char, std::allocator<unsigned char> >&[m[K’
+[2.214s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[2.215s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.215s] In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+[2.215s]                  from [01m[K/usr/include/c++/9/functional:62[m[K,
+[2.215s]                  from [01m[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13[m[K,
+[2.215s]                  from [01m[K/usr/include/c++/9/algorithm:71[m[K,
+[2.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:18[m[K,
+[2.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.215s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:1[m[K:
+[2.215s] [01m[K/usr/include/c++/9/bits/stl_vector.h:706:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[2.215s]   706 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[2.215s]       |       [01;36m[K^~~~~~~~[m[K
+[2.215s] [01m[K/usr/include/c++/9/bits/stl_vector.h:706:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >&&[m[K’
+[2.215s]   706 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[2.215s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[2.215s] [01m[K/usr/include/c++/9/bits/stl_vector.h:727:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[2.215s]   727 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[2.215s]       |       [01;36m[K^~~~~~~~[m[K
+[2.215s] [01m[K/usr/include/c++/9/bits/stl_vector.h:727:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kstd::initializer_list<unsigned char>[m[K’
+[2.215s]   727 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[2.215s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.215s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:89:26:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_y_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} and ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’})
+[2.215s]    89 |         msg_out.data_y = [01;31m[Ky_str[m[K;
+[2.215s]       |                          [01;31m[K^~~~~[m[K
+[2.215s] In file included from [01m[K/usr/include/c++/9/vector:72[m[K,
+[2.215s]                  from [01m[K/usr/include/c++/9/functional:62[m[K,
+[2.215s]                  from [01m[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13[m[K,
+[2.215s]                  from [01m[K/usr/include/c++/9/algorithm:71[m[K,
+[2.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:18[m[K,
+[2.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.215s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.216s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.216s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:1[m[K:
+[2.216s] [01m[K/usr/include/c++/9/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[2.216s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[2.216s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.216s] [01m[K/usr/include/c++/9/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst std::vector<unsigned char, std::allocator<unsigned char> >&[m[K’
+[2.216s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[2.216s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.216s] In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+[2.216s]                  from [01m[K/usr/include/c++/9/functional:62[m[K,
+[2.216s]                  from [01m[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13[m[K,
+[2.216s]                  from [01m[K/usr/include/c++/9/algorithm:71[m[K,
+[2.216s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:18[m[K,
+[2.216s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.216s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.216s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.216s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:1[m[K:
+[2.216s] [01m[K/usr/include/c++/9/bits/stl_vector.h:706:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[2.216s]   706 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[2.216s]       |       [01;36m[K^~~~~~~~[m[K
+[2.216s] [01m[K/usr/include/c++/9/bits/stl_vector.h:706:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >&&[m[K’
+[2.216s]   706 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[2.216s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[2.216s] [01m[K/usr/include/c++/9/bits/stl_vector.h:727:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>][m[K’
+[2.216s]   727 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[2.216s]       |       [01;36m[K^~~~~~~~[m[K
+[2.216s] [01m[K/usr/include/c++/9/bits/stl_vector.h:727:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kstd::initializer_list<unsigned char>[m[K’
+[2.217s]   727 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[2.217s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.221s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In member function ‘[01m[Kvoid EncTurtlePlant::result_callback(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.221s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:102:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::__cxx11::basic_stringstream<char>::basic_stringstream(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_result_type&)[m[K’
+[2.221s]   102 |       std::stringstream ss(msg->data_result[01;31m[K)[m[K;
+[2.221s]       |                                            [01;31m[K^[m[K
+[2.221s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:22[m[K,
+[2.221s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.221s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.221s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.221s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.221s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.221s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.221s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.222s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.222s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.222s]                  from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:1[m[K:
+[2.222s] [01m[K/usr/include/c++/9/sstream:789:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(std::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[2.222s]   789 |       [01;36m[Kbasic_stringstream[m[K(basic_stringstream&& __rhs)
+[2.222s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.222s] [01m[K/usr/include/c++/9/sstream:789:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_result_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kstd::__cxx11::basic_stringstream<char>&&[m[K’
+[2.222s]   789 |       basic_stringstream([01;36m[Kbasic_stringstream&& __rhs[m[K)
+[2.222s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.222s] [01m[K/usr/include/c++/9/sstream:772:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(const __string_type&, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::__string_type = std::__cxx11::basic_string<char>; std::ios_base::openmode = std::_Ios_Openmode][m[K’
+[2.222s]   772 |       [01;36m[Kbasic_stringstream[m[K(const __string_type& __str,
+[2.222s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.222s] [01m[K/usr/include/c++/9/sstream:772:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_result_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kconst __string_type&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+[2.222s]   772 |       basic_stringstream([01;36m[Kconst __string_type& __str[m[K,
+[2.222s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[2.222s] [01m[K/usr/include/c++/9/sstream:756:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream(std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::ios_base::openmode = std::_Ios_Openmode][m[K’
+[2.222s]   756 |       [01;36m[Kbasic_stringstream[m[K(ios_base::openmode __m)
+[2.222s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.222s] [01m[K/usr/include/c++/9/sstream:756:45:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kenc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::_data_result_type[m[K’ {aka ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> >[m[K’} to ‘[01m[Kstd::ios_base::openmode[m[K’ {aka ‘[01m[Kstd::_Ios_Openmode[m[K’}
+[2.222s]   756 |       basic_stringstream([01;36m[Kios_base::openmode __m[m[K)
+[2.222s]       |                          [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.222s] [01m[K/usr/include/c++/9/sstream:741:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_stringstream<_CharT, _Traits, _Alloc>::basic_stringstream() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[2.222s]   741 |       [01;36m[Kbasic_stringstream[m[K()
+[2.222s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.222s] [01m[K/usr/include/c++/9/sstream:741:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[7.800s] make[2]: *** [CMakeFiles/enc_turtle_controller.dir/build.make:63: CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o] Error 1
+[7.800s] make[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/enc_turtle_controller.dir/all] Error 2
+[7.800s] make[1]: *** Waiting for unfinished jobs....
+[8.109s] make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1
+[8.110s] make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2
+[8.110s] make: *** [Makefile:141: all] Error 2
+[8.114s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12

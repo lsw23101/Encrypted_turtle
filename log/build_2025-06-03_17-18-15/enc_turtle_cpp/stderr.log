@@ -1,0 +1,20 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:[m[K In constructor ‘[01m[KEncTurtleController::EncTurtleController()[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:34:[m[K [01;31m[Kerror: [m[K‘[01m[KENCRYPTION[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+   21 |     cc->Enable(PKESchemeFeature::[01;31m[KENCRYPTION[m[K |
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:33:[m[K [01;31m[Kerror: [m[K‘[01m[KSHE[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+   22 |               PKESchemeFeature::[01;31m[KSHE[m[K |
+      |                                 [01;31m[K^~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In constructor ‘[01m[KEncTurtlePlant::EncTurtlePlant()[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:34:[m[K [01;31m[Kerror: [m[K‘[01m[KENCRYPTION[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+   22 |     cc->Enable(PKESchemeFeature::[01;31m[KENCRYPTION[m[K |
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:33:[m[K [01;31m[Kerror: [m[K‘[01m[KSHE[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+   23 |               PKESchemeFeature::[01;31m[KSHE[m[K |
+      |                                 [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/enc_turtle_controller.dir/build.make:63: CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/enc_turtle_controller.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

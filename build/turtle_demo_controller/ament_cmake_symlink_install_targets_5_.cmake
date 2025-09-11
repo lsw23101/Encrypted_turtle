@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller/rosidl_generator_py/turtle_demo_controller/libturtle_demo_controller__python.so" "TARGETS" "turtle_demo_controller__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

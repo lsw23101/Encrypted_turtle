@@ -1,0 +1,500 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:9:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+    9 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+      |                                                       [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:10:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   10 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+      |                                         [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:11:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   11 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+      |                                             [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:12:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   12 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                   [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:13:65:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   13 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                 [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPCryptoParameters[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KCryptoParametersRNS[m[K’?
+   14 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPCryptoParameters[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   14 | _TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                      [01;31m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   14 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPCryptoParameters[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KCryptoParametersRNS[m[K’?
+   14 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPCryptoParameters[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   14 | _TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                      [01;31m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   14 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:14:71:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   14 | YPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPublicKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPublicKeyImpl[m[K’?
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPPublicKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   15 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPublicKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPublicKeyImpl[m[K’?
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPPublicKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   15 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:15:68:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                    [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPrivateKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPrivateKeyImpl[m[K’?
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPPrivateKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   16 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPrivateKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPrivateKeyImpl[m[K’?
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPPrivateKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   16 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:16:69:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                     [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:18:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   18 | bcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:19:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   19 | hemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:92:[m[K [01;31m[Kerror: [m[K‘[01m[KLPCryptoParameters[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KCryptoParametersRNS[m[K’?
+   20 | bcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::[01;31m[KLPCryptoParameters[m[K<lbcrypto::DCRTPoly>);
+      |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:129:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   20 | oly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                      [01;31m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   20 | [01;31m[KCEREAL_REGISTER_POLYMORPHIC_RELATION[m[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:20:131:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   20 | y>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:92:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPublicKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPublicKeyImpl[m[K’?
+   21 | bcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::[01;31m[KLPPublicKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                                      [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:126:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   21 | RTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                      [01;31m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   21 | [01;31m[KCEREAL_REGISTER_POLYMORPHIC_RELATION[m[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:128:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   21 | Poly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:3[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:92:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPrivateKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPrivateKeyImpl[m[K’?
+   22 | bcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::[01;31m[KLPPrivateKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:127:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   22 | TPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                      [01;31m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   22 | [01;31m[KCEREAL_REGISTER_POLYMORPHIC_RELATION[m[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:129:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   22 | oly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:10:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   10 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+      |                                                       [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:11:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   11 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+      |                                         [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:12:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   12 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+      |                                             [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:13:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   13 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                   [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:14:65:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   14 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                 [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPCryptoParameters[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KCryptoParametersRNS[m[K’?
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPCryptoParameters[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                     [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   15 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPCryptoParameters[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KCryptoParametersRNS[m[K’?
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPCryptoParameters[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                     [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   15 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:71:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   15 | CEREAL_REGISTER_TYPE(lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                       [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPublicKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPublicKeyImpl[m[K’?
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPPublicKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   16 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPublicKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPublicKeyImpl[m[K’?
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPPublicKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   16 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:16:68:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   16 | CEREAL_REGISTER_TYPE(lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                    [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPrivateKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPrivateKeyImpl[m[K’?
+   17 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPPrivateKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   17 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   17 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/openfhe/cereal/types/polymorphic.hpp:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:32:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPrivateKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPrivateKeyImpl[m[K’?
+   17 | CEREAL_REGISTER_TYPE(lbcrypto::[01;31m[KLPPrivateKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   17 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                   [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   17 | [01;31m[KCEREAL_REGISTER_TYPE[m[K(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:17:69:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   17 | CEREAL_REGISTER_TYPE(lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                     [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:19:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   19 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoParametersBase<lbcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+      |                                                                                                                           [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:20:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   20 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::SchemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+      |                                                                                                       [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:92:[m[K [01;31m[Kerror: [m[K‘[01m[KLPCryptoParameters[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KCryptoParametersRNS[m[K’?
+   21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::[01;31m[KLPCryptoParameters[m[K<lbcrypto::DCRTPoly>);
+      |                                                                                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:129:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                                                                                 [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   21 | [01;31m[KCEREAL_REGISTER_POLYMORPHIC_RELATION[m[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:21:131:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   21 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPCryptoParameters<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                                                                                   [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:92:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPublicKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPublicKeyImpl[m[K’?
+   22 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::[01;31m[KLPPublicKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                                                                            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:126:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   22 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                                                                              [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   22 | [01;31m[KCEREAL_REGISTER_POLYMORPHIC_RELATION[m[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:128:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   22 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPublicKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                                                                                [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/openfhe/core/utils/serializable.h:61[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/ubintdyn.h:51[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/mubintvecdyn.h:43[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintdyn/backenddyn.h:44[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/hal/bigintbackend.h:38[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/math/math-hal.h:48[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/elemparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/default/ilparams.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/hal/lat-backend.h:49[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/lattice/lat-hal.h:35[m[K,
+                 from [01m[K/usr/local/include/openfhe/core/openfhecore.h:39[m[K,
+                 from [01m[K/usr/local/include/openfhe/pke/openfhe.h:40[m[K,
+                 from [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:4[m[K:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:92:[m[K [01;31m[Kerror: [m[K‘[01m[KLPPrivateKeyImpl[m[K’ is not a member of ‘[01m[Klbcrypto[m[K’; did you mean ‘[01m[KLWEPrivateKeyImpl[m[K’?
+   23 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::[01;31m[KLPPrivateKeyImpl[m[K<lbcrypto::DCRTPoly>);
+      |                                                                                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:127:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   23 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly[01;31m[K>[m[K);
+      |                                                                                                                               [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K>[m[K’ token
+   23 | [01;31m[KCEREAL_REGISTER_POLYMORPHIC_RELATION[m[K(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>);
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:129:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   23 | CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoObject<lbcrypto::DCRTPoly>, lbcrypto::LPPrivateKeyImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                                                                                 [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/enc_turtle_controller.dir/build.make:63: CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/enc_turtle_controller.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

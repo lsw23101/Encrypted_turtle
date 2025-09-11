@@ -1,0 +1,125 @@
+![image](https://github.com/user-attachments/assets/8ac3d6a4-9617-4b49-b13f-b977f1c6da56)
+
+<rqt_graph >
+
+# 현재 상황
+
+암호문을 연산하기 위한 evalkey가
+
+plant에서 암호화를 하기 위해 만들었던 컨텍스트와
+controller에서 생성한 컨텍스트가 다르다는 이유로 덧셈 연산만 수행할 수 있는 오류
+
+따라서 OpenFHE는 evalkey를 플랜트가 던져줘야될 것으로 보임...
+
+현재 : 
+암호화 된 터틀봇 1의 x,y 값을 보냄 => 컨트롤러가 x+y 계산 후 전송 => 플랜트가 복호화 후 프린트
+
+암호화 -> cereal 라이브러리를 통한 직렬화 -> string msg 을 통해 통신 
+
+이때 xml 파일로 QoS 설정을 통해 fast DDS의 데이터 max size를 2MB로 변경하여 사용
+(현재 P = 65537 일때, N = 16384 (2^14) 정도이며 이때 데이터 크기는 1050103 약 1MB 사이즈)
+
+# install
+```
+$ mkdir my_ws/src  
+$ cd ~/my_ws/src  
+$ git clone https://github.com/lsw23101/ROS2_turtlesim_ws
+
+colcon build --symlink-install
+```
+(git pull을 하면 폴더가 생성 x)
+
+
+# Requirement
+ros2 (현:foxy)
+turtlesim package
+
+# Usage
+1. 배쉬 실행
+```
+source /opt/ros/foxy/setup.bash
+source install/setup.bash
+
+OR 단축어 설정 해놨으면
+
+rosfoxy 
+```
+
+2. 런치파일 실행
+   
+```
+ros2 launch enc_turtle_cpp enc_turtle_demo.launch.py
+```
+런치파일 실행하면 teleop_twist_keyboard 에서 터틀봇 1 조종 가능
+
+
+# Reference
+
+https://github.com/roboticvedant/ROS2_turtlesim_PID_demo
+
+
+=========================================================================
+
+# git 다루기
+https://shortcuts.tistory.com/8
+
+# OpenFHE의 scheme 테스트, 디버그 메모...
+
+bgv 테스트 용
+
+```
+ cd ~/ROS2_turtlesim_ws && colcon build --packages-select enc_turtle_cpp && source install/setup.bash && ros2 run enc_turtle_cpp bgv_test
+
+```
+
+(암호 보안 레벨 비설정 가능)
+openfhecore/include/lattice/params.h
+```
+parameters.SetSecurityLevel(SecurityLevel::HEStd_NotSet); // 자동 결정 방지
+```
+
+# open fhe scheme 속도
+```
+// N사이즈 : 2^14 16384 일때 뎁스: 2
+
+sangwon@STEIECDSL-P04:~/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp$ ./bgv_test
+========== BGV 암호화 성능 테스트 시작 ==========
+컨텍스트 생성 시간: 11.551 ms
+키 생성 시간: 74.051 ms
+
+암호화 시간 (두 개의 값): 15.028 ms
+직렬화 시간 (두 개의 값): 3.508 ms
+직렬화된 데이터 크기: 1050103 bytes
+
+역직렬화 시간 (두 개의 값): 5.607 ms
+복호화 시간 (두 개의 값): 4.623 ms
+
+복호화된 결과:
+X: 5544
+Y: 5544
+
+========== 성능 요약 ==========
+컨텍스트 생성: 11.551 ms (10.1%)
+키 생성: 74.1 ms (64.7%)
+암호화: 15.0 ms (13.1%)
+직렬화: 3.5 ms (3.1%)
+역직렬화: 5.6 ms (4.9%)
+복호화: 4.6 ms (4.0%)
+총 시간: 114.4 ms (100%)
+==============================
+
+```
+
+
+// N 사이즈가 2^13 일때 뎁스: 1
+
+![image](https://github.com/user-attachments/assets/931f0fdd-07e8-4626-a2b3-fceb73d74fc5)
+
+
+// N 사이즈 2^12 일때 뎁스: 0 일때 65537 플레인 텍스트 크기에 대해서 이게 마지노선
+
+
+![image](https://github.com/user-attachments/assets/780c3537-c846-4351-b90b-a6b4ba0f4394)
+
+// 
+****

@@ -1,0 +1,239 @@
+[0.308s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.308s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ab73ec54c10>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ab73ec54c10>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ab73eb73a30>)
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.469s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sangwon/ROS2_turtlesim_ws'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/enc_turtle_cpp) by extension 'ros'
+[0.482s] DEBUG:colcon.colcon_core.package_identification:Package 'src/enc_turtle_cpp' with type 'ros.ament_cmake' and name 'enc_turtle_cpp'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extension 'ignore'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extension 'ignore_ament_install'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extensions ['colcon_pkg']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extension 'colcon_pkg'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extensions ['colcon_meta']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extension 'colcon_meta'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extensions ['ros']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtle_demo_controller) by extension 'ros'
+[0.483s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtle_demo_controller' with type 'ros.ament_cmake' and name 'turtle_demo_controller'
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.483s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.503s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.503s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.506s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/sangwon/ROS2_turtlesim_ws/install
+[0.508s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 308 installed packages in /opt/ros/foxy
+[0.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'cmake_target' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'enc_turtle_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.612s] DEBUG:colcon.colcon_core.verb:Building package 'enc_turtle_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp', 'merge_install': False, 'path': '/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp', 'symlink_install': True, 'test_result_base': None}
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'cmake_args' from command line to 'None'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'cmake_target' from command line to 'None'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'turtle_demo_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.613s] DEBUG:colcon.colcon_core.verb:Building package 'turtle_demo_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller', 'merge_install': False, 'path': '/home/sangwon/ROS2_turtlesim_ws/src/turtle_demo_controller', 'symlink_install': True, 'test_result_base': None}
+[0.613s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.614s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.614s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp' with build type 'ament_cmake'
+[0.614s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp'
+[0.618s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.618s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.618s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.623s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sangwon/ROS2_turtlesim_ws/src/turtle_demo_controller' with build type 'ament_cmake'
+[0.623s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sangwon/ROS2_turtlesim_ws/src/turtle_demo_controller'
+[0.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller -- -j12 -l12
+[0.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller -- -j12 -l12
+[0.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller
+[1.107s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtle_demo_controller)
+[1.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller' for CMake module files
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller' for CMake config files
+[1.114s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_demo_controller', 'cmake_prefix_path')
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/cmake_prefix_path.ps1'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/cmake_prefix_path.dsv'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/cmake_prefix_path.sh'
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib'
+[1.116s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_demo_controller', 'ld_library_path_lib')
+[1.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/ld_library_path_lib.ps1'
+[1.117s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/ld_library_path_lib.dsv'
+[1.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/ld_library_path_lib.sh'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/bin'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/pkgconfig/turtle_demo_controller.pc'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages'
+[1.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_demo_controller', 'pythonpath')
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/pythonpath.ps1'
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/pythonpath.dsv'
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/pythonpath.sh'
+[1.119s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/bin'
+[1.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.ps1'
+[1.120s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.dsv'
+[1.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.sh'
+[1.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.bash'
+[1.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.zsh'
+[1.122s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/colcon-core/packages/turtle_demo_controller)
+[1.186s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtle_demo_controller)
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller' for CMake module files
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller' for CMake config files
+[1.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_demo_controller', 'cmake_prefix_path')
+[1.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/cmake_prefix_path.ps1'
+[1.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/cmake_prefix_path.dsv'
+[1.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/cmake_prefix_path.sh'
+[1.189s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib'
+[1.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_demo_controller', 'ld_library_path_lib')
+[1.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/ld_library_path_lib.ps1'
+[1.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/ld_library_path_lib.dsv'
+[1.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/ld_library_path_lib.sh'
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/bin'
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/pkgconfig/turtle_demo_controller.pc'
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/lib/python3.8/site-packages'
+[1.190s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtle_demo_controller', 'pythonpath')
+[1.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/pythonpath.ps1'
+[1.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/pythonpath.dsv'
+[1.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/hook/pythonpath.sh'
+[1.191s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/bin'
+[1.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.ps1'
+[1.192s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.dsv'
+[1.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.sh'
+[1.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.bash'
+[1.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/turtle_demo_controller/package.zsh'
+[1.193s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller/share/colcon-core/packages/turtle_demo_controller)
+[22.099s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[22.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp
+[22.265s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(enc_turtle_cpp)
+[22.265s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp' for CMake module files
+[22.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp
+[22.267s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp' for CMake config files
+[22.268s] Level 1:colcon.colcon_core.shell:create_environment_hook('enc_turtle_cpp', 'cmake_prefix_path')
+[22.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/cmake_prefix_path.ps1'
+[22.269s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/cmake_prefix_path.dsv'
+[22.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/cmake_prefix_path.sh'
+[22.269s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib'
+[22.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('enc_turtle_cpp', 'ld_library_path_lib')
+[22.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/ld_library_path_lib.ps1'
+[22.270s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/ld_library_path_lib.dsv'
+[22.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/ld_library_path_lib.sh'
+[22.270s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/bin'
+[22.271s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/pkgconfig/enc_turtle_cpp.pc'
+[22.271s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages'
+[22.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('enc_turtle_cpp', 'pythonpath')
+[22.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/pythonpath.ps1'
+[22.271s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/pythonpath.dsv'
+[22.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/pythonpath.sh'
+[22.272s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/bin'
+[22.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.ps1'
+[22.272s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.dsv'
+[22.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.sh'
+[22.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.bash'
+[22.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.zsh'
+[22.273s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/colcon-core/packages/enc_turtle_cpp)
+[22.355s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(enc_turtle_cpp)
+[22.355s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp' for CMake module files
+[22.355s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp' for CMake config files
+[22.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('enc_turtle_cpp', 'cmake_prefix_path')
+[22.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/cmake_prefix_path.ps1'
+[22.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/cmake_prefix_path.dsv'
+[22.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/cmake_prefix_path.sh'
+[22.358s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib'
+[22.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('enc_turtle_cpp', 'ld_library_path_lib')
+[22.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/ld_library_path_lib.ps1'
+[22.358s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/ld_library_path_lib.dsv'
+[22.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/ld_library_path_lib.sh'
+[22.359s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/bin'
+[22.359s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/pkgconfig/enc_turtle_cpp.pc'
+[22.359s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/python3.8/site-packages'
+[22.359s] Level 1:colcon.colcon_core.shell:create_environment_hook('enc_turtle_cpp', 'pythonpath')
+[22.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/pythonpath.ps1'
+[22.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/pythonpath.dsv'
+[22.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/hook/pythonpath.sh'
+[22.360s] Level 1:colcon.colcon_core.environment:checking '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/bin'
+[22.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.ps1'
+[22.361s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.dsv'
+[22.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.sh'
+[22.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.bash'
+[22.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/enc_turtle_cpp/package.zsh'
+[22.362s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sangwon/ROS2_turtlesim_ws/install/enc_turtle_cpp/share/colcon-core/packages/enc_turtle_cpp)
+[22.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[22.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[22.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[22.364s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[22.394s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[22.394s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[22.394s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[22.394s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[22.396s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[22.396s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[22.396s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sangwon/ROS2_turtlesim_ws/install/local_setup.ps1'
+[22.397s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sangwon/ROS2_turtlesim_ws/install/_local_setup_util_ps1.py'
+[22.398s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sangwon/ROS2_turtlesim_ws/install/setup.ps1'
+[22.399s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sangwon/ROS2_turtlesim_ws/install/local_setup.sh'
+[22.399s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sangwon/ROS2_turtlesim_ws/install/_local_setup_util_sh.py'
+[22.399s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sangwon/ROS2_turtlesim_ws/install/setup.sh'
+[22.400s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sangwon/ROS2_turtlesim_ws/install/local_setup.bash'
+[22.401s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sangwon/ROS2_turtlesim_ws/install/setup.bash'
+[22.402s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sangwon/ROS2_turtlesim_ws/install/local_setup.zsh'
+[22.402s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sangwon/ROS2_turtlesim_ws/install/setup.zsh'

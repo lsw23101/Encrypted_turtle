@@ -1,0 +1,69 @@
+[  7%] Built target enc_turtle_cpp__rosidl_generator_c
+[  9%] Built target enc_turtle_cpp__cpp
+[ 14%] Built target bgv_test
+[ 19%] Built target turtle_controller
+[ 24%] Built target turtle_plant
+[ 31%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[ 39%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[ 46%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[ 53%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[ 60%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[ 68%] Built target enc_turtle_cpp
+[35m[1mScanning dependencies of target enc_turtle_plant[0m
+[ 70%] Built target enc_turtle_cpp__py
+[ 75%] Built target enc_turtle_controller
+[ 78%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[ 82%] Built target enc_turtle_cpp__python
+[ 87%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:10:55:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   10 | CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+      |                                                       [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:11:41:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   11 | CEREAL_REGISTER_TYPE(lbcrypto::DCRTPoly)[01;35m[K;[m[K
+      |                                         [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:12:45:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   12 | CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+      |                                             [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:13:67:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   13 | CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)[01;35m[K;[m[K
+      |                                                                   [01;35m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:14:123:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   14 | bcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:15:103:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   15 | hemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)[01;35m[K;[m[K
+      |                                                      [01;35m[K^[m[K
+
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:164:22:[m[K [01;31m[Kerror: [m[K‘[01m[KChunkCollector[m[K’ was not declared in this scope
+  164 |   std::map<uint64_t, [01;31m[KChunkCollector[m[K> chunk_collectors_;
+      |                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:164:36:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  164 |   std::map<uint64_t, ChunkCollector[01;31m[K>[m[K chunk_collectors_;
+      |                                    [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:164:36:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In member function ‘[01m[Kvoid EncTurtlePlant::result_callback(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:121:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kfind[m[K’ in ‘[01m[K((EncTurtlePlant*)this)->EncTurtlePlant::chunk_collectors_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  121 |     if (chunk_collectors_.[01;31m[Kfind[m[K(key) == chunk_collectors_.end()) {
+      |                           [01;31m[K^~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:121:58:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((EncTurtlePlant*)this)->EncTurtlePlant::chunk_collectors_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  121 |     if (chunk_collectors_.find(key) == chunk_collectors_.[01;31m[Kend[m[K()) {
+      |                                                          [01;31m[K^~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:122:28:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[uint64_t {aka long unsigned int}][m[K’ for array subscript
+  122 |       chunk_collectors_[key[01;31m[K][m[K.chunks.resize(msg->total_chunks);
+      |                            [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:123:28:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[uint64_t {aka long unsigned int}][m[K’ for array subscript
+  123 |       chunk_collectors_[key[01;31m[K][m[K.total_chunks = msg->total_chunks;
+      |                            [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:126:44:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[uint64_t {aka long unsigned int}][m[K’ for array subscript
+  126 |     auto& collector = chunk_collectors_[key[01;31m[K][m[K;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:153:25:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kerase[m[K’ in ‘[01m[K((EncTurtlePlant*)this)->EncTurtlePlant::chunk_collectors_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  153 |       chunk_collectors_.[01;31m[Kerase[m[K(key);
+      |                         [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

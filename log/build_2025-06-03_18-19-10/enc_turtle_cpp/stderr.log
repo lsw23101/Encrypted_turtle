@@ -1,0 +1,14 @@
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:[m[K In member function ‘[01m[Kvoid EncTurtleController::process_complete_data(const string&, const string&)[m[K’:
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:147:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kchunk_id[m[K’
+  147 |           msg_out.[01;31m[Kchunk_id[m[K = i;
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:148:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktotal_chunks[m[K’
+  148 |           msg_out.[01;31m[Ktotal_chunks[m[K = total_chunks;
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:154:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kis_last[m[K’
+  154 |           msg_out.[01;31m[Kis_last[m[K = (i == total_chunks - 1);
+      |                   [01;31m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/enc_turtle_controller.dir/build.make:63: CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/enc_turtle_controller.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

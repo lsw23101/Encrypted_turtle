@@ -1,0 +1,40 @@
+[0.020s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.074s] [  6%] Built target enc_turtle_cpp__rosidl_generator_c
+[0.074s] [  8%] Built target enc_turtle_cpp__cpp
+[0.076s] [ 13%] Built target bgv_test
+[0.081s] [ 17%] Built target turtle_controller
+[0.082s] [ 22%] Built target turtle_plant
+[0.098s] [ 28%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[0.098s] [ 35%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[0.099s] [ 42%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[0.099s] [ 48%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[0.102s] [ 55%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[0.127s] [ 62%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[0.147s] [ 62%] Built target enc_turtle_cpp
+[0.159s] [35m[1mScanning dependencies of target test_plant[0m
+[0.160s] [35m[1mScanning dependencies of target test_controller[0m
+[0.169s] [ 64%] Built target enc_turtle_cpp__py
+[0.178s] [ 68%] Built target enc_turtle_controller
+[0.180s] [ 73%] Built target enc_turtle_plant
+[0.189s] [ 75%] [32mBuilding CXX object CMakeFiles/test_plant.dir/src/test_plant.cpp.o[0m
+[0.193s] [ 77%] [32mBuilding CXX object CMakeFiles/test_controller.dir/src/test_controller.cpp.o[0m
+[0.194s] [ 82%] Built target enc_turtle_cpp__python
+[0.223s] [ 86%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[0.223s] [ 91%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[0.224s] [ 95%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[2.195s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_controller.cpp:[m[K In member function ‘[01m[Kvoid TestController::encrypted_callback(enc_turtle_cpp::msg::EncryptedData_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.195s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_controller.cpp:67:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class lbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >[m[K’ {aka ‘[01m[Kclass lbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >[m[K’} has no member named ‘[01m[KInsertPublicKey[m[K’
+[2.195s]    67 |         cc->[01;31m[KInsertPublicKey[m[K(pubKey);
+[2.195s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.207s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:[m[K In constructor ‘[01m[KTestPlant::TestPlant()[m[K’:
+[2.207s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/test_plant.cpp:73:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class lbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >[m[K’ {aka ‘[01m[Kclass lbcrypto::CryptoContextImpl<lbcrypto::DCRTPolyImpl<bigintdyn::mubintvec<bigintdyn::ubint<long unsigned int> > > >[m[K’} has no member named ‘[01m[KGetEvalMultKey[m[K’; did you mean ‘[01m[KInsertEvalMultKey[m[K’?
+[2.207s]    73 |         Serial::Serialize(cc->[01;31m[KGetEvalMultKey[m[K(), ss_evalkey, SerType::BINARY);
+[2.207s]       |                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.207s]       |                               [32m[KInsertEvalMultKey[m[K
+[7.983s] make[2]: *** [CMakeFiles/test_controller.dir/build.make:63: CMakeFiles/test_controller.dir/src/test_controller.cpp.o] Error 1
+[7.983s] make[1]: *** [CMakeFiles/Makefile2:483: CMakeFiles/test_controller.dir/all] Error 2
+[7.983s] make[1]: *** Waiting for unfinished jobs....
+[8.034s] make[2]: *** [CMakeFiles/test_plant.dir/build.make:63: CMakeFiles/test_plant.dir/src/test_plant.cpp.o] Error 1
+[8.034s] make[1]: *** [CMakeFiles/Makefile2:650: CMakeFiles/test_plant.dir/all] Error 2
+[8.034s] make: *** [Makefile:141: all] Error 2
+[8.038s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12

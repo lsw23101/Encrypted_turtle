@@ -1,0 +1,41 @@
+[0.015s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID: /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.059s] [35m[1mScanning dependencies of target bgv_test[0m
+[0.071s] [  4%] Built target enc_turtle_cpp__cpp
+[0.071s] [  4%] [32mBuilding CXX object CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o[0m
+[0.071s] [ 12%] Built target enc_turtle_cpp__rosidl_generator_c
+[0.081s] [ 21%] Built target turtle_plant
+[0.081s] [ 21%] Built target turtle_controller
+[0.082s] [ 24%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.082s] [ 26%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.083s] [ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.083s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.083s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.113s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/bgv_test.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kopenfhe/core/lattice/lattice-core.h: No such file or directory
+[0.114s]     2 | #include [01;31m[K<openfhe/core/lattice/lattice-core.h>[m[K
+[0.114s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.114s] compilation terminated.
+[0.117s] make[2]: *** [CMakeFiles/bgv_test.dir/build.make:63: CMakeFiles/bgv_test.dir/src/bgv_test.cpp.o] Error 1
+[0.117s] make[1]: *** [CMakeFiles/Makefile2:131: CMakeFiles/bgv_test.dir/all] Error 2
+[0.117s] make[1]: *** Waiting for unfinished jobs....
+[0.244s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_cpp[0m
+[0.245s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_introspection_c[0m
+[0.255s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_introspection_cpp[0m
+[0.257s] [ 36%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/enc_turtle_cpp/msg/encrypted_data__type_support.cpp.o[0m
+[0.257s] [ 39%] [32mBuilding C object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/enc_turtle_cpp/msg/detail/encrypted_data__type_support.c.o[0m
+[0.260s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_c[0m
+[0.269s] [ 41%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/enc_turtle_cpp/msg/detail/encrypted_data__type_support.cpp.o[0m
+[0.269s] [35m[1mScanning dependencies of target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp[0m
+[0.273s] [ 43%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_c.dir/rosidl_typesupport_c/enc_turtle_cpp/msg/encrypted_data__type_support.cpp.o[0m
+[0.286s] [ 46%] [32mBuilding CXX object CMakeFiles/enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/enc_turtle_cpp/msg/detail/dds_fastrtps/encrypted_data__type_support.cpp.o[0m
+[0.292s] [ 48%] [32m[1mLinking C shared library libenc_turtle_cpp__rosidl_typesupport_introspection_c.so[0m
+[0.304s] [ 51%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_c.so[0m
+[0.377s] [ 51%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[0.397s] [ 51%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[0.482s] [ 56%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_introspection_cpp.so[0m
+[0.482s] [ 56%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_cpp.so[0m
+[0.557s] [ 56%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[0.577s] [ 56%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[0.617s] [ 58%] [32m[1mLinking CXX shared library libenc_turtle_cpp__rosidl_typesupport_fastrtps_cpp.so[0m
+[0.743s] [ 58%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[0.744s] make: *** [Makefile:141: all] Error 2
+[0.747s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '2': CMAKE_PREFIX_PATH=/home/sangwon/ROS2_turtlesim_ws/install/turtle_demo_controller:/opt/ros/foxy WSLENV=ELECTRON_RUN_AS_NODE/w:WT_SESSION:WT_PROFILE_ID: /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12

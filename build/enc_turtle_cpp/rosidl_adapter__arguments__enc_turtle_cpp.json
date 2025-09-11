@@ -1,0 +1,6 @@
+{
+  "package_name": "enc_turtle_cpp",
+  "non_idl_tuples": [
+    "/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp:msg/EncryptedData.msg"
+  ]
+}

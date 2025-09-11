@@ -1,0 +1,43 @@
+[0.020s] Invoking command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
+[0.075s] [  2%] Built target enc_turtle_cpp__cpp
+[0.075s] [  9%] Built target enc_turtle_cpp__rosidl_generator_c
+[0.076s] [ 14%] Built target bgv_test
+[0.086s] [ 19%] Built target turtle_plant
+[0.087s] [ 24%] Built target turtle_controller
+[0.100s] [ 31%] Built target enc_turtle_cpp__rosidl_typesupport_cpp
+[0.102s] [ 39%] Built target enc_turtle_cpp__rosidl_typesupport_c
+[0.103s] [ 46%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_cpp
+[0.104s] [ 53%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_cpp
+[0.104s] [ 60%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c
+[0.130s] [ 68%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c
+[0.149s] [ 68%] Built target enc_turtle_cpp
+[0.161s] [35m[1mScanning dependencies of target enc_turtle_plant[0m
+[0.161s] [35m[1mScanning dependencies of target enc_turtle_controller[0m
+[0.170s] [ 70%] Built target enc_turtle_cpp__py
+[0.191s] [ 73%] [32mBuilding CXX object CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o[0m
+[0.193s] [ 75%] [32mBuilding CXX object CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o[0m
+[0.194s] [ 80%] Built target enc_turtle_cpp__python
+[0.221s] [ 85%] Built target enc_turtle_cpp__rosidl_typesupport_introspection_c__pyext
+[0.221s] [ 90%] Built target enc_turtle_cpp__rosidl_typesupport_fastrtps_c__pyext
+[0.221s] [ 95%] Built target enc_turtle_cpp__rosidl_typesupport_c__pyext
+[2.136s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:[m[K In constructor ‘[01m[KEncTurtleController::EncTurtleController()[m[K’:
+[2.136s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:21:34:[m[K [01;31m[Kerror: [m[K‘[01m[KENCRYPTION[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+[2.136s]    21 |     cc->Enable(PKESchemeFeature::[01;31m[KENCRYPTION[m[K |
+[2.136s]       |                                  [01;31m[K^~~~~~~~~~[m[K
+[2.136s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_controller.cpp:22:33:[m[K [01;31m[Kerror: [m[K‘[01m[KSHE[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+[2.136s]    22 |               PKESchemeFeature::[01;31m[KSHE[m[K |
+[2.136s]       |                                 [01;31m[K^~~[m[K
+[2.141s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:[m[K In constructor ‘[01m[KEncTurtlePlant::EncTurtlePlant()[m[K’:
+[2.141s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:22:34:[m[K [01;31m[Kerror: [m[K‘[01m[KENCRYPTION[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+[2.141s]    22 |     cc->Enable(PKESchemeFeature::[01;31m[KENCRYPTION[m[K |
+[2.141s]       |                                  [01;31m[K^~~~~~~~~~[m[K
+[2.141s] [01m[K/home/sangwon/ROS2_turtlesim_ws/src/enc_turtle_cpp/src/enc_turtle_plant.cpp:23:33:[m[K [01;31m[Kerror: [m[K‘[01m[KSHE[m[K’ is not a member of ‘[01m[Klbcrypto::PKESchemeFeature[m[K’
+[2.141s]    23 |               PKESchemeFeature::[01;31m[KSHE[m[K |
+[2.141s]       |                                 [01;31m[K^~~[m[K
+[5.970s] make[2]: *** [CMakeFiles/enc_turtle_controller.dir/build.make:63: CMakeFiles/enc_turtle_controller.dir/src/enc_turtle_controller.cpp.o] Error 1
+[5.970s] make[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/enc_turtle_controller.dir/all] Error 2
+[5.970s] make[1]: *** Waiting for unfinished jobs....
+[6.385s] make[2]: *** [CMakeFiles/enc_turtle_plant.dir/build.make:63: CMakeFiles/enc_turtle_plant.dir/src/enc_turtle_plant.cpp.o] Error 1
+[6.385s] make[1]: *** [CMakeFiles/Makefile2:445: CMakeFiles/enc_turtle_plant.dir/all] Error 2
+[6.386s] make: *** [Makefile:141: all] Error 2
+[6.390s] Invoked command in '/home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/sangwon/ROS2_turtlesim_ws/build/enc_turtle_cpp -- -j12 -l12
