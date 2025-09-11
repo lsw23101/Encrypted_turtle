@@ -25,16 +25,16 @@ $ mkdir my_ws/src
 $ cd ~/my_ws/src  
 $ git clone https://github.com/lsw23101/Encrypted_turtle
 
-colcon build --symlink-install
+$ colcon build --symlink-install
 혹은
-cba
+$ cba
 ```
-(git pull을 하면 폴더가 생성 x)
 
 
 # Requirement
 ros2 (현:foxy)
 turtlesim package
+Openfhe 설치...(openfhe 환경 설정이 조금 어려웠습니다..)
 
 # Usage
 1. 배쉬 실행
