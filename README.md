@@ -26,6 +26,8 @@ $ cd ~/my_ws/src
 $ git clone https://github.com/lsw23101/Encrypted_turtle
 
 colcon build --symlink-install
+혹은
+cba
 ```
 (git pull을 하면 폴더가 생성 x)
 
