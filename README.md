@@ -2,6 +2,18 @@
 
 <rqt_graph >
 
+터틀봇 1과 터틀봇 2를 소환하고 터틀봇 2는 터틀봇 1을 따라가는 상황 [1]
+
+<암호화 없이 터틀2가 터틀1을 따라가는 과정> 
+1. 플랜트는 터틀봇 1과 2의 pose를 받아 컨트롤러 전송
+2. 컨트롤러는 터틀봇 2의 cmd_vel을 계산 후 플랜트에게 전송
+3. 플랜트는 연산 받은 cmd_vel으로 터틀봇 2 움직임
+
+<암호화 연산>
+1. 플랜트는 터틀봇 1의 pose (x,y) 를 암호화하여 컨트롤러 전송
+2. 컨트롤러는 암호화된 Enc(x) + Enc(y) 를 수행
+3. 플랜트는 암호화 된 연산 결과를 복호화 하여 프린트
+
 # 현재 상황
 
 암호문을 연산하기 위한 evalkey가
@@ -57,7 +69,7 @@ ros2 launch enc_turtle_cpp enc_turtle_demo.launch.py
 
 # Reference
 
-https://github.com/roboticvedant/ROS2_turtlesim_PID_demo
+[1] https://github.com/roboticvedant/ROS2_turtlesim_PID_demo
 
 
 =========================================================================
