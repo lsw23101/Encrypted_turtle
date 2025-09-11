@@ -1,1 +1,0 @@
-/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

@@ -1,1 +1,0 @@
-/home/sangwon/ROS2_turtlesim_ws/src/turtle_demo_controller/launch/two_turtle.launch.py

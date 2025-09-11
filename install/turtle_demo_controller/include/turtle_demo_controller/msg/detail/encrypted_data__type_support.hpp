@@ -1,1 +1,0 @@
-/home/sangwon/ROS2_turtlesim_ws/build/turtle_demo_controller/rosidl_generator_cpp/turtle_demo_controller/msg/detail/encrypted_data__type_support.hpp
