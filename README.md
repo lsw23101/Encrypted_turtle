@@ -23,7 +23,7 @@ controller에서 생성한 컨텍스트가 다르다는 이유로 덧셈 연산�
 ```
 $ mkdir my_ws/src  
 $ cd ~/my_ws/src  
-$ git clone https://github.com/lsw23101/ROS2_turtlesim_ws
+$ git clone https://github.com/lsw23101/Encrypted_turtle
 
 colcon build --symlink-install
 ```
