@@ -1,19 +1,15 @@
 <img width="1110" height="334" alt="image" src="https://github.com/user-attachments/assets/0120d299-8c1d-467d-9839-f5fb2d99c1fc" />
 
+<enc_turtle_plant>:
+암호문 연산을 위한 evalmult를 초기화 단계에서 송신
+터틀 봇 1의 pose 데이터 (x,y)를 받아 암호화 후 송신
+암호화 된 연산 결과 x+y, x*y 를 받아 복호화 후 프린트
+
+<enc_turtle_controller>
+암호문 연산을 위한 cc(CipherContext)를 첫 암호문에서 추출 후 evalkey 등록
+암호화 된 데이터 x,y 를 받아 연산 후 송신
 
 <rqt_graph >
-
-~~터틀봇 1과 터틀봇 2를 소환하고 터틀봇 2는 터틀봇 1을 따라가는 상황 [1]~~
-
-<암호화 없이 터틀2가 터틀1을 따라가는 과정> 
-1. 플랜트는 터틀봇 1과 2의 pose를 받아 컨트롤러 전송
-2. 컨트롤러는 터틀봇 2의 cmd_vel을 계산 후 플랜트에게 전송
-3. 플랜트는 연산 받은 cmd_vel으로 터틀봇 2 움직임
-
-<암호화 연산>
-1. 플랜트는 터틀봇 1의 pose (x,y) 를 암호화하여 컨트롤러 전송
-2. 컨트롤러는 암호화된 Enc(x) + Enc(y) 를 수행
-3. 플랜트는 암호화 된 연산 결과를 복호화 하여 프린트
 
 # 현재 상황
 
@@ -35,8 +31,8 @@ controller에서 생성한 컨텍스트가 다르다는 이유로 덧셈 연산�
 
 # install
 ```
-$ mkdir my_ws/src  
-$ cd ~/my_ws/src  
+$ mkdir my_ws/  
+$ cd ~/my_ws/
 $ git clone https://github.com/lsw23101/Encrypted_turtle
 
 $ colcon build --symlink-install
@@ -53,20 +49,25 @@ Openfhe 설치...(openfhe 환경 설정이 조금 어려웠습니다..)
 # Usage
 1. 배쉬 실행
 ```
-source /opt/ros/foxy/setup.bash
-source install/setup.bash
+$ source /opt/ros/foxy/setup.bash
+$ source install/setup.bash
 
-OR 단축어 설정 해놨으면
+OR 단축어 설정시
 
-rosfoxy 
+$ rosfoxy 
 ```
 
 2. 런치파일 실행
-   
+
+암호문 전송 연산 데모
 ```
-ros2 launch enc_turtle_cpp enc_turtle_demo.launch.py
+$ ros2 launch enc_turtle_cpp enc_turtle_demo.launch.py
 ```
-런치파일 실행하면 teleop_twist_keyboard 에서 터틀봇 1 조종 가능
+
+test_enc_turtle_demo.launch.py : 터틀봇 1과 2의 암호문을 받아 leader-follwer 해보려고 시도 중..
+turtle_demo.launch.py : [1]에서 제공하는 leader-follower 데모
+
+런치파일 실행하면 teleop_twist_keyboard 에서 터틀봇 조종 가능
 
 
 # Reference
