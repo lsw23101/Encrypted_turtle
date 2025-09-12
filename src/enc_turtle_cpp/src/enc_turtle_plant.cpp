@@ -144,9 +144,6 @@ private:
       auto serialization_time = std::chrono::duration_cast<std::chrono::microseconds>(
         serialization_end - serialization_start_).count() / 1000.0;
 
-      auto total_time = std::chrono::duration_cast<std::chrono::microseconds>(
-        serialization_end - loop_start_time_).count() / 1000.0;
-
       std::stringstream info;
       info << "\n========== 새로운 암호화 통신 시작 ==========\n"
            << "원본 데이터: x=" << std::fixed << std::setprecision(3) << original_x_
@@ -154,7 +151,6 @@ private:
            << "암호화 시간: " << encryption_time << " ms\n"
            << "직렬화 시간: " << serialization_time << " ms\n"
            << "데이터 크기(x,y): " << x_data.size() << " " << y_data.size() << " bytes\n"
-           << "루프 한번 시간: " << total_time << " ms\n"
            << "----------------------------------------";
       RCLCPP_INFO(this->get_logger(), "%s", info.str().c_str());
 
@@ -182,11 +178,16 @@ private:
   // result_callback 수정
   void result_callback(const enc_turtle_cpp::msg::EncryptedData::SharedPtr msg) {
     try {
-      // 공통: 역직렬화
+      // 공통: 역직렬화(시간 측정)
       Ciphertext<DCRTPoly> ct;
+      double deser_time_ms = 0.0;
       {
+        auto deser_start = std::chrono::high_resolution_clock::now();
         std::stringstream ss(std::string(msg->data.begin(), msg->data.end()));
         Serial::Deserialize(ct, ss, SerType::BINARY);
+        auto deser_end = std::chrono::high_resolution_clock::now();
+        deser_time_ms = std::chrono::duration_cast<std::chrono::microseconds>(
+          deser_end - deser_start).count() / 1000.0;
       }
 
       if (msg->data_type == 2) { // x+y
@@ -201,6 +202,8 @@ private:
 
       // 둘 다 모이면 그때 한 번만 복호화/출력
       if (got_sum_ && got_prod_) {
+        auto dec_start = std::chrono::high_resolution_clock::now();
+
         // (x+y)
         Plaintext pt_sum;
         cc->Decrypt(kp.secretKey, ct_sum_buf_, &pt_sum);
@@ -213,11 +216,25 @@ private:
         pt_prod->SetLength(1);
         double prod_val = double(pt_prod->GetPackedValue()[0]) / double(SCALE_PROD_);
 
+        auto dec_end = std::chrono::high_resolution_clock::now();
+        double decryption_time = std::chrono::duration_cast<std::chrono::microseconds>(
+          dec_end - dec_start).count() / 1000.0;
+
+        // 위에서 측정한 현재 메시지의 역직렬화 시간 사용
+        double deserialization_time = deser_time_ms;
+
+        // 전체 루프 시간: pose 콜백에서 기록한 loop_start_time_ 기준
+        double total_loop_time = std::chrono::duration_cast<std::chrono::microseconds>(
+          dec_end - loop_start_time_).count() / 1000.0;
+
         RCLCPP_INFO(this->get_logger(),
-          "\n========== 암호화 통신 결과(한 번에) ==========\n"
-          "x+y = %.3f,   x*y = %.3f\n"
-          "=============================================",
-          sum_val, prod_val);
+          "\n========== 암호화 통신 결과 ==========\n"
+          "Dec(Enc(x)+Enc(y)) = %.3f,   Dec(Enc(x)*Enc(y)) = %.3f\n"
+          "역직렬화 시간: %.3f ms\n"
+          "복호화 시간: %.3f ms\n"
+          "전체 루프 시간: %.3f ms\n"
+          "===================================================",
+          sum_val, prod_val, deserialization_time, decryption_time, total_loop_time);
 
         // 다음 프레임 준비
         got_sum_ = got_prod_ = false;

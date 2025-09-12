@@ -6,6 +6,7 @@
 #include <thread>
 #include <cmath>
 #include <sstream>
+#include <chrono>
 
 // Cereal 등록 매크로
 CEREAL_CLASS_VERSION(lbcrypto::CryptoParametersBGVRNS, 1)
@@ -132,7 +133,11 @@ private:
         }
 
         // === 같은 컨텍스트(run_cc_)로 연산 ===
+        // 덧셈 시간 측정
+        auto add_start = std::chrono::high_resolution_clock::now();
         auto ct_sum  = run_cc_->EvalAdd(ciphertext_x_, ciphertext_y_);
+        auto add_end = std::chrono::high_resolution_clock::now();
+        double add_ms = std::chrono::duration_cast<std::chrono::microseconds>(add_end - add_start).count() / 1000.0;
         enc_turtle_cpp::msg::EncryptedData out_sum;
         {
           std::stringstream ss_out;
@@ -144,7 +149,11 @@ private:
         }
 
         if (got_emk_) {
+          // 곱셈 시간 측정
+          auto mul_start = std::chrono::high_resolution_clock::now();
           auto ct_prod = run_cc_->EvalMult(ciphertext_x_, ciphertext_y_);
+          auto mul_end = std::chrono::high_resolution_clock::now();
+          double mul_ms = std::chrono::duration_cast<std::chrono::microseconds>(mul_end - mul_start).count() / 1000.0;
           enc_turtle_cpp::msg::EncryptedData out_prod;
           std::stringstream ss_out2;
           Serial::Serialize(ct_prod, ss_out2, SerType::BINARY);
@@ -152,8 +161,12 @@ private:
           out_prod.data.assign(s2.begin(), s2.end());
           out_prod.data_type = 3; // x*y
           result_pub_->publish(out_prod);
+          RCLCPP_INFO(this->get_logger(), "[Controller] EvalAdd: %.3f ms, EvalMult: %.3f ms", add_ms, mul_ms);
         }
 
+        if (!got_emk_) {
+          RCLCPP_INFO(this->get_logger(), "[Controller] EvalAdd: %.3f ms (EvalMult skipped: no eval key)", add_ms);
+        }
         RCLCPP_INFO(this->get_logger(), "Published enc (x+y)%s",
           got_emk_ ? " and (x*y)" : " (mult skipped: no eval key)");
         // 필요하면 다음 프레임을 위해 리셋
