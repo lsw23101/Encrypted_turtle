@@ -1,4 +1,5 @@
 <img width="1110" height="334" alt="image" src="https://github.com/user-attachments/assets/0120d299-8c1d-467d-9839-f5fb2d99c1fc" />
+<rqt_graph >
 
 <enc_turtle_plant>:
 암호문 연산을 위한 evalmult를 초기화 단계에서 송신
@@ -9,7 +10,18 @@
 암호문 연산을 위한 cc(CipherContext)를 첫 암호문에서 추출 후 evalkey 등록
 암호화 된 데이터 x,y 를 받아 연산 후 송신
 
-<rqt_graph >
+
+
+<img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />
+링 차원 : 약 8000 
+암호화: 5ms
+직렬화: 0.1ms
+역직렬화: 1.5ms
+복호화: 0.8ms
+덧셈: 0.15ms
+곱셈: 3.27ms
+전체 루프: 15ms
+통신시간: 약 4~5ms (전체 루프에서 위 과정의 차이로 추정)
 
 # 현재 상황
 <9/12>
