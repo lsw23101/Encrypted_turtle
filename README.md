@@ -2,11 +2,13 @@
 <rqt_graph >
 
 <enc_turtle_plant>:
+
 암호문 연산을 위한 evalmult를 초기화 단계에서 송신
 터틀 봇 1의 pose 데이터 (x,y)를 받아 암호화 후 송신
 암호화 된 연산 결과 x+y, x*y 를 받아 복호화 후 프린트
 
 <enc_turtle_controller>
+ 
 암호문 연산을 위한 cc(CipherContext)를 첫 암호문에서 추출 후 evalkey 등록
 암호화 된 데이터 x,y 를 받아 연산 후 송신
 
