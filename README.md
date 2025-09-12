@@ -12,11 +12,12 @@
 <rqt_graph >
 
 # 현재 상황
-
 <9/12>
-암호문 x랑 y의 +, x 는 성공함
-1. 암호 컨텍스트 cc는 암호문에서 뽑아서 사용
+BGV의 덧셈 곱셈 한번 정도의 연산 
+1. 암호 컨텍스트 cc는 첫 송신받은 암호문에서 뽑아서 사용
 2. Evalkey는 cc안에서 SerializeEvalMultkey 라는 함수가 존재하는 것으로 보아 시리얼화해서 통신하고 다시 등록하는게 맞는 과정으로 보임
+3. PlaintextModulus 크기와 실수를 정수로 바꾸는 SCALE_XY_ 변수를 고려하여 설정이후 곱셈 깊이와 RingDim 보안 레벨 설정
+
 
 이때 xml 파일로 QoS 설정을 통해 fast DDS의 데이터 max size를 2MB로 변경하여 사용
 
