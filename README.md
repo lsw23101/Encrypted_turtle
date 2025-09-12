@@ -2,22 +2,35 @@
 
 <rqt_graph >
 
+터틀봇 1과 터틀봇 2를 소환하고 터틀봇 2는 터틀봇 1을 따라가는 상황 [1]
+
+<암호화 없이 터틀2가 터틀1을 따라가는 과정> 
+1. 플랜트는 터틀봇 1과 2의 pose를 받아 컨트롤러 전송
+2. 컨트롤러는 터틀봇 2의 cmd_vel을 계산 후 플랜트에게 전송
+3. 플랜트는 연산 받은 cmd_vel으로 터틀봇 2 움직임
+
+<암호화 연산>
+1. 플랜트는 터틀봇 1의 pose (x,y) 를 암호화하여 컨트롤러 전송
+2. 컨트롤러는 암호화된 Enc(x) + Enc(y) 를 수행
+3. 플랜트는 암호화 된 연산 결과를 복호화 하여 프린트
+
 # 현재 상황
 
-암호문을 연산하기 위한 evalkey가
-
-plant에서 암호화를 하기 위해 만들었던 컨텍스트와
-controller에서 생성한 컨텍스트가 다르다는 이유로 덧셈 연산만 수행할 수 있는 오류
-
-따라서 OpenFHE는 evalkey를 플랜트가 던져줘야될 것으로 보임...
-
-현재 : 
-암호화 된 터틀봇 1의 x,y 값을 보냄 => 컨트롤러가 x+y 계산 후 전송 => 플랜트가 복호화 후 프린트
-
-암호화 -> cereal 라이브러리를 통한 직렬화 -> string msg 을 통해 통신 
+<9/12>
+암호문 x랑 y의 +, x 는 성공함
+1. 암호 컨텍스트 cc는 암호문에서 뽑아서 사용
+2. Evalkey는 cc안에서 SerializeEvalMultkey 라는 함수가 존재하는 것으로 보아 시리얼화해서 통신하고 다시 등록하는게 맞는 과정으로 보임
 
 이때 xml 파일로 QoS 설정을 통해 fast DDS의 데이터 max size를 2MB로 변경하여 사용
-(현재 P = 65537 일때, N = 16384 (2^14) 정도이며 이때 데이터 크기는 1050103 약 1MB 사이즈)
+
+~~암호문을 연산하기 위한 evalkey가
+plant에서 암호화를 하기 위해 만들었던 컨텍스트와
+controller에서 생성한 컨텍스트가 다르다는 이유로 덧셈 연산만 수행할 수 있는 오류
+따라서 OpenFHE는 evalkey를 플랜트가 던져줘야될 것으로 보임...
+현재 : 
+암호화 된 터틀봇 1의 x,y 값을 보냄 => 컨트롤러가 x+y 계산 후 전송 => 플랜트가 복호화 후 프린트
+암호화 -> cereal 라이브러리를 통한 직렬화 -> string msg 을 통해 통신 
+(현재 P = 65537 일때, N = 16384 (2^14) 정도이며 이때 데이터 크기는 1050103 약 1MB 사이즈)~~
 
 # install
 ```
@@ -25,14 +38,16 @@ $ mkdir my_ws/src
 $ cd ~/my_ws/src  
 $ git clone https://github.com/lsw23101/Encrypted_turtle
 
-colcon build --symlink-install
+$ colcon build --symlink-install
+혹은
+$ cba
 ```
-(git pull을 하면 폴더가 생성 x)
 
 
 # Requirement
 ros2 (현:foxy)
 turtlesim package
+Openfhe 설치...(openfhe 환경 설정이 조금 어려웠습니다..)
 
 # Usage
 1. 배쉬 실행
@@ -55,10 +70,14 @@ ros2 launch enc_turtle_cpp enc_turtle_demo.launch.py
 
 # Reference
 
-https://github.com/roboticvedant/ROS2_turtlesim_PID_demo
+[1] https://github.com/roboticvedant/ROS2_turtlesim_PID_demo
 
 
-=========================================================================
+
+// 
+****
+
+
 
 #### git 다루기
 https://shortcuts.tistory.com/8
