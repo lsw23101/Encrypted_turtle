@@ -1,8 +1,9 @@
-![image](https://github.com/user-attachments/assets/8ac3d6a4-9617-4b49-b13f-b977f1c6da56)
+<img width="1110" height="334" alt="image" src="https://github.com/user-attachments/assets/0120d299-8c1d-467d-9839-f5fb2d99c1fc" />
+
 
 <rqt_graph >
 
-터틀봇 1과 터틀봇 2를 소환하고 터틀봇 2는 터틀봇 1을 따라가는 상황 [1]
+~~터틀봇 1과 터틀봇 2를 소환하고 터틀봇 2는 터틀봇 1을 따라가는 상황 [1]~~
 
 <암호화 없이 터틀2가 터틀1을 따라가는 과정> 
 1. 플랜트는 터틀봇 1과 2의 pose를 받아 컨트롤러 전송
