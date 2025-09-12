@@ -16,13 +16,21 @@
 
 <img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />
 링 차원 : 약 8000 
+
 암호화: 5ms
+
 직렬화: 0.1ms
+
 역직렬화: 1.5ms
+
 복호화: 0.8ms
+
 덧셈: 0.15ms
+
 곱셈: 3.27ms
+
 전체 루프: 15ms
+
 통신시간: 약 4~5ms (전체 루프에서 위 과정의 차이로 추정)
 
 # 현재 상황
