@@ -69,6 +69,7 @@ $ cba
 ros2 (현:foxy)
 turtlesim package
 Openfhe 설치...(openfhe 환경 설정이 조금 어려웠습니다..)
+colon build 하기 위해서 openfhe 설치 디렉토리 설정을 해주어야합니다. 
 
 # Usage
 1. 배쉬 실행
