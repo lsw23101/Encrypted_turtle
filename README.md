@@ -53,7 +53,7 @@ controller에서 생성한 컨텍스트가 다르다는 이유로 덧셈 연산�
 암호화 -> cereal 라이브러리를 통한 직렬화 -> string msg 을 통해 통신 
 (현재 P = 65537 일때, N = 16384 (2^14) 정도이며 이때 데이터 크기는 1050103 약 1MB 사이즈)~~
 
-# install
+# Install
 ```
 $ mkdir my_ws/  
 $ cd ~/my_ws/
@@ -62,6 +62,13 @@ $ git clone https://github.com/lsw23101/Encrypted_turtle
 $ colcon build --symlink-install
 혹은
 $ cba
+```
+
+# git push
+```
+$ git add src
+$ git commit -m "message"
+$ git push
 ```
 
 
