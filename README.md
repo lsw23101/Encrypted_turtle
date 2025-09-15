@@ -1,4 +1,5 @@
-<img width="1110" height="334" alt="image" src="https://github.com/user-attachments/assets/0120d299-8c1d-467d-9839-f5fb2d99c1fc" />
+<img width="994" height="160" alt="image" src="https://github.com/user-attachments/assets/3d84cdda-2584-4e9a-b449-fc3b0f58f5c2" />
+
 <rqt_graph >
 
 <enc_turtle_plant>:
