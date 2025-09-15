@@ -8,30 +8,19 @@
 #include <iomanip>
 #include <sstream>
 
-// Cereal 등록 매크로
-CEREAL_CLASS_VERSION(lbcrypto::CryptoParametersBGVRNS, 1)
-CEREAL_CLASS_VERSION(lbcrypto::DCRTPoly, 1)
-CEREAL_CLASS_VERSION(lbcrypto::SchemeBGVRNS, 1)
-CEREAL_CLASS_VERSION(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>, 1)
-CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)
-CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)
-CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)
-CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoParametersBase<lbcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)
-CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::SchemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)
-// EvalMult 키 직렬화용 등록
-CEREAL_CLASS_VERSION(lbcrypto::EvalKeyRelinImpl<lbcrypto::DCRTPoly>, 1)
-CEREAL_REGISTER_TYPE(lbcrypto::EvalKeyRelinImpl<lbcrypto::DCRTPoly>)
-CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::Serializable, lbcrypto::EvalKeyRelinImpl<lbcrypto::DCRTPoly>)
+// cereal 등록은 src/openfhe_cereal_registration.cpp 한 곳에서 처리
 
 using namespace lbcrypto;
 
+//노드 클래스
 class EncTurtlePlant : public rclcpp::Node {
 public:
+  // 생성자
   EncTurtlePlant() : Node("enc_turtle_plant") {
     // ===== 스케일 상수 =====
     SCALE_XY_   = 50;                   // x,y 스케일 스케일한 연산 결과가 PlaintextmModulus/2 를 넘지 않도록
-    SCALE_SUM_  = SCALE_XY_;            // 합 결과는
-    SCALE_PROD_ = SCALE_XY_ * SCALE_XY_; // 곱 결과는
+    SCALE_SUM_  = SCALE_XY_;            // 덧셈 스케일
+    SCALE_PROD_ = SCALE_XY_ * SCALE_XY_; // 곱셈 스케일
 
     // ===== 암호화 설정 =====
     CCParams<CryptoContextBGVRNS> parameters;
@@ -65,6 +54,7 @@ public:
     emk_pub_ = this->create_publisher<enc_turtle_cpp::msg::EncryptedData>("fhe_evalmult", qos);
 
     // ===== 런타임 채널 =====
+    // 구독자 두개 만들기 
     pose_sub_ = this->create_subscription<turtlesim::msg::Pose>(
         "turtle1/pose", qos,
         std::bind(&EncTurtlePlant::pose_callback, this, std::placeholders::_1));
@@ -73,12 +63,9 @@ public:
         "encrypted_result", qos,
         std::bind(&EncTurtlePlant::result_callback, this, std::placeholders::_1));
 
+    // 암호화 데이터 보낼 퍼블리셔
     encrypted_pub_ = this->create_publisher<enc_turtle_cpp::msg::EncryptedData>(
         "encrypted_pose", qos);
-
-    turtle1_pose_sub_ = this->create_subscription<turtlesim::msg::Pose>(
-      "/turtle1/pose", 10,
-      std::bind(&EncTurtlePlant::turtle1_pose_callback, this, std::placeholders::_1));
 
     turtle1_state_pub_ = this->create_publisher<turtlesim::msg::Pose>("/turtle1/state", 10);
 
@@ -88,24 +75,25 @@ public:
   }
 
 private:
-  // 초기: EvalMultKey만 송신
+  // 멤버함수
+  // cc 내부 함수로 EvalMultKey 직렬화 -> msg_emk 퍼블리시
   void send_evalmult_once(){
     if (emk_sent_) return;
     emk_sent_ = true;
 
     std::stringstream ss_emk;
     cc->SerializeEvalMultKey(ss_emk, SerType::BINARY);
-    std::string semk = ss_emk.str();
+    std::string str_emk = ss_emk.str();
 
-    enc_turtle_cpp::msg::EncryptedData memk;
-    memk.data.assign(semk.begin(), semk.end());
-    memk.data_type = 101; // evalmult 표시용
-    emk_pub_->publish(memk);
+    enc_turtle_cpp::msg::EncryptedData msg_emk;
+    msg_emk.data.assign(str_emk.begin(), str_emk.end());
+    emk_pub_->publish(msg_emk);
 
     RCLCPP_INFO(this->get_logger(), "[Plant] Setup sent: EvalMultKey only");
   }
 
-  // 암호화 관련 콜백 (x,y 스케일 적용해서 암호화·전송)
+  // pose를 받으면 콜백 -> 받은 데이터 암호화 직렬화 송신 
+  // turtle1_state_pub_ 퍼블리시하고 있지만 현재는 사용 x
   void pose_callback(const turtlesim::msg::Pose::SharedPtr msg) {
     try {
       original_x_ = msg->x;
@@ -166,7 +154,7 @@ private:
       msg_y.data_type = 1;
       encrypted_pub_->publish(msg_y);
 
-      // 터틀봇 제어를 위한 상태 정보 전송
+      // 터틀봇 제어를 위한 상태 정보 전송 (현재는 사용 x) test 파일에서 사용중
       turtle1_state_pub_->publish(*msg);
 
     } catch (const std::exception& e) {
@@ -175,10 +163,10 @@ private:
   }
 
   // 결과 수신(덧셈/곱셈 모두 처리: 합은 ÷SCALE_XY, 곱은 ÷(SCALE_XY^2))
-  // result_callback 수정
+  // result_sub_가 암호화된 연산 결과를 받으면 수행하는 콜백 함수
   void result_callback(const enc_turtle_cpp::msg::EncryptedData::SharedPtr msg) {
     try {
-      // 공통: 역직렬화(시간 측정)
+      // 시간 측정
       Ciphertext<DCRTPoly> ct;
       double deser_time_ms = 0.0;
       {
@@ -190,6 +178,7 @@ private:
           deser_end - deser_start).count() / 1000.0;
       }
 
+      // 암호문 전달받은 데이터 저장
       if (msg->data_type == 2) { // x+y
         ct_sum_buf_ = ct;
         got_sum_ = true;
@@ -200,22 +189,23 @@ private:
         return; // 알 수 없는 타입은 무시
       }
 
-      // 둘 다 모이면 그때 한 번만 복호화/출력
+      // 두개 받고 나서 복호화
       if (got_sum_ && got_prod_) {
         auto dec_start = std::chrono::high_resolution_clock::now();
 
         // (x+y)
         Plaintext pt_sum;
         cc->Decrypt(kp.secretKey, ct_sum_buf_, &pt_sum);
-        pt_sum->SetLength(1);
-        double sum_val = double(pt_sum->GetPackedValue()[0]) / double(SCALE_SUM_);
+        pt_sum->SetLength(1); // 패킹과 관련하여 사용, 현재는 스칼라 데이터 암호화하여 길이 1
+        double sum_val = double(pt_sum->GetPackedValue()[0]) / double(SCALE_SUM_); // 스케일 복원
 
         // (x*y)
         Plaintext pt_prod;
         cc->Decrypt(kp.secretKey, ct_prod_buf_, &pt_prod);
         pt_prod->SetLength(1);
-        double prod_val = double(pt_prod->GetPackedValue()[0]) / double(SCALE_PROD_);
+        double prod_val = double(pt_prod->GetPackedValue()[0]) / double(SCALE_PROD_); // 스케일 복원
 
+        // 시간 측정
         auto dec_end = std::chrono::high_resolution_clock::now();
         double decryption_time = std::chrono::duration_cast<std::chrono::microseconds>(
           dec_end - dec_start).count() / 1000.0;
@@ -236,7 +226,7 @@ private:
           "===================================================",
           sum_val, prod_val, deserialization_time, decryption_time, total_loop_time);
 
-        // 다음 프레임 준비
+        // 루프 초기화
         got_sum_ = got_prod_ = false;
         ct_sum_buf_.reset();
         ct_prod_buf_.reset();
@@ -246,12 +236,9 @@ private:
     }
   }
 
-  // 기존 터틀 플랜트 콜백
-  void turtle1_pose_callback(const turtlesim::msg::Pose::SharedPtr msg){
-    turtle1_state_pub_->publish(*msg);
-  }
+  // 기존 turtle1_pose 콜백 제거: pose_callback 내에서 상태 퍼블리시 처리
 
-  // ===== 상태 =====
+  // 멤버변수
   CryptoContext<DCRTPoly> cc;
   KeyPair<DCRTPoly> kp;
   bool emk_sent_ = false;
@@ -274,12 +261,8 @@ private:
   rclcpp::Subscription<enc_turtle_cpp::msg::EncryptedData>::SharedPtr result_sub_;
   rclcpp::Publisher<enc_turtle_cpp::msg::EncryptedData>::SharedPtr encrypted_pub_;
 
-  rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr turtle1_pose_sub_;
-  rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr turtle2_pose_sub_;
-  rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr control_command_sub_;
+  
   rclcpp::Publisher<turtlesim::msg::Pose>::SharedPtr turtle1_state_pub_;
-  rclcpp::Publisher<turtlesim::msg::Pose>::SharedPtr turtle2_state_pub_;
-  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr turtle2_cmd_pub_;
   rclcpp::TimerBase::SharedPtr setup_timer_;
 };
 

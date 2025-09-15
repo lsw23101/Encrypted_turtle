@@ -8,20 +8,7 @@
 #include <iomanip>
 #include <sstream>
 
-// Cereal 등록 매크로
-CEREAL_CLASS_VERSION(lbcrypto::CryptoParametersBGVRNS, 1)
-CEREAL_CLASS_VERSION(lbcrypto::DCRTPoly, 1)
-CEREAL_CLASS_VERSION(lbcrypto::SchemeBGVRNS, 1)
-CEREAL_CLASS_VERSION(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>, 1)
-CEREAL_REGISTER_TYPE(lbcrypto::CryptoParametersBGVRNS)
-CEREAL_REGISTER_TYPE(lbcrypto::SchemeBGVRNS)
-CEREAL_REGISTER_TYPE(lbcrypto::CiphertextImpl<lbcrypto::DCRTPoly>)
-CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::CryptoParametersBase<lbcrypto::DCRTPoly>, lbcrypto::CryptoParametersBGVRNS)
-CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::SchemeBase<lbcrypto::DCRTPoly>, lbcrypto::SchemeBGVRNS)
-// EvalMult 키 직렬화용 등록
-CEREAL_CLASS_VERSION(lbcrypto::EvalKeyRelinImpl<lbcrypto::DCRTPoly>, 1)
-CEREAL_REGISTER_TYPE(lbcrypto::EvalKeyRelinImpl<lbcrypto::DCRTPoly>)
-CEREAL_REGISTER_POLYMORPHIC_RELATION(lbcrypto::Serializable, lbcrypto::EvalKeyRelinImpl<lbcrypto::DCRTPoly>)
+// cereal 등록은 src/openfhe_cereal_registration.cpp 한 곳에서 처리
 
 using namespace lbcrypto;
 

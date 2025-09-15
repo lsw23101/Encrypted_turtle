@@ -103,7 +103,7 @@ ament_target_dependencies(
 )
 
 # Encrypted Plant node
-add_executable(enc_turtle_plant src/enc_turtle_plant.cpp)
+add_executable(enc_turtle_plant src/enc_turtle_plant.cpp src/openfhe_cereal_registration.cpp)
 target_include_directories(enc_turtle_plant PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -123,7 +123,7 @@ ament_target_dependencies(
 )
 
 # Encrypted Controller node
-add_executable(enc_turtle_controller src/enc_turtle_controller.cpp)
+add_executable(enc_turtle_controller src/enc_turtle_controller.cpp src/openfhe_cereal_registration.cpp)
 target_include_directories(enc_turtle_controller PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -143,7 +143,7 @@ ament_target_dependencies(
 )
 
 # BGV test
-add_executable(bgv_test src/bgv_test.cpp)
+add_executable(bgv_test src/bgv_test.cpp src/openfhe_cereal_registration.cpp)
 target_include_directories(bgv_test PUBLIC
   ${OPENFHE_INCLUDE_DIRS}
 )
@@ -154,7 +154,7 @@ target_link_libraries(bgv_test
 target_compile_options(bgv_test PRIVATE -fopenmp ${OPENFHE_COMPILE_OPTIONS})
 
 # Test Plant node
-add_executable(test_plant src/test_plant.cpp)
+add_executable(test_plant src/test_plant.cpp src/openfhe_cereal_registration.cpp)
 target_include_directories(test_plant PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -174,7 +174,7 @@ ament_target_dependencies(
 )
 
 # Test Controller node
-add_executable(test_controller src/test_controller.cpp)
+add_executable(test_controller src/test_controller.cpp src/openfhe_cereal_registration.cpp)
 target_include_directories(test_controller PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
