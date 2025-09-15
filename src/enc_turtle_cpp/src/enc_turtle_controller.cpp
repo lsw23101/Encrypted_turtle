@@ -36,7 +36,22 @@ private:
   // --- EvalMultKey 수신 (cc는 암호문에서 획득하므로 도착 전까지 버퍼링만) ---
   void on_evalmult(const enc_turtle_cpp::msg::EncryptedData::SharedPtr msg){
     std::string s(msg->data.begin(), msg->data.end());
-    // 항상 버퍼만 하고, 등록은 컨텍스트 생성 시 1회 시도
+    // 컨텍스트가 이미 있으면 즉시 등록, 아니면 버퍼링
+    if (cntr_cc_ && !emk_registered_) {
+      std::stringstream ss(s);
+      cntr_cc_->DeserializeEvalMultKey(ss, SerType::BINARY);
+      emk_registered_ = true;
+      got_emk_ = true;
+      pending_emk_.clear();
+      if (sub_emk_) {
+        sub_emk_.reset();
+        RCLCPP_INFO(this->get_logger(), "[Controller] EvalMult subscription closed (one-shot)");
+      }
+      RCLCPP_INFO(this->get_logger(), "[Controller] EvalMult key registered on ciphertext context (immediate)");
+      return;
+    }
+
+    // 컨텍스트가 아직 없으면 버퍼만 하고, 생성 시 1회 등록 시도
     pending_emk_ = std::move(s);
     RCLCPP_INFO(this->get_logger(), "[Controller] EvalMultKey buffered (will register when context is ready)");
   }
@@ -152,7 +167,7 @@ private:
         // }
         // RCLCPP_INFO(this->get_logger(), "Published enc (x+y)%s",
         //   got_emk_ ? " and (x*y)" : " (mult skipped: no eval key)");
-        // 다음 프레임을 위해 리셋
+        // 다음 프레임을 위해 반드시 리셋
         got_x_ = false;
         got_y_ = false;
         ciphertext_x_.reset();
