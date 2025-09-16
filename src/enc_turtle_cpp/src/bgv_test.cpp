@@ -24,10 +24,15 @@ using namespace lbcrypto;
 int main() {
     // 파라미터 설정
     CCParams<CryptoContextBGVRNS> parameters;
-    parameters.SetPlaintextModulus(65537);
-    parameters.SetMultiplicativeDepth(0);  // 덧셈만 사용하므로 0으로 설정
+    // parameters.SetPlaintextModulus(65537);
+    // parameters.SetPlaintextModulus(557057);
+    // 
+    parameters.SetPlaintextModulus(2013265921);
+    parameters.SetMultiplicativeDepth(5);  // 덧셈만 사용하므로 0으로 설정
     parameters.SetSecurityLevel(SecurityLevel::HEStd_128_classic);
-    parameters.SetRingDim(4096);  // 2^13으로 줄임
+    // parameters.SetRingDim(16384);  // 곱셈 깊이 5에 맞는 최소 크기 557057에 5회에 이정도 차원으로 가능
+    parameters.SetRingDim(32768);
+
 
     std::cout << "========== BGV 암호화 성능 테스트 시작 ==========\n";
     
@@ -41,6 +46,17 @@ int main() {
     auto context_time = std::chrono::duration_cast<std::chrono::microseconds>(
         context_end - context_start).count() / 1000.0;
     std::cout << "컨텍스트 생성 시간: " << context_time << " ms\n";
+    
+    // BGV 파라미터 정보 출력
+    usint ringDim = cc->GetRingDimension();
+    std::cout << "BGV scheme is using ring dimension " << ringDim << std::endl;
+    std::cout << "log Q " << cc->GetModulus().GetMSB() << std::endl;
+    
+    const auto cryptoParamsBGV = std::dynamic_pointer_cast<CryptoParametersBGVRNS>(cc->GetCryptoParameters());
+    std::cout << "Plaintext modulus: " << cryptoParamsBGV->GetPlaintextModulus() << std::endl;
+    std::cout << "Multiplicative depth: " << cryptoParamsBGV->GetMultiplicativeDepth() << std::endl;
+    std::cout << "Security level: " << cryptoParamsBGV->GetStdLevel() << std::endl;
+    std::cout << std::endl;
 
     // 키 생성 시간 측정
     auto keygen_start = std::chrono::high_resolution_clock::now();
