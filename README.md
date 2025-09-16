@@ -22,7 +22,10 @@
 
 
 <img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />  
-링 차원 : 약 8000  암호화: 5ms
+링 차원 : 약 8000  
+암호화: 5ms
+
+
 직렬화: 0.1ms  
 역직렬화: 1.5ms  
 복호화: 0.8ms  
