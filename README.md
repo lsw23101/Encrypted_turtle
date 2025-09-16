@@ -36,8 +36,7 @@
 
 # 논의점...
 1. 지금 방법 외의 이미 잘 짜여진 암호문의 통신 방법이 있을지...
-2. BGV에서는 곱셈 깊이가 커질 수록 스케일 팩터에 의해 평문 공간의 크기가 매우 커지고, 링 차원이 매우 커져야했었는데
-   저번 CKKS에서는 
+2. 보안 레벨을 NotSet으로 설정시 파라미터 설정을 명확하
 3. 
 
 # Install
@@ -104,7 +103,7 @@ $ git push
 bgv 테스트 용
 
 ```
- cd ~/ROS2_turtlesim_ws && colcon build --packages-select enc_turtle_cpp && source install/setup.bash && ros2 run enc_turtle_cpp bgv_test
+ cd ~/Encrypted_turtle && colcon build --packages-select enc_turtle_cpp && source install/setup.bash && ros2 run enc_turtle_cpp bgv_test
 
 ```
 
@@ -115,10 +114,6 @@ parameters.SetSecurityLevel(SecurityLevel::HEStd_NotSet); // 자동 결정 방�
 ```
 
 #### open fhe scheme 속도
-
-```
-~/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp$ ./bgv_test
-```
 
 
 // N 사이즈가 2^13 일때 뎁스: 1
