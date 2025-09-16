@@ -52,10 +52,10 @@ $ cba
 ```
 
 # Requirement
-ROS2 (현:foxy)
-turtlesim package
+ROS2 (현:foxy)  
+turtlesim package  
 OpenFHE 설치 (openfhe 환경 설정이 조금 안맞을 수도 있습니다...)  
-cereal 라이브러리 (openfhe의 종속성으로 같이 설치)
+cereal 라이브러리 (openfhe의 종속성으로 같이 설치되는 것 같습니다.)
 
 # Usage
 1. 배쉬 실행
