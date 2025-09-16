@@ -125,13 +125,6 @@ private:
 
       // 두 암호문 다 있으면 연산
       if (got_x_ && got_y_) {
-        // 안전 체크: 같은 컨텍스트인지
-        if (ciphertext_x_->GetCryptoContext() != ciphertext_y_->GetCryptoContext()) {
-          RCLCPP_ERROR(this->get_logger(), "X and Y contexts mismatch");
-          return;
-        }
-
-        // 여기서는 늦은 등록을 시도하지 않음(컨텍스트 획득 시 1회만 등록)
 
         if (!got_emk_) {
           RCLCPP_WARN(this->get_logger(), "[Controller] EvalMult key not registered yet; skipping mult");
@@ -191,7 +184,7 @@ private:
 
 
   // 상태
-  CryptoContext<DCRTPoly> cntr_cc_;             // 실제 연산 컨텍스트(암호문에서 획득)
+  CryptoContext<DCRTPoly> cntr_cc_;             // 컨트롤러가 암호문에서 뽑아낸 cc
   bool got_emk_ = false;
   bool emk_registered_ = false;
   std::string waiting_emk_;                    // 컨텍스트 준비 전 도착한 evalmult 키 대기 버퍼
