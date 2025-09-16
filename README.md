@@ -6,24 +6,15 @@
 2. 컨트롤러 <enc_turtle_controller>: 암호문 데이터 **x**, **y**의 덧셈, 곱셈 1회 수행 후 송신
 3. 이때 암호문은 cereal을 이용하여 바이트스트림으로 변환 후 통신
 
-<img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />
-
-링 차원 : 약 8000 
-
-암호화: 5ms
-
-직렬화: 0.1ms
-
-역직렬화: 1.5ms
-
-복호화: 0.8ms
-
-덧셈: 0.15ms
-
-곱셈: 3.27ms
-
-전체 루프: 15ms
-
+<img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />  
+링 차원 : 약 8000  
+암호화: 5ms  
+직렬화: 0.1ms  
+역직렬화: 1.5ms  
+복호화: 0.8ms  
+덧셈: 0.15ms  
+곱셈: 3.27ms  
+전체 루프: 15ms  
 통신시간: 약 4~5ms (전체 루프에서 위 과정의 차이로 추정) (통신이 다른 pc가 되거나 무선이 되는 등 상황이면 더 커질 것으로 예상)
 
 # 결과
