@@ -1,5 +1,6 @@
 <img width="994" height="160" alt="image" src="https://github.com/user-attachments/assets/3d84cdda-2584-4e9a-b449-fc3b0f58f5c2" />  
 <rqt_graph >
+
 # 내용
 1. 플랜트 <enc_turtle_plant>: 터틀봇의 위치 (x,y) 를 암호화 후 송신
 2. 컨트롤러 <enc_turtle_controller>: 암호문 데이터 **x**, **y**의 덧셈, 곱셈 1회 수행 후 송신
@@ -29,7 +30,7 @@
 1. BGV의 덧셈 곱셈 한번 정도의 연산
 2. 암호문간 연산을 위해서는 암호 컨텍스(CryptoContext, cc)가 필요하며 이 cc에 연산 키(EvalKey)가 필요
 3. 연산이 수행되는 암호문은 암호화 될 때와 "동일한" cc를 이용하여 연산이 되어야 함
-4. EvalKey와 같은 연산 키는 비밀키를 기반으로 생성하므로 컨트롤러에서 만들 수 없음 (추측, Lattigo에서는 sk 없이 evalkey 생성 가능 했던 것으로 기억)
+4. EvalKey와 같은 연산 키는 비밀키를 기반으로 생성하므로 컨트롤러에서 만들 수 없음  (추측, Lattigo에서는 sk 없이 evalkey 생성 가능 했던 것으로 기억)
 5. 플랜트에서 생성한 cc를 직렬화 후 통신하면 오류 발생 -> 첫 암호문에서 cc 추출 (cc를 뽑아내는 함수가 존재)
 6. 플랜트에서 생성한 EvalKey는 직렬화 후 통신하여 컨트롤러가 5에서 뽑아낸 cc에 "등록"
 7. 실수 데이터를 정수화 하기 위한 스케일 상수(SCALE_XY_)에 맞는 평문 공간(PlaintextModulus) 설정 필요
