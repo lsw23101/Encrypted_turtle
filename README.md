@@ -135,7 +135,7 @@ parameters.SetSecurityLevel(SecurityLevel::HEStd_NotSet); // 자동 결정 방�
 #### open fhe scheme 속도
 
 ```
-sangwon@STEIECDSL-P04:~/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp$ ./bgv_test
+~/ROS2_turtlesim_ws/install/enc_turtle_cpp/lib/enc_turtle_cpp$ ./bgv_test
 ```
 
 
