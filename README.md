@@ -114,10 +114,9 @@ turtle_demo.launch.py : [1]에서 제공하는 leader-follower 데모
 
 
 <details>
+ <summary>테스트, 디버그 메모...</summary>
 #### git 다루기
 https://shortcuts.tistory.com/8
-
-#### OpenFHE의 scheme 테스트, 디버그 메모...
 
 bgv 테스트 용
 
