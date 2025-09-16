@@ -1,19 +1,9 @@
-<img width="994" height="160" alt="image" src="https://github.com/user-attachments/assets/3d84cdda-2584-4e9a-b449-fc3b0f58f5c2" />
-
+<img width="994" height="160" alt="image" src="https://github.com/user-attachments/assets/3d84cdda-2584-4e9a-b449-fc3b0f58f5c2" />  
 <rqt_graph >
-
-<enc_turtle_plant>:
-
-암호문 연산을 위한 evalmult를 초기화 단계에서 송신
-터틀 봇 1의 pose 데이터 (x,y)를 받아 암호화 후 송신
-암호화 된 연산 결과 x+y, x*y 를 받아 복호화 후 프린트
-
-<enc_turtle_controller>
- 
-암호문 연산을 위한 cc(CipherContext)를 첫 암호문에서 추출 후 evalkey 등록
-암호화 된 데이터 x,y 를 받아 연산 후 송신
-
-
+# 내용
+1. 플랜트 <enc_turtle_plant>: 터틀봇의 위치 (x,y) 를 암호화 후 송신
+2. 컨트롤러 <enc_turtle_controller>: 암호문 데이터 **x**, **y**의 덧셈, 곱셈 1회 수행 후 송신
+3. 이때 암호문은 cereal을 이용하여 바이트스트림으로 변환 후 통신
 
 <img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />
 
@@ -35,12 +25,16 @@
 
 통신시간: 약 4~5ms (전체 루프에서 위 과정의 차이로 추정) (통신이 다른 pc가 되거나 무선이 되는 등 상황이면 더 커질 것으로 예상)
 
-# 현재 상황
-<9/12>
-BGV의 덧셈 곱셈 한번 정도의 연산 
-1. 암호 컨텍스트 cc는 첫 송신받은 암호문에서 뽑아서 사용
-2. Evalkey는 cc안에서 SerializeEvalMultkey 라는 함수가 존재하는 것으로 보아 시리얼화해서 통신하고 다시 등록하는게 맞는 과정으로 보임
-3. PlaintextModulus 크기와 실수를 정수로 바꾸는 SCALE_XY_ 변수를 고려하여 설정이후 곱셈 깊이와 RingDim 보안 레벨 설정
+# 결과
+1. BGV의 덧셈 곱셈 한번 정도의 연산
+2. 암호문간 연산을 위해서는 암호 컨텍스(CryptoContext, cc)가 필요하며 이 cc에 연산 키(EvalKey)가 필요
+3. 연산이 수행되는 암호문은 암호화 될 때와 "동일한" cc를 이용하여 연산이 되어야 함
+4. EvalKey와 같은 연산 키는 비밀키를 기반으로 생성하므로 컨트롤러에서 만들 수 없음 (추측, Lattigo에서는 sk 없이 evalkey 생성 가능 했던 것으로 기억)
+5. 플랜트에서 생성한 cc를 직렬화 후 통신하면 오류 발생 -> 첫 암호문에서 cc 추출 (cc를 뽑아내는 함수가 존재)
+6. 플랜트에서 생성한 EvalKey는 직렬화 후 통신하여 컨트롤러가 5에서 뽑아낸 cc에 "등록"
+7. 실수 데이터를 정수화 하기 위한 스케일 상수(SCALE_XY_)에 맞는 평문 공간(PlaintextModulus) 설정 필요
+8. 현재 보안 레벨은 NotSet
+
 
 src/enc_turtle_cpp/config/fastdds_config.xml
 이때 xml 파일로 QoS 설정을 통해 fast DDS의 데이터 max size를 2MB로 변경하여 사용
@@ -66,9 +60,10 @@ $ cba
 ```
 
 # Requirement
-ros2 (현:foxy)
+ROS2 (현:foxy)
 turtlesim package
-Openfhe 설치 (openfhe 환경 설정이 조금 안맞을 수도 있습니다...)  
+OpenFHE 설치 (openfhe 환경 설정이 조금 안맞을 수도 있습니다...)  
+cereal 라이브러리 (openfhe의 종속성으로 같이 설치)
 
 # Usage
 1. 배쉬 실행
