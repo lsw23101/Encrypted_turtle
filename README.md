@@ -105,11 +105,8 @@ turtle_demo.launch.py : [1]에서 제공하는 leader-follower 데모
 
 # Reference
 
-[1] https://github.com/roboticvedant/ROS2_turtlesim_PID_demo
+[1] https://github.com/roboticvedant/ROS2_turtlesim_PID_demo (터틀봇 PID 예제)
 
-
-
-// 
 ****
 
 
