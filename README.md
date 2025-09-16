@@ -65,19 +65,10 @@ $ colcon build --symlink-install
 $ cba
 ```
 
-# git push
-```
-$ git add src
-$ git commit -m "message"
-$ git push
-```
-
-
 # Requirement
 ros2 (현:foxy)
 turtlesim package
-Openfhe 설치...(openfhe 환경 설정이 조금 어려웠습니다..)
-colon build 하기 위해서 openfhe 설치 디렉토리 설정을 해주어야합니다. 
+Openfhe 설치 (openfhe 환경 설정이 조금 안맞을 수도 있습니다...)  
 
 # Usage
 1. 배쉬 실행
@@ -110,11 +101,19 @@ turtle_demo.launch.py : [1]에서 제공하는 leader-follower 데모
 ****
 
 
+
 <details>
  <summary>테스트, 디버그 메모...</summary>
+ 
 #### git 다루기
 https://shortcuts.tistory.com/8
-
+ 
+# git push
+```
+$ git add src
+$ git commit -m "message"
+$ git push
+```
 bgv 테스트 용
 
 ```
