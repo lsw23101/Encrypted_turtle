@@ -50,15 +50,21 @@ public:
     qos.reliable();
     qos.durability_volatile();
 
-    // ===== Setup 채널: EvalMultKey만 송신 =====
+    // 처음 세팅에 쓰이는 객체, evalkey 송신 이후 사용 x
     emk_pub_ = this->create_publisher<enc_turtle_cpp::msg::EncryptedData>("fhe_evalmult", qos);
-
+    // 타이머 객체
+    setup_timer_ = this->create_wall_timer(std::chrono::milliseconds(200),
+                    [this]{ send_evalmult_once(); });
+    
+    
     // ===== 런타임 채널 =====
     // 구독자 두개 만들기 
+    // 터틀봇 pose 받음
     pose_sub_ = this->create_subscription<turtlesim::msg::Pose>(
         "turtle1/pose", qos,
         std::bind(&EncTurtlePlant::pose_callback, this, std::placeholders::_1));
 
+    // 연산 결과 받음
     result_sub_ = this->create_subscription<enc_turtle_cpp::msg::EncryptedData>(
         "encrypted_result", qos,
         std::bind(&EncTurtlePlant::result_callback, this, std::placeholders::_1));
@@ -66,12 +72,6 @@ public:
     // 암호화 데이터 보낼 퍼블리셔
     encrypted_pub_ = this->create_publisher<enc_turtle_cpp::msg::EncryptedData>(
         "encrypted_pose", qos);
-
-    turtle1_state_pub_ = this->create_publisher<turtlesim::msg::Pose>("/turtle1/state", 10);
-
-    // 초기 셋업(★ EvalMultKey만 1회 송신)
-    setup_timer_ = this->create_wall_timer(std::chrono::milliseconds(200),
-                    [this]{ send_evalmult_once(); });
   }
 
 private:
@@ -117,12 +117,13 @@ private:
       auto encryption_time = std::chrono::duration_cast<std::chrono::microseconds>(
         encryption_end - encryption_start_).count() / 1000.0;
 
-      // 직렬화
+      // 직렬화 (바이트스트림으로 바로 변환)
       serialization_start_ = std::chrono::high_resolution_clock::now();
       std::stringstream ss_x, ss_y;
       Serial::Serialize(ciphertext_x, ss_x, SerType::BINARY);
       Serial::Serialize(ciphertext_y, ss_y, SerType::BINARY);
 
+      // stringstream → vector<uint8_t> 직접 변환
       std::string x_str = ss_x.str();
       std::string y_str = ss_y.str();
       std::vector<uint8_t> x_data(x_str.begin(), x_str.end());
@@ -154,8 +155,7 @@ private:
       msg_y.data_type = 1;
       encrypted_pub_->publish(msg_y);
 
-      // 터틀봇 제어를 위한 상태 정보 전송 (현재는 사용 x) test 파일에서 사용중
-      turtle1_state_pub_->publish(*msg);
+      // 상태 퍼블리시 제거 (enc_turtle_controller에서 사용하지 않음)
 
     } catch (const std::exception& e) {
       RCLCPP_ERROR(this->get_logger(), "Error in encryption: %s", e.what());
@@ -171,6 +171,7 @@ private:
       double deser_time_ms = 0.0;
       {
         auto deser_start = std::chrono::high_resolution_clock::now();
+        // 바이트스트림을 직접 stringstream으로 변환
         std::stringstream ss(std::string(msg->data.begin(), msg->data.end()));
         Serial::Deserialize(ct, ss, SerType::BINARY);
         auto deser_end = std::chrono::high_resolution_clock::now();
@@ -236,8 +237,6 @@ private:
     }
   }
 
-  // 기존 turtle1_pose 콜백 제거: pose_callback 내에서 상태 퍼블리시 처리
-
   // 멤버변수
   CryptoContext<DCRTPoly> cc;
   KeyPair<DCRTPoly> kp;
@@ -262,7 +261,7 @@ private:
   rclcpp::Publisher<enc_turtle_cpp::msg::EncryptedData>::SharedPtr encrypted_pub_;
 
   
-  rclcpp::Publisher<turtlesim::msg::Pose>::SharedPtr turtle1_state_pub_;
+  
   rclcpp::TimerBase::SharedPtr setup_timer_;
 };
 

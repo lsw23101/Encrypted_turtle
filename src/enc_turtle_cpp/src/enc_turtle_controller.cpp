@@ -19,12 +19,12 @@ public:
     qos.reliable();
     qos.durability_volatile();
 
-    // === Setup 구독자, evalkey 받고 구독 해제할 예정 ===
+    // 처음 세팅 evalkey 구독
     sub_emk_ = this->create_subscription<enc_turtle_cpp::msg::EncryptedData>(
       "fhe_evalmult", qos,
       std::bind(&EncTurtleController::on_evalmult, this, std::placeholders::_1));
 
-    // === 런타임 채널 === 구독 1개 퍼블리시 1개
+    // === 런타임 채널 === 암호 데이터 구독 / 연산 결과 퍼블리시
     encrypted_sub_ = this->create_subscription<enc_turtle_cpp::msg::EncryptedData>(
       "encrypted_pose", qos,
       std::bind(&EncTurtleController::enc_pose_callback, this, std::placeholders::_1));
@@ -33,34 +33,45 @@ public:
   }
 
 private:
-  // --- EvalMultKey 수신 (cc는 암호문에서 획득하므로 도착 전까지 버퍼링만) ---
+  // --- EvalMultKey 수신하는 함수 (cc는 암호문에서 획득하므로 도착 전까지 버퍼링만) ---
   void on_evalmult(const enc_turtle_cpp::msg::EncryptedData::SharedPtr msg){
+    // 1. 수신한 메시지에서 바이트 데이터를 std::string으로 변환
     std::string s(msg->data.begin(), msg->data.end());
-    // 컨텍스트가 이미 있으면 즉시 등록, 아니면 버퍼링
+    
+    // 2. 컨텍스트가 이미 준비되어 있고 아직 키가 등록되지 않았는지 확인
     if (cntr_cc_ && !emk_registered_) {
+      // 3. 바이트 데이터를 stringstream으로 변환 (역직렬화용)
       std::stringstream ss(s);
+      // 4. 컨텍스트에 EvalMultKey 등록 (바이너리 형식으로 역직렬화)
       cntr_cc_->DeserializeEvalMultKey(ss, SerType::BINARY);
+      // 5. 키 등록 완료 플래그들 설정
       emk_registered_ = true;
       got_emk_ = true;
-      pending_emk_.clear();
+      // 6. 대기 중인 키 데이터 정리 (이미 등록했으므로 불필요)
+      waiting_emk_.clear();
+      
+      // 7. 1회성 구독이므로 등록 완료 후 구독 해제
       if (sub_emk_) {
         sub_emk_.reset();
         RCLCPP_INFO(this->get_logger(), "[Controller] EvalMult subscription closed (one-shot)");
       }
+      // 8. 등록 완료 로그 출력
       RCLCPP_INFO(this->get_logger(), "[Controller] EvalMult key registered on ciphertext context (immediate)");
-      return;
+      return; // 9. 즉시 등록 완료했으므로 함수 종료
     }
 
-    // 컨텍스트가 아직 없으면 버퍼만 하고, 생성 시 1회 등록 시도
-    pending_emk_ = std::move(s);
-    RCLCPP_INFO(this->get_logger(), "[Controller] EvalMultKey buffered (will register when context is ready)");
+    // 10. 컨텍스트가 아직 준비되지 않았거나 이미 등록된 경우
+    // 11. 키 데이터를 waiting_emk_ 버퍼에 저장 (move로 효율적 전달)
+    waiting_emk_ = std::move(s);
+    // 12. 대기 중 저장 완료 로그 출력 (컨텍스트 준비되면 나중에 등록 예정)
+    RCLCPP_INFO(this->get_logger(), "[Controller] EvalMultKey waiting (will register when context is ready)");
   }
 
-  // --- 암호문 수신/연산 ---
+  // 암호문 수신 후 콜백 함수
   void enc_pose_callback(const enc_turtle_cpp::msg::EncryptedData::SharedPtr msg) {
     try {
-      std::string data_str(msg->data.begin(), msg->data.end());
-      std::stringstream ss(data_str);
+      // 바이트스트림을 직접 stringstream으로 변환
+      std::stringstream ss(std::string(msg->data.begin(), msg->data.end()));
 
       if (msg->data_type == 0) { // X
         Serial::Deserialize(ciphertext_x_, ss, SerType::BINARY);
@@ -71,13 +82,13 @@ private:
           cntr_cc_ = ciphertext_x_->GetCryptoContext();
           cntr_cc_->Enable(KEYSWITCH);
           cntr_cc_->Enable(LEVELEDSHE);
-          // 버퍼된 evalmult 키 등록 1회 시도
-          if (!pending_emk_.empty() && !emk_registered_) {
-            std::stringstream ess(pending_emk_);
+          // 대기 중인 evalmult 키 등록 1회 시도
+          if (!waiting_emk_.empty() && !emk_registered_) {
+            std::stringstream ess(waiting_emk_);
             cntr_cc_->DeserializeEvalMultKey(ess, SerType::BINARY);
             emk_registered_ = true;
             got_emk_ = true;
-            pending_emk_.clear();
+            waiting_emk_.clear();
             if (sub_emk_) {
               sub_emk_.reset();
               RCLCPP_INFO(this->get_logger(), "[Controller] EvalMult subscription closed (one-shot)");
@@ -96,12 +107,12 @@ private:
           cntr_cc_ = ciphertext_y_->GetCryptoContext();
           cntr_cc_->Enable(KEYSWITCH);
           cntr_cc_->Enable(LEVELEDSHE);
-          if (!pending_emk_.empty() && !emk_registered_) {
-            std::stringstream ess(pending_emk_);
+          if (!waiting_emk_.empty() && !emk_registered_) {
+            std::stringstream ess(waiting_emk_);
             cntr_cc_->DeserializeEvalMultKey(ess, SerType::BINARY);
             emk_registered_ = true;
             got_emk_ = true;
-            pending_emk_.clear();
+            waiting_emk_.clear();
             if (sub_emk_) {
               sub_emk_.reset();
               RCLCPP_INFO(this->get_logger(), "[Controller] EvalMult subscription closed (one-shot)");
@@ -183,12 +194,12 @@ private:
   CryptoContext<DCRTPoly> cntr_cc_;             // 실제 연산 컨텍스트(암호문에서 획득)
   bool got_emk_ = false;
   bool emk_registered_ = false;
-  std::string pending_emk_;                    // run_cc_ 준비 전 도착한 evalmult 키 버퍼
+  std::string waiting_emk_;                    // 컨텍스트 준비 전 도착한 evalmult 키 대기 버퍼
 
   Ciphertext<DCRTPoly> ciphertext_x_, ciphertext_y_;
   bool got_x_ = false, got_y_ = false;
 
-  // ROS2
+  // ROS2 pub/sub 3개 1개는 초기 설정 2개는 런타임
   rclcpp::Subscription<enc_turtle_cpp::msg::EncryptedData>::SharedPtr sub_emk_;
   rclcpp::Subscription<enc_turtle_cpp::msg::EncryptedData>::SharedPtr encrypted_sub_;
   rclcpp::Publisher<enc_turtle_cpp::msg::EncryptedData>::SharedPtr result_pub_;
