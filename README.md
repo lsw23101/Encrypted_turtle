@@ -36,8 +36,7 @@
 
 # 논의점...
 1. 지금 방법 외의 이미 잘 짜여진 암호문의 통신 방법이 있을지...
-2. 보안 레벨을 NotSet으로 설정시 파라미터 설정을 명확하
-3. 
+2. 파라미터 설정...
 
 # Install
 ```
@@ -112,19 +111,12 @@ openfhecore/include/lattice/params.h
 ```
 parameters.SetSecurityLevel(SecurityLevel::HEStd_NotSet); // 자동 결정 방지
 ```
+# ntt 소수
+
+
+
 
 #### open fhe scheme 속도
 
-
-// N 사이즈가 2^13 일때 뎁스: 1
-
-<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/931f0fdd-07e8-4626-a2b3-fceb73d74fc5" />
-
-
-// N 사이즈 2^12 일때 뎁스: 0 일때 65537 플레인 텍스트 크기에 대해서 이게 마지노선
-
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/780c3537-c846-4351-b90b-a6b4ba0f4394" />
-
-// 
 ****
 </details>
