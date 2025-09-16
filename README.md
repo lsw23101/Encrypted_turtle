@@ -64,12 +64,12 @@ $ rosfoxy
 
 2. 런치파일 실행
 
-암호문 전송 연산 데모
+데모
 ```
 $ ros2 launch enc_turtle_cpp enc_turtle_demo.launch.py
 ```
 
-test_enc_turtle_demo.launch.py : 터틀봇 1과 2의 암호문을 받아 leader-follwer 해보려고 시도 중..
+test_enc_turtle_demo.launch.py : 터틀봇 1과 2의 암호문을 받아 leader-follwer 해보려고 시도 중..  
 turtle_demo.launch.py : [1]에서 제공하는 leader-follower 데모
 
 런치파일 실행하면 teleop_twist_keyboard 에서 터틀봇 조종 가능
