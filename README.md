@@ -113,7 +113,7 @@ turtle_demo.launch.py : [1]에서 제공하는 leader-follower 데모
 ****
 
 
-
+<details>
 #### git 다루기
 https://shortcuts.tistory.com/8
 
@@ -150,3 +150,4 @@ parameters.SetSecurityLevel(SecurityLevel::HEStd_NotSet); // 자동 결정 방�
 
 // 
 ****
+</details>
