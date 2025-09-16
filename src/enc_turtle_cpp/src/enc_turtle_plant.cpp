@@ -27,8 +27,9 @@ public:
     // parameters.SetPlaintextModulus(65537);
     parameters.SetPlaintextModulus(557057); // 검색해서 ntt 소수 적당한 것 찾기...
     parameters.SetMultiplicativeDepth(1);       // x*y 1회
-    parameters.SetSecurityLevel(SecurityLevel::HEStd_NotSet);
-    parameters.SetRingDim(8192); // NotSet이라
+    // parameters.SetSecurityLevel(SecurityLevel::HEStd_NotSet);
+    parameters.SetSecurityLevel(SecurityLevel::HEStd_128_classic);
+    parameters.SetRingDim(8192); // 
 
     cc = GenCryptoContext(parameters);
     cc->Enable(PKE);
@@ -39,8 +40,8 @@ public:
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     kp = cc->KeyGen();
     if (kp.secretKey) {
-      cc->EvalSumKeyGen(kp.secretKey);     // (선택)
-      cc->EvalMultKeyGen(kp.secretKey);    // ★ 곱셈용 평가키 생성
+      // cc->EvalSumKeyGen(kp.secretKey);     // 
+      cc->EvalMultKeyGen(kp.secretKey);    // 곱셈용 평가키 생성
     } else {
       RCLCPP_ERROR(this->get_logger(), "Key generation failed!");
     }
