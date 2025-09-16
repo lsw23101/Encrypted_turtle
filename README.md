@@ -1,4 +1,5 @@
 <img width="994" height="160" alt="image" src="https://github.com/user-attachments/assets/3d84cdda-2584-4e9a-b449-fc3b0f58f5c2" />  
+
 <rqt_graph >
 
 # 내용
@@ -6,16 +7,6 @@
 2. 컨트롤러 <enc_turtle_controller>: 암호문 데이터 **x**, **y**의 덧셈, 곱셈 1회 수행 후 송신
 3. 이때 암호문은 cereal을 이용하여 바이트스트림으로 변환 후 통신
 
-<img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />  
-링 차원 : 약 8000   
-암호화: 5ms  
-직렬화: 0.1ms  
-역직렬화: 1.5ms  
-복호화: 0.8ms  
-덧셈: 0.15ms  
-곱셈: 3.27ms  
-전체 루프: 15ms  
-통신시간: 약 4~5ms (전체 루프에서 위 과정의 차이로 추정) (통신이 다른 pc가 되거나 무선이 되는 등 상황이면 더 커질 것으로 예상)
 
 # 결과
 1. BGV의 덧셈 곱셈 한번 정도의 연산
@@ -31,14 +22,16 @@
 src/enc_turtle_cpp/config/fastdds_config.xml
 이때 xml 파일로 QoS 설정을 통해 fast DDS의 데이터 max size를 2MB로 변경하여 사용
 
-~~암호문을 연산하기 위한 evalkey가
-plant에서 암호화를 하기 위해 만들었던 컨텍스트와
-controller에서 생성한 컨텍스트가 다르다는 이유로 덧셈 연산만 수행할 수 있는 오류
-따라서 OpenFHE는 evalkey를 플랜트가 던져줘야될 것으로 보임...
-현재 : 
-암호화 된 터틀봇 1의 x,y 값을 보냄 => 컨트롤러가 x+y 계산 후 전송 => 플랜트가 복호화 후 프린트
-암호화 -> cereal 라이브러리를 통한 직렬화 -> string msg 을 통해 통신 
-(현재 P = 65537 일때, N = 16384 (2^14) 정도이며 이때 데이터 크기는 1050103 약 1MB 사이즈)~~
+<img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />  
+링 차원 : 약 8000   
+암호화: 5ms  
+직렬화: 0.1ms  
+역직렬화: 1.5ms  
+복호화: 0.8ms  
+덧셈: 0.15ms  
+곱셈: 3.27ms  
+전체 루프: 15ms  
+통신시간: 약 4~5ms (전체 루프에서 위 과정의 차이로 추정) (통신이 다른 pc가 되거나 무선이 되는 등 상황이면 더 커질 것으로 예상)
 
 # Install
 ```
