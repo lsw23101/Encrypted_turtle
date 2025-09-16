@@ -12,18 +12,19 @@
 1. BGV의 덧셈 곱셈 한번 정도의 연산
 2. 암호문간 연산을 위해서는 암호 컨텍스(CryptoContext, cc)가 필요하며 이 cc에 연산 키(EvalKey)가 필요
 3. 연산이 수행되는 암호문은 암호화 될 때와 "동일한" cc를 이용하여 연산이 되어야 함
-4. EvalKey와 같은 연산 키는 비밀키를 기반으로 생성하므로 컨트롤러에서 만들 수 없음  (추측, Lattigo에서는 sk 없이 evalkey 생성 가능 했던 것으로 기억)
-5. 플랜트에서 생성한 cc를 직렬화 후 통신하면 오류 발생 -> 첫 암호문에서 cc 추출 (cc를 뽑아내는 함수가 존재)
-6. 플랜트에서 생성한 EvalKey는 직렬화 후 통신하여 컨트롤러가 5에서 뽑아낸 cc에 "등록"
-7. 실수 데이터를 정수화 하기 위한 스케일 상수(SCALE_XY_)에 맞는 평문 공간(PlaintextModulus) 설정 필요
-8. 현재 보안 레벨은 NotSet
+4. EvalKey와 같은 연산 키는 비밀키를 기반으로 생성하므로 컨트롤러에서 만들 수 없음
+   (추측, Lattigo에서는 sk 없이 evalkey 생성 가능 했던 것으로 기억)
+6. 플랜트에서 생성한 cc를 직렬화 후 통신하면 오류 발생 -> 첫 암호문에서 cc 추출 (cc를 뽑아내는 함수가 존재)
+7. 플랜트에서 생성한 EvalKey는 직렬화 후 통신하여 컨트롤러가 5에서 뽑아낸 cc에 "등록"
+8. 실수 데이터를 정수화 하기 위한 스케일 상수(SCALE_XY_)에 맞는 평문 공간(PlaintextModulus) 설정 필요
+9. 현재 보안 레벨은 NotSet
 
 
 src/enc_turtle_cpp/config/fastdds_config.xml
 이때 xml 파일로 QoS 설정을 통해 fast DDS의 데이터 max size를 2MB로 변경하여 사용
 
 <img width="1208" height="323" alt="image" src="https://github.com/user-attachments/assets/0d76de63-8d77-4681-97f1-e3406dde2c86" />  
-링 차원 : 약 8000   
+링 차원 : 약 8000  
 암호화: 5ms  
 직렬화: 0.1ms  
 역직렬화: 1.5ms  
