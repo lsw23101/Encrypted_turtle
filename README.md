@@ -17,7 +17,7 @@
 6. 플랜트에서 생성한 cc를 직렬화 후 통신하면 오류 발생 -> 첫 암호문에서 cc 추출 (cc를 뽑아내는 함수가 존재)
 7. 플랜트에서 생성한 EvalKey는 직렬화 후 통신하여 컨트롤러가 5에서 뽑아낸 cc에 "등록"
 8. 실수 데이터를 정수화 하기 위한 스케일 팩터(SCALE_XY_)에 맞는 평문 공간(PlaintextModulus) 설정 필요
-9. 현재 보안 레벨은 NotSet
+9. 현재 스케일 팩터는 50, 평문 공간은 557057, 보안레벨 128-bit
 10. src/enc_turtle_cpp/config/fastdds_config.xml 파일로 QoS 설정을 통해 fast DDS의 데이터 max size를 2MB로 변경하여 사용
 
 
